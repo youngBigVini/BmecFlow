@@ -5,7 +5,6 @@ namespace BmecFlow
     class LogManager
     {
         string pathName = @"Q:\quality_data\test_results";
-        //string pathName = @"C:\DEVELOPMENT PROJECTS\BmecFlow\Logs"; //alterar na Prod!
         string strLogPattern = "*.rslt*";
 
 

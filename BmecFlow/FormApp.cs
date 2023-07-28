@@ -12,6 +12,10 @@ namespace BmecFlow
         SQLManager sQLManager = new SQLManager();
         string cqa = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
+        string strFieldCheck = "Preencha corretamente todos os campos para serem inseridos!!!";
+        string trackingDir = @"X:\DC\BmecFlow\tracking";
+        string dbDir = @"X:\DC\BmecFlow\db\";
+        string cfgPattern = ".cfg";
         public FormMain()
         {
             InitializeComponent();
@@ -25,15 +29,14 @@ namespace BmecFlow
         }
         public void readRouteFilesAndFillComboBox()
         {
-            string dir = @"X:\DC\BmecFlow\db\";
             string line = string.Empty;
-            foreach (string s in Directory.GetFiles(dir, "*", SearchOption.AllDirectories))
+            foreach (string s in Directory.GetFiles(dbDir, "*", SearchOption.AllDirectories))
             {
                 line = s;
-                line = line.Replace(@"X:\DC\BmecFlow\db\", "");
-                if (line.Contains(".cfg"))
+                line = line.Replace(dbDir, "");
+                if (line.Contains(cfgPattern))
                 {
-                    line = line.Replace(".cfg", "");
+                    line = line.Replace(cfgPattern, "");
                     comboBoxProductName.Items.Add(line);
                     comboBoxProcessProduct.Items.Add(line);
                 }
@@ -121,7 +124,7 @@ namespace BmecFlow
             try
             {
                 string selectedProduct = comboBoxProductName.GetItemText(comboBoxProductName.SelectedItem);
-                string[] splitFile = File.ReadAllLines(@"X:\DC\BmecFlow\db\" + selectedProduct + ".cfg");
+                string[] splitFile = File.ReadAllLines(dbDir + selectedProduct + cfgPattern);
                 string productName = splitFile[0];
                 string routeFlow = splitFile[1];
 
@@ -144,7 +147,7 @@ namespace BmecFlow
         private void buttonBkp_Click(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            string strFilePath = @"X:\DC\BmecFlow\db\BmecFlow.mdb";
+            string strFilePath = dbDir + "BmecFlow.mdb";
             string strFileDestination = @"C:\temp\Backup_" + dt.ToString("yyyyMMdd") + "_BmecFlow.mdb";
 
             try
@@ -164,12 +167,12 @@ namespace BmecFlow
         private void buttonROUTESave_Click(object sender, EventArgs e)
         {
             if (textBoxProductName.Text == "" || comboBoxRouteME.Text == "" || comboBoxRouteBE.Text == "")
-                MessageBox.Show("Preencha corretamente todos os campos!!!");
+                MessageBox.Show(strFieldCheck);
             else
             {
                 try
                 {
-                    File.WriteAllText(@"X:\DC\BmecFlow\db\" + textBoxProductName.Text + ".cfg", textBoxProductName.Text + "\n" + comboBoxRouteME.Text + "," + comboBoxRouteBE.Text);
+                    File.WriteAllText(dbDir + textBoxProductName.Text + cfgPattern, textBoxProductName.Text + "\n" + comboBoxRouteME.Text + "," + comboBoxRouteBE.Text);
                 }
                 catch
                 {
@@ -200,7 +203,7 @@ namespace BmecFlow
             bool result = false;
             if (textBoxOBSTrackId.Text == "" || textBoxOBSCQA.Text == "")
             {
-                MessageBox.Show("Preencha todos os campos para serem inseridos!!!");
+                MessageBox.Show(strFieldCheck);
                 cleanPInfos();
             }
             else if (textBoxOBSTrackId.TextLength != 10)
@@ -221,7 +224,7 @@ namespace BmecFlow
         {
             if (textBoxTrackIdProcess.Text == "" || textBoxTrackingInfos.Text == "" || comboBoxProcessProduct.Text == "" || comboBoxAREA.Text == "" || comboBoxBuild.Text == "")
             {
-                MessageBox.Show("Preencha todos os campos para serem inseridos!!!");
+                MessageBox.Show(strFieldCheck);
                 cleanPInfos();
             }
             else if (textBoxTrackIdProcess.TextLength != 10)
@@ -238,7 +241,7 @@ namespace BmecFlow
         }
         public void UnitTrackingGenTxt(string folderName, string trackingInfos, string fileNameTrackId)
         {
-            string dirName = @"X:\DC\BmecFlow\tracking\" + folderName;
+            string dirName = trackingDir + folderName;
             Directory.CreateDirectory(dirName);
 
             string filepath = dirName + "\\" + fileNameTrackId + ".tracking";
@@ -349,14 +352,13 @@ namespace BmecFlow
         {
             textBoxRestrictionUnits.Text = "-> Unidades com restrições:" + Environment.NewLine + "->PRODUTO \\ TRACKID" + Environment.NewLine;
             string strTrackingPattern = "*.tracking*";
-            string unitsTrackingPathName = @"X:\DC\BmecFlow\tracking";
             string unittrackid = string.Empty;
             try
             {
-                foreach (string file_name in Directory.GetFiles(unitsTrackingPathName, strTrackingPattern, SearchOption.AllDirectories))
+                foreach (string file_name in Directory.GetFiles(trackingDir, strTrackingPattern, SearchOption.AllDirectories))
                 {
                     unittrackid = file_name;
-                    unittrackid = unittrackid.Replace(unitsTrackingPathName, "");
+                    unittrackid = unittrackid.Replace(trackingDir, "");
                     textBoxRestrictionUnits.Text += Environment.NewLine + unittrackid;
                 }
             }
@@ -366,7 +368,7 @@ namespace BmecFlow
         }
         private void openFolder()
         {
-            System.Diagnostics.Process.Start(@"X:\DC\BmecFlow\tracking\");
+            System.Diagnostics.Process.Start(trackingDir);
         }
         private void buttonRestrictionUnits_Click(object sender, EventArgs e)
         {
