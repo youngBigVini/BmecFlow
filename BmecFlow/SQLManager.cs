@@ -99,6 +99,41 @@ namespace BmecFlow
             return result;
 
         }
+        public bool InsertFailDetailsToDb(string trackID, string failDetail)
+        {
+            bool status = false;
+            bool result = false;
+            try
+            {
+                status = DoesTrackIDExist(trackID);
+                var con = new OleDbConnection(dbConnection);
+                var cmd = new OleDbCommand();
+                cmd.Connection = con;
+                if (!status)
+                {
+                    cmd.CommandText = "INSERT INTO BFlow (Trackid, FAILDETAILS)  VALUES (" + trackID + ", " + failDetail + ");";
+                    cmd.Parameters.AddWithValue("@Trackid", trackID);
+                    cmd.Parameters.AddWithValue("@FAILDETAILS", failDetail);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@FAILDETAILS", failDetail);
+                    cmd.CommandText = "UPDATE BFlow SET FAILDETAILS = '" + failDetail + "' Where Trackid = '" + trackID + "'";
+                }
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Application.DoEvents();
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+                result = false;
+            }
+            return result;
+
+        }
 
         public bool CheckRouteStatus(string trackID, string stationType)
         {

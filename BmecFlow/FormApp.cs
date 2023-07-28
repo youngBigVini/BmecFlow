@@ -190,7 +190,7 @@ namespace BmecFlow
         private void cleanPInfos()
         {
             textBoxOBSTrackId.Text = "";
-            comboBoxObs.Text = "";
+            textBoxOBSCQA.Text = "";
             textBoxTrackIdProcess.Text = "";
             textBoxTrackingInfos.Text = "";
         }
@@ -198,7 +198,7 @@ namespace BmecFlow
         private void buttonObs_Click(object sender, EventArgs e)
         {
             bool result = false;
-            if (textBoxOBSTrackId.Text == "" || comboBoxObs.Text == "")
+            if (textBoxOBSTrackId.Text == "" || textBoxOBSCQA.Text == "")
             {
                 MessageBox.Show("Preencha todos os campos para serem inseridos!!!");
                 cleanPInfos();
@@ -210,7 +210,7 @@ namespace BmecFlow
             }
             else
             {
-                result = sQLManager.InsertObstoDb(textBoxOBSTrackId.Text, comboBoxObs.Text);
+                result = sQLManager.InsertObstoDb(textBoxOBSTrackId.Text, textBoxOBSCQA.Text);
                 if (result)
                     MessageBox.Show("Observações inseridas com sucesso!!!");
                 cleanPInfos();
@@ -298,7 +298,50 @@ namespace BmecFlow
 
         private void buttonOpenFolder_Click(object sender, EventArgs e)
         {
+            openFolder();
+        }
+
+        private void buttonInserirFDetails_Click(object sender, EventArgs e)
+        {
+            bool result = false;
+            result = sQLManager.InsertFailDetailsToDb(textBoxFailDetailTrackid.Text, textBoxFailDetails.Text);
+            if (result)
+                MessageBox.Show("Detalhes da falha incluidos com sucesso!!");
+
+            textBoxFailDetailTrackid.Text = "";
+        }
+
+        public void getRestrictionUnits()
+        {
+            textBoxRestrictionUnits.Text = "-> Unidades com restrições:" + Environment.NewLine + "->PRODUTO \\ TRACKID" + Environment.NewLine;
+            string strTrackingPattern = "*.tracking*";
+            string unitsTrackingPathName = @"X:\DC\BmecFlow\tracking";
+            string unittrackid = string.Empty;
+            try
+            {
+                foreach (string file_name in Directory.GetFiles(unitsTrackingPathName, strTrackingPattern, SearchOption.AllDirectories))
+                {
+                    unittrackid = file_name;
+                    unittrackid = unittrackid.Replace(unitsTrackingPathName, "");
+                    textBoxRestrictionUnits.Text += Environment.NewLine + unittrackid;
+                }
+            }
+            catch
+            { }
+
+        }
+        private void openFolder()
+        {
             System.Diagnostics.Process.Start(@"X:\DC\BmecFlow\tracking\");
+        }
+        private void buttonRestrictionUnits_Click(object sender, EventArgs e)
+        {
+            getRestrictionUnits();
+        }
+
+        private void buttonOFolder2_Click(object sender, EventArgs e)
+        {
+            openFolder();
         }
     }
 }

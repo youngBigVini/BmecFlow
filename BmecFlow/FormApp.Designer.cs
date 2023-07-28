@@ -58,7 +58,6 @@
             this.textBoxOBSTrackId = new System.Windows.Forms.TextBox();
             this.labelObs = new System.Windows.Forms.Label();
             this.labelPInfos = new System.Windows.Forms.Label();
-            this.comboBoxObs = new System.Windows.Forms.ComboBox();
             this.buttonObs = new System.Windows.Forms.Button();
             this.dataGridViewApp = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -113,6 +112,20 @@
             this.fAILDETAILSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxCQA = new System.Windows.Forms.ComboBox();
             this.buttonOpenFolder = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.labelFAILDetail = new System.Windows.Forms.Label();
+            this.textBoxFailDetailTrackid = new System.Windows.Forms.TextBox();
+            this.labelFDetails = new System.Windows.Forms.Label();
+            this.buttonInserirFDetails = new System.Windows.Forms.Button();
+            this.labelDetalhesFail = new System.Windows.Forms.Label();
+            this.textBoxFailDetails = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxOBSCQA = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.textBoxRestrictionUnits = new System.Windows.Forms.TextBox();
+            this.buttonRestrictionUnits = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buttonOFolder2 = new System.Windows.Forms.Button();
             this.groupBoxSettings.SuspendLayout();
             this.tabControlApp.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -125,6 +138,8 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelAppName
@@ -175,7 +190,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(477, 15);
+            this.label1.Location = new System.Drawing.Point(478, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 4;
@@ -184,7 +199,7 @@
             // textBoxTrackID
             // 
             this.textBoxTrackID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrackID.Location = new System.Drawing.Point(423, 39);
+            this.textBoxTrackID.Location = new System.Drawing.Point(420, 53);
             this.textBoxTrackID.Multiline = true;
             this.textBoxTrackID.Name = "textBoxTrackID";
             this.textBoxTrackID.Size = new System.Drawing.Size(190, 41);
@@ -261,6 +276,8 @@
             this.tabControlApp.Controls.Add(this.tabPage3);
             this.tabControlApp.Controls.Add(this.tabPage4);
             this.tabControlApp.Controls.Add(this.tabPage5);
+            this.tabControlApp.Controls.Add(this.tabPage6);
+            this.tabControlApp.Controls.Add(this.tabPage7);
             this.tabControlApp.Location = new System.Drawing.Point(12, 4);
             this.tabControlApp.Name = "tabControlApp";
             this.tabControlApp.SelectedIndex = 0;
@@ -417,9 +434,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.textBoxOBSCQA);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.buttonObs);
-            this.tabPage3.Controls.Add(this.comboBoxObs);
             this.tabPage3.Controls.Add(this.labelPInfos);
             this.tabPage3.Controls.Add(this.labelObs);
             this.tabPage3.Controls.Add(this.labelOBSTRACKID);
@@ -436,7 +453,7 @@
             // 
             this.labelOBSTRACKID.AutoSize = true;
             this.labelOBSTRACKID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOBSTRACKID.Location = new System.Drawing.Point(474, 29);
+            this.labelOBSTRACKID.Location = new System.Drawing.Point(478, 32);
             this.labelOBSTRACKID.Name = "labelOBSTRACKID";
             this.labelOBSTRACKID.Size = new System.Drawing.Size(77, 18);
             this.labelOBSTRACKID.TabIndex = 6;
@@ -455,10 +472,10 @@
             // labelObs
             // 
             this.labelObs.AutoSize = true;
-            this.labelObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelObs.Location = new System.Drawing.Point(47, 409);
+            this.labelObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelObs.Location = new System.Drawing.Point(47, 391);
             this.labelObs.Name = "labelObs";
-            this.labelObs.Size = new System.Drawing.Size(144, 20);
+            this.labelObs.Size = new System.Drawing.Size(173, 24);
             this.labelObs.TabIndex = 8;
             this.labelObs.Text = "Observações CQA:";
             // 
@@ -472,14 +489,6 @@
             this.labelPInfos.Size = new System.Drawing.Size(192, 33);
             this.labelPInfos.TabIndex = 9;
             this.labelPInfos.Text = "CQA Process";
-            // 
-            // comboBoxObs
-            // 
-            this.comboBoxObs.FormattingEnabled = true;
-            this.comboBoxObs.Location = new System.Drawing.Point(51, 443);
-            this.comboBoxObs.Name = "comboBoxObs";
-            this.comboBoxObs.Size = new System.Drawing.Size(960, 21);
-            this.comboBoxObs.TabIndex = 10;
             // 
             // buttonObs
             // 
@@ -530,6 +539,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Controls.Add(this.buttonOpenFolder);
             this.tabPage4.Controls.Add(this.comboBoxAREA);
             this.tabPage4.Controls.Add(this.labelArea);
@@ -554,7 +564,7 @@
             // 
             this.labelProcess.AutoSize = true;
             this.labelProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProcess.Location = new System.Drawing.Point(474, 29);
+            this.labelProcess.Location = new System.Drawing.Point(478, 32);
             this.labelProcess.Name = "labelProcess";
             this.labelProcess.Size = new System.Drawing.Size(77, 18);
             this.labelProcess.TabIndex = 8;
@@ -594,10 +604,11 @@
             // 
             // textBoxTrackingInfos
             // 
-            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 134);
+            this.textBoxTrackingInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 183);
             this.textBoxTrackingInfos.Multiline = true;
             this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
-            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 234);
+            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 211);
             this.textBoxTrackingInfos.TabIndex = 12;
             // 
             // groupBox1
@@ -696,7 +707,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(474, 29);
+            this.label5.Location = new System.Drawing.Point(478, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 18);
             this.label5.TabIndex = 13;
@@ -756,7 +767,7 @@
             this.comboBoxAREA.FormattingEnabled = true;
             this.comboBoxAREA.Items.AddRange(new object[] {
             "SMT",
-            "BE",
+            "PROCESSO",
             "PRODUTO",
             "TESTE",
             "CQA"});
@@ -962,6 +973,157 @@
             this.buttonOpenFolder.UseVisualStyleBackColor = true;
             this.buttonOpenFolder.Click += new System.EventHandler(this.buttonOpenFolder_Click);
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.textBoxFailDetails);
+            this.tabPage6.Controls.Add(this.buttonInserirFDetails);
+            this.tabPage6.Controls.Add(this.labelDetalhesFail);
+            this.tabPage6.Controls.Add(this.labelFDetails);
+            this.tabPage6.Controls.Add(this.labelFAILDetail);
+            this.tabPage6.Controls.Add(this.textBoxFailDetailTrackid);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1055, 587);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "FAIL DETAILS";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // labelFAILDetail
+            // 
+            this.labelFAILDetail.AutoSize = true;
+            this.labelFAILDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFAILDetail.Location = new System.Drawing.Point(478, 32);
+            this.labelFAILDetail.Name = "labelFAILDetail";
+            this.labelFAILDetail.Size = new System.Drawing.Size(77, 18);
+            this.labelFAILDetail.TabIndex = 8;
+            this.labelFAILDetail.Text = "TRACK-ID";
+            // 
+            // textBoxFailDetailTrackid
+            // 
+            this.textBoxFailDetailTrackid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFailDetailTrackid.Location = new System.Drawing.Point(420, 53);
+            this.textBoxFailDetailTrackid.MaxLength = 10;
+            this.textBoxFailDetailTrackid.Multiline = true;
+            this.textBoxFailDetailTrackid.Name = "textBoxFailDetailTrackid";
+            this.textBoxFailDetailTrackid.Size = new System.Drawing.Size(190, 41);
+            this.textBoxFailDetailTrackid.TabIndex = 9;
+            // 
+            // labelFDetails
+            // 
+            this.labelFDetails.AutoSize = true;
+            this.labelFDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFDetails.ForeColor = System.Drawing.Color.Teal;
+            this.labelFDetails.Location = new System.Drawing.Point(3, 3);
+            this.labelFDetails.Name = "labelFDetails";
+            this.labelFDetails.Size = new System.Drawing.Size(174, 33);
+            this.labelFDetails.TabIndex = 16;
+            this.labelFDetails.Text = "FAIL Details";
+            // 
+            // buttonInserirFDetails
+            // 
+            this.buttonInserirFDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInserirFDetails.Location = new System.Drawing.Point(49, 304);
+            this.buttonInserirFDetails.Name = "buttonInserirFDetails";
+            this.buttonInserirFDetails.Size = new System.Drawing.Size(96, 39);
+            this.buttonInserirFDetails.TabIndex = 19;
+            this.buttonInserirFDetails.Text = "Inserir";
+            this.buttonInserirFDetails.UseVisualStyleBackColor = true;
+            this.buttonInserirFDetails.Click += new System.EventHandler(this.buttonInserirFDetails_Click);
+            // 
+            // labelDetalhesFail
+            // 
+            this.labelDetalhesFail.AutoSize = true;
+            this.labelDetalhesFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDetalhesFail.Location = new System.Drawing.Point(34, 133);
+            this.labelDetalhesFail.Name = "labelDetalhesFail";
+            this.labelDetalhesFail.Size = new System.Drawing.Size(166, 24);
+            this.labelDetalhesFail.TabIndex = 17;
+            this.labelDetalhesFail.Text = "Detalhes da Falha:";
+            // 
+            // textBoxFailDetails
+            // 
+            this.textBoxFailDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFailDetails.Location = new System.Drawing.Point(38, 166);
+            this.textBoxFailDetails.Multiline = true;
+            this.textBoxFailDetails.Name = "textBoxFailDetails";
+            this.textBoxFailDetails.Size = new System.Drawing.Size(963, 70);
+            this.textBoxFailDetails.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 24);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Descrições / Restrições:";
+            // 
+            // textBoxOBSCQA
+            // 
+            this.textBoxOBSCQA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxOBSCQA.Location = new System.Drawing.Point(51, 418);
+            this.textBoxOBSCQA.Multiline = true;
+            this.textBoxOBSCQA.Name = "textBoxOBSCQA";
+            this.textBoxOBSCQA.Size = new System.Drawing.Size(929, 46);
+            this.textBoxOBSCQA.TabIndex = 13;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.buttonOFolder2);
+            this.tabPage7.Controls.Add(this.label7);
+            this.tabPage7.Controls.Add(this.buttonRestrictionUnits);
+            this.tabPage7.Controls.Add(this.textBoxRestrictionUnits);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1055, 587);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "RESTRICTIONS";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // textBoxRestrictionUnits
+            // 
+            this.textBoxRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRestrictionUnits.Location = new System.Drawing.Point(53, 117);
+            this.textBoxRestrictionUnits.Multiline = true;
+            this.textBoxRestrictionUnits.Name = "textBoxRestrictionUnits";
+            this.textBoxRestrictionUnits.Size = new System.Drawing.Size(940, 442);
+            this.textBoxRestrictionUnits.TabIndex = 12;
+            // 
+            // buttonRestrictionUnits
+            // 
+            this.buttonRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRestrictionUnits.Location = new System.Drawing.Point(53, 72);
+            this.buttonRestrictionUnits.Name = "buttonRestrictionUnits";
+            this.buttonRestrictionUnits.Size = new System.Drawing.Size(96, 39);
+            this.buttonRestrictionUnits.TabIndex = 13;
+            this.buttonRestrictionUnits.Text = "Buscar";
+            this.buttonRestrictionUnits.UseVisualStyleBackColor = true;
+            this.buttonRestrictionUnits.Click += new System.EventHandler(this.buttonRestrictionUnits_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Teal;
+            this.label7.Location = new System.Drawing.Point(3, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(229, 33);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Restriction Units";
+            // 
+            // buttonOFolder2
+            // 
+            this.buttonOFolder2.Location = new System.Drawing.Point(918, 88);
+            this.buttonOFolder2.Name = "buttonOFolder2";
+            this.buttonOFolder2.Size = new System.Drawing.Size(75, 23);
+            this.buttonOFolder2.TabIndex = 20;
+            this.buttonOFolder2.Text = "Open Folder";
+            this.buttonOFolder2.UseVisualStyleBackColor = true;
+            this.buttonOFolder2.Click += new System.EventHandler(this.buttonOFolder2_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -991,6 +1153,10 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1023,7 +1189,6 @@
         private System.Windows.Forms.ComboBox comboBoxProductName;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button buttonObs;
-        private System.Windows.Forms.ComboBox comboBoxObs;
         private System.Windows.Forms.Label labelPInfos;
         private System.Windows.Forms.Label labelObs;
         private System.Windows.Forms.Label labelOBSTRACKID;
@@ -1081,6 +1246,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fAILDETAILSDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox comboBoxCQA;
         private System.Windows.Forms.Button buttonOpenFolder;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TextBox textBoxFailDetails;
+        private System.Windows.Forms.Button buttonInserirFDetails;
+        private System.Windows.Forms.Label labelDetalhesFail;
+        private System.Windows.Forms.Label labelFDetails;
+        private System.Windows.Forms.Label labelFAILDetail;
+        private System.Windows.Forms.TextBox textBoxFailDetailTrackid;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxOBSCQA;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TextBox textBoxRestrictionUnits;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonRestrictionUnits;
+        private System.Windows.Forms.Button buttonOFolder2;
     }
 }
 

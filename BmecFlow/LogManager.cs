@@ -8,6 +8,7 @@ namespace BmecFlow
         //string pathName = @"C:\DEVELOPMENT PROJECTS\BmecFlow\Logs"; //alterar na Prod!
         string strLogPattern = "*.rslt*";
 
+
         SQLManager sqlManager = new SQLManager();
 
         protected virtual bool IsFileLocked(FileInfo file)
@@ -60,7 +61,7 @@ namespace BmecFlow
             }
             catch
             { }
-
         }
+
     }
 }
