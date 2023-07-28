@@ -11,7 +11,7 @@ namespace BmecFlow
         LogManager logManager = new LogManager();
         SQLManager sQLManager = new SQLManager();
         string cqa = string.Empty;
-
+        string invalidTrackIdMsg = "trackId inválido!!!";
         public FormMain()
         {
             InitializeComponent();
@@ -205,7 +205,7 @@ namespace BmecFlow
             }
             else if (textBoxOBSTrackId.TextLength != 10)
             {
-                MessageBox.Show("TrackId invalido!!!");
+                MessageBox.Show(invalidTrackIdMsg);
                 cleanPInfos();
             }
             else
@@ -231,7 +231,7 @@ namespace BmecFlow
             }
             else
             {
-                UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxBuild.Text + "\n" + comboBoxAREA.Text + ": "+  textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
+                UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxBuild.Text + "\n" + comboBoxAREA.Text + ": " + textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
                 MessageBox.Show("informações inseridas com sucesso!!!");
                 cleanPInfos();
             }
@@ -268,32 +268,65 @@ namespace BmecFlow
 
         private void buttonPASS_Click(object sender, EventArgs e)
         {
-            cqa = comboBoxCQA.Text;
-            sQLManager.InsertToMdb(textBoxOBSTrackId.Text, cqa, "P");
-            MessageBox.Show("CQA result PASS adicionado com sucesso!!!");
-            textBoxOBSTrackId.Text = "";
+            if (textBoxOBSTrackId.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg);
+                textBoxOBSTrackId.Text = "";
+
+            }
+            else
+            {
+                cqa = comboBoxCQA.Text;
+                sQLManager.InsertToMdb(textBoxOBSTrackId.Text, cqa, "P");
+                MessageBox.Show("CQA result PASS adicionado com sucesso!!!");
+                textBoxOBSTrackId.Text = "";
+            }
         }
 
         private void buttonFAIL_Click(object sender, EventArgs e)
         {
-            cqa = comboBoxCQA.Text;
-            sQLManager.InsertToMdb(textBoxOBSTrackId.Text, cqa, "F");
-            MessageBox.Show("CQA result FAIL adicionado com sucesso!!!");
-            textBoxOBSTrackId.Text = "";
+            if (textBoxOBSTrackId.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg);
+                textBoxOBSTrackId.Text = "";
+            }
+            else
+            {
+                cqa = comboBoxCQA.Text;
+                sQLManager.InsertToMdb(textBoxOBSTrackId.Text, cqa, "F");
+                MessageBox.Show("CQA result FAIL adicionado com sucesso!!!");
+                textBoxOBSTrackId.Text = "";
+            }
         }
 
         private void buttonRuninPASS_Click(object sender, EventArgs e)
         {
-            sQLManager.InsertToMdb(textBoxRunin.Text, "RUNNIN", "P");
-            MessageBox.Show("RUNNIN result PASS adicionado com sucesso!!!");
-            textBoxRunin.Text = "";
+            if (textBoxRunin.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg);
+                textBoxRunin.Text = "";
+            }
+            else
+            {
+                sQLManager.InsertToMdb(textBoxRunin.Text, "RUNNIN", "P");
+                MessageBox.Show("RUNNIN result PASS adicionado com sucesso!!!");
+                textBoxRunin.Text = "";
+            }
         }
 
         private void buttonRuninFAIL_Click(object sender, EventArgs e)
         {
-            sQLManager.InsertToMdb(textBoxRunin.Text, "RUNNIN", "F");
-            MessageBox.Show("RUNNIN result FAIL adicionado com sucesso!!!");
-            textBoxRunin.Text = "";
+            if (textBoxRunin.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg);
+                textBoxRunin.Text = "";
+            }
+            else
+            {
+                sQLManager.InsertToMdb(textBoxRunin.Text, "RUNNIN", "F");
+                MessageBox.Show("RUNNIN result FAIL adicionado com sucesso!!!");
+                textBoxRunin.Text = "";
+            }
         }
 
         private void buttonOpenFolder_Click(object sender, EventArgs e)
