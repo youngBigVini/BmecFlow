@@ -1026,7 +1026,7 @@
             // buttonInserirFDetails
             // 
             this.buttonInserirFDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInserirFDetails.Location = new System.Drawing.Point(49, 304);
+            this.buttonInserirFDetails.Location = new System.Drawing.Point(468, 400);
             this.buttonInserirFDetails.Name = "buttonInserirFDetails";
             this.buttonInserirFDetails.Size = new System.Drawing.Size(96, 39);
             this.buttonInserirFDetails.TabIndex = 19;
@@ -1038,7 +1038,7 @@
             // 
             this.labelDetalhesFail.AutoSize = true;
             this.labelDetalhesFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDetalhesFail.Location = new System.Drawing.Point(34, 133);
+            this.labelDetalhesFail.Location = new System.Drawing.Point(16, 156);
             this.labelDetalhesFail.Name = "labelDetalhesFail";
             this.labelDetalhesFail.Size = new System.Drawing.Size(166, 24);
             this.labelDetalhesFail.TabIndex = 17;
@@ -1047,10 +1047,10 @@
             // textBoxFailDetails
             // 
             this.textBoxFailDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFailDetails.Location = new System.Drawing.Point(38, 166);
+            this.textBoxFailDetails.Location = new System.Drawing.Point(21, 183);
             this.textBoxFailDetails.Multiline = true;
             this.textBoxFailDetails.Name = "textBoxFailDetails";
-            this.textBoxFailDetails.Size = new System.Drawing.Size(963, 70);
+            this.textBoxFailDetails.Size = new System.Drawing.Size(1010, 211);
             this.textBoxFailDetails.TabIndex = 20;
             // 
             // label6
