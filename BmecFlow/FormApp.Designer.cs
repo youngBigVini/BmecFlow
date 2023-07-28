@@ -770,10 +770,13 @@
             "PROCESSO",
             "PRODUTO",
             "TESTE",
-            "CQA"});
+            "CQA",
+            "CQA2",
+            "RUNNIN",
+            "FALHA"});
             this.comboBoxAREA.Location = new System.Drawing.Point(276, 73);
             this.comboBoxAREA.Name = "comboBoxAREA";
-            this.comboBoxAREA.Size = new System.Drawing.Size(75, 21);
+            this.comboBoxAREA.Size = new System.Drawing.Size(85, 21);
             this.comboBoxAREA.TabIndex = 18;
             // 
             // labelArea
