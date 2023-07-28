@@ -308,6 +308,7 @@ namespace BmecFlow
             if (result)
                 MessageBox.Show("Detalhes da falha incluidos com sucesso!!");
 
+            textBoxFailDetails.Text = "";
             textBoxFailDetailTrackid.Text = "";
         }
 
