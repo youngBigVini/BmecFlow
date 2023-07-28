@@ -26,4 +26,3 @@ C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
-C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojAssemblyReference.cache

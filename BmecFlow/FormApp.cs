@@ -231,7 +231,7 @@ namespace BmecFlow
             }
             else
             {
-                UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxProcessProduct.Text + "->" + comboBoxBuild.Text + "\n" + comboBoxAREA.Text + ": " + textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
+                UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxProcessProduct.Text + "->" + comboBoxBuild.Text + "-" + comboBoxAREA.Text + ": " + textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
                 MessageBox.Show("informações inseridas com sucesso!!!");
                 cleanPInfos();
             }
