@@ -41,7 +41,7 @@ namespace BmecFlow
             FileInfo fileInfoMQS;
             try
             {
-                foreach (string file_name in Directory.GetFiles(pathName, strLogPattern, SearchOption.AllDirectories))
+                foreach (string file_name in Directory.GetFiles(pathName, strLogPattern, SearchOption.TopDirectoryOnly))
                 {
                     fileInfoMQS = new FileInfo(file_name);
                     if (!IsFileLocked(fileInfoMQS))

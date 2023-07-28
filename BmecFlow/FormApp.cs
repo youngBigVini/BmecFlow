@@ -295,5 +295,10 @@ namespace BmecFlow
             MessageBox.Show("RUNNIN result FAIL adicionado com sucesso!!!");
             textBoxRunin.Text = "";
         }
+
+        private void buttonOpenFolder_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"X:\DC\BmecFlow\tracking\");
+        }
     }
 }

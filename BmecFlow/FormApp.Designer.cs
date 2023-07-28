@@ -112,6 +112,7 @@
             this.cQAOBSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAILDETAILSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxCQA = new System.Windows.Forms.ComboBox();
+            this.buttonOpenFolder = new System.Windows.Forms.Button();
             this.groupBoxSettings.SuspendLayout();
             this.tabControlApp.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -529,6 +530,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.buttonOpenFolder);
             this.tabPage4.Controls.Add(this.comboBoxAREA);
             this.tabPage4.Controls.Add(this.labelArea);
             this.tabPage4.Controls.Add(this.comboBoxBuild);
@@ -562,6 +564,7 @@
             // 
             this.textBoxTrackIdProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTrackIdProcess.Location = new System.Drawing.Point(420, 53);
+            this.textBoxTrackIdProcess.MaxLength = 10;
             this.textBoxTrackIdProcess.Multiline = true;
             this.textBoxTrackIdProcess.Name = "textBoxTrackIdProcess";
             this.textBoxTrackIdProcess.Size = new System.Drawing.Size(190, 41);
@@ -591,10 +594,10 @@
             // 
             // textBoxTrackingInfos
             // 
-            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 122);
+            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 134);
             this.textBoxTrackingInfos.Multiline = true;
             this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
-            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 246);
+            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 234);
             this.textBoxTrackingInfos.TabIndex = 12;
             // 
             // groupBox1
@@ -654,7 +657,7 @@
             this.groupBox2.Size = new System.Drawing.Size(399, 100);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "CQA result";
+            this.groupBox2.Text = "Runnin Result";
             // 
             // buttonRuninFAIL
             // 
@@ -949,6 +952,16 @@
             this.comboBoxCQA.TabIndex = 2;
             this.comboBoxCQA.Text = "CQA";
             // 
+            // buttonOpenFolder
+            // 
+            this.buttonOpenFolder.Location = new System.Drawing.Point(21, 101);
+            this.buttonOpenFolder.Name = "buttonOpenFolder";
+            this.buttonOpenFolder.Size = new System.Drawing.Size(75, 23);
+            this.buttonOpenFolder.TabIndex = 19;
+            this.buttonOpenFolder.Text = "Open Folder";
+            this.buttonOpenFolder.UseVisualStyleBackColor = true;
+            this.buttonOpenFolder.Click += new System.EventHandler(this.buttonOpenFolder_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1067,6 +1080,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cQAOBSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAILDETAILSDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox comboBoxCQA;
+        private System.Windows.Forms.Button buttonOpenFolder;
     }
 }
 
