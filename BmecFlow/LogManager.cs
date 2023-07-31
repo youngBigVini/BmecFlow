@@ -5,6 +5,7 @@ namespace BmecFlow
     class LogManager
     {
         string pathName = @"Q:\quality_data\test_results";
+
         string strLogPattern = "*.rslt*";
 
 
@@ -51,6 +52,9 @@ namespace BmecFlow
                             string line;
                             while ((line = reader.ReadLine()) != null)
                             {
+                                if (line.Contains("5GFR1BdTst"))
+                                    line = line.Replace("5GFR1BdTst", "T5GFR1BdTst");
+
                                 if (line.Contains("TH4") && !line.Contains("LEAK"))
                                     getPatternAndWriteToDB(line);
                             }
