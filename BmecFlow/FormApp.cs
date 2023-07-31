@@ -241,7 +241,7 @@ namespace BmecFlow
         }
         public void UnitTrackingGenTxt(string folderName, string trackingInfos, string fileNameTrackId)
         {
-            string dirName = trackingDir + folderName;
+            string dirName = trackingDir + "\\" + folderName  ;
             Directory.CreateDirectory(dirName);
 
             string filepath = dirName + "\\" + fileNameTrackId + ".tracking";
