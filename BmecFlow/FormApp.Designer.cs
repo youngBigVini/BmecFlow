@@ -379,11 +379,11 @@
             this.comboBoxRouteBE.Items.AddRange(new object[] {
             "FODTEST,RadioSlim,L2AR,DepthCal,DepthVal,CFC",
             "FODTEST,L2VISION,L2AR,DepthCal,DepthVal,CFC",
-            "UCT,L2AR,ACT,SQT,RadioSlim,LCDCAL,TOF,DepthCal,DepthVal",
-            "UCT,FODTEST,RadioSlim,L2AR,DepthCal,DepthVal,Camera_SOIS",
-            "RadioSlim,L2AR,DepthVal",
-            "L2VISION,L2AR,DepthVal",
-            "RadioSlim,L2AR"});
+            "UCT,L2AR,ACT,SQT,RadioSlim,LCDCAL,TOF,DepthCal,DepthVal,CFC",
+            "UCT,FODTEST,RadioSlim,L2AR,DepthCal,DepthVal,Camera_SOIS,CFC",
+            "RadioSlim,L2AR,DepthVal,CFC",
+            "L2VISION,L2AR,DepthVal,CFC",
+            "RadioSlim,L2AR,CFC"});
             this.comboBoxRouteBE.Location = new System.Drawing.Point(16, 216);
             this.comboBoxRouteBE.Name = "comboBoxRouteBE";
             this.comboBoxRouteBE.Size = new System.Drawing.Size(459, 23);
