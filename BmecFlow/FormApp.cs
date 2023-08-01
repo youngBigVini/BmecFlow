@@ -146,6 +146,10 @@ namespace BmecFlow
         }
         private void buttonBkp_Click(object sender, EventArgs e)
         {
+            string path = @"C:\temp";
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
             DateTime dt = DateTime.Now;
             string strFilePath = dbDir + "BmecFlow.mdb";
             string strFileDestination = @"C:\temp\Backup_" + dt.ToString("yyyyMMdd") + "_BmecFlow.mdb";
@@ -241,7 +245,7 @@ namespace BmecFlow
         }
         public void UnitTrackingGenTxt(string folderName, string trackingInfos, string fileNameTrackId)
         {
-            string dirName = trackingDir + "\\" + folderName  ;
+            string dirName = trackingDir + "\\" + folderName;
             Directory.CreateDirectory(dirName);
 
             string filepath = dirName + "\\" + fileNameTrackId + ".tracking";
