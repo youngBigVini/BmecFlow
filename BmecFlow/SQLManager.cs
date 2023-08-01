@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.OleDb;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace BmecFlow
@@ -162,9 +164,47 @@ namespace BmecFlow
                 return result;
             }
         }
-        public void exportDbToCsv()
+        public bool ImportDelimitedFile(string filename)
         {
+            string path = @"C:\temp";
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
 
+            FileInfo file = new FileInfo(filename);
+            string resultLine = string.Empty;
+            DateTime dt = DateTime.Now;
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbConnection))
+                {
+                    using (OleDbCommand cmd = new OleDbCommand(string.Format("SELECT * FROM [{0}]", "BFlow"), connection))
+                    {
+                        connection.Open();
+
+                        using (OleDbDataAdapter adp = new OleDbDataAdapter(cmd))
+                        {
+                            DataTable tbl = new DataTable("BFlowTable");
+                            adp.Fill(tbl);
+
+                            foreach (DataRow row in tbl.Rows)
+                            {
+                                using (StreamWriter writer = new StreamWriter(new FileStream(@"C:\temp\BmecFlow"+ dt.ToString("yyyyMMdd") + ".csv", FileMode.Create, FileAccess.Write)))
+                                {
+                                    writer.WriteLine("ID,Trackid,IFLASH,BrdTest,T5GFR1BdTst,PRINTLABEL,UCT,FODTEST,L2VISION,RadioSlim,LCDCAL,L2AR,SQT,DepthCal,DepthVal,Camera_SOIS,ACT,TOF,CFC,CQA,CQA2,RUNNIN,BE,CQAOBS,FAILDETAILS");
+                                    resultLine = string.Join(Environment.NewLine, tbl.Rows.OfType<DataRow>().Select(x => string.Join(" , ", x.ItemArray)));
+                                    writer.WriteLine(resultLine);
+
+                                }
+                            }
+                        }
+                    }
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

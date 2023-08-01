@@ -126,6 +126,7 @@
             this.buttonRestrictionUnits = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.buttonOFolder2 = new System.Windows.Forms.Button();
+            this.buttonExportToCsv = new System.Windows.Forms.Button();
             this.groupBoxSettings.SuspendLayout();
             this.tabControlApp.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -286,6 +287,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.buttonExportToCsv);
             this.tabPage1.Controls.Add(this.buttonRefresh);
             this.tabPage1.Controls.Add(this.labelRouteStatus);
             this.tabPage1.Controls.Add(this.LabelAppName);
@@ -1127,6 +1129,16 @@
             this.buttonOFolder2.UseVisualStyleBackColor = true;
             this.buttonOFolder2.Click += new System.EventHandler(this.buttonOFolder2_Click);
             // 
+            // buttonExportToCsv
+            // 
+            this.buttonExportToCsv.Location = new System.Drawing.Point(933, 124);
+            this.buttonExportToCsv.Name = "buttonExportToCsv";
+            this.buttonExportToCsv.Size = new System.Drawing.Size(93, 23);
+            this.buttonExportToCsv.TabIndex = 14;
+            this.buttonExportToCsv.Text = "Export to csv";
+            this.buttonExportToCsv.UseVisualStyleBackColor = true;
+            this.buttonExportToCsv.Click += new System.EventHandler(this.buttonExportToCsv_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1136,7 +1148,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.2";
+            this.Text = "BmecFlow v1.3";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxSettings.ResumeLayout(false);
             this.groupBoxSettings.PerformLayout();
@@ -1263,6 +1275,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button buttonRestrictionUnits;
         private System.Windows.Forms.Button buttonOFolder2;
+        private System.Windows.Forms.Button buttonExportToCsv;
     }
 }
 

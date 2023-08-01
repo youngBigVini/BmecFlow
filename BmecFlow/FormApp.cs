@@ -397,5 +397,16 @@ namespace BmecFlow
         {
             openFolder();
         }
+
+        private void buttonExportToCsv_Click(object sender, EventArgs e)
+        {
+            bool status = false;
+            status = sQLManager.ImportDelimitedFile(dbDir + "BmecFlow.mdb");
+
+            if (status)
+                MessageBox.Show(@"Dados exportados com sucesso para folder C:\temp!!!","SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
+            else
+                MessageBox.Show("Erro ao exportar os dados!!!","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
