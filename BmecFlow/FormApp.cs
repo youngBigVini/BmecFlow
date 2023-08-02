@@ -11,6 +11,7 @@ namespace BmecFlow
         LogManager logManager = new LogManager();
         SQLManager sQLManager = new SQLManager();
         string cqa = string.Empty;
+        string leak = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
         string strFieldCheck = "Preencha corretamente todos os campos para serem inseridos!!!";
         string trackingDir = @"X:\DC\BmecFlow\tracking";
@@ -23,8 +24,8 @@ namespace BmecFlow
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bmecFlowDataSet.BFlow' table. You can move, or remove it, as needed.
-            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
+            // TODO: This line of code loads data into the 'bmecFlowDataSet1.BFlow' table. You can move, or remove it, as needed.
+            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet1.BFlow);
 
         }
         public void readRouteFilesAndFillComboBox()
@@ -166,7 +167,7 @@ namespace BmecFlow
         }
         private void datagridViewUpdateData()
         {
-            bFlowTableAdapter.Fill(bmecFlowDataSet.BFlow);
+            bFlowTableAdapter.Fill(bmecFlowDataSet1.BFlow);
         }
         private void buttonROUTESave_Click(object sender, EventArgs e)
         {
@@ -340,32 +341,7 @@ namespace BmecFlow
         {
             openFolder();
         }
-
-        private void buttonInserirFDetails_Click(object sender, EventArgs e)
-        {
-            bool result = false;
-            if (textBoxFailDetailTrackid.TextLength != 10)
-            {
-                MessageBox.Show(invalidTrackIdMsg, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxFailDetailTrackid.Text = "";
-            }
-            else if (textBoxFailDetailTrackid.Text == "" || textBoxFailDetails.Text == "")
-            {
-                MessageBox.Show(strFieldCheck, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxFailDetailTrackid.Text = "";
-                textBoxFailDetails.Text = "";
-            }
-            else
-            {
-                result = sQLManager.InsertFailDetailsToDb(textBoxFailDetailTrackid.Text, textBoxFailDetails.Text);
-                if (result)
-                    MessageBox.Show("Detalhes da falha incluidos com sucesso!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
-
-                textBoxFailDetails.Text = "";
-                textBoxFailDetailTrackid.Text = "";
-            }
-        }
-
+     
         public void getRestrictionUnits()
         {
             textBoxRestrictionUnits.Text = "-> Unidades com restrições:" + Environment.NewLine + "->PRODUTO \\ TRACKID" + Environment.NewLine;
@@ -407,6 +383,39 @@ namespace BmecFlow
                 MessageBox.Show(@"Dados exportados com sucesso para folder C:\temp!!!","SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
             else
                 MessageBox.Show("Erro ao exportar os dados!!!","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void buttonPASSLEAK_Click(object sender, EventArgs e)
+        {
+            if (textBoxLEAKTrackid.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBoxLEAKTrackid.Text = "";
+
+            }
+            else
+            {
+                leak = comboBoxLEAK.Text;
+                sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "P");
+                MessageBox.Show("LEAK result PASS adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
+                textBoxLEAKTrackid.Text = "";
+            }
+        }
+
+        private void buttonFAILLEAK_Click(object sender, EventArgs e)
+        {
+            if (textBoxLEAKTrackid.TextLength != 10)
+            {
+                MessageBox.Show(invalidTrackIdMsg, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBoxLEAKTrackid.Text = "";
+            }
+            else
+            {
+                leak = comboBoxLEAK.Text;
+                sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "F");
+                MessageBox.Show("LEAK result FAIL adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
+                textBoxLEAKTrackid.Text = "";
+            }
         }
     }
 }
