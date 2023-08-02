@@ -20,9 +20,9 @@ namespace BmecFlow {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BmecFlowDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BmecFlowDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BmecFlowDataSet1 : global::System.Data.DataSet {
+    public partial class BmecFlowDataSet : global::System.Data.DataSet {
         
         private BFlowDataTable tableBFlow;
         
@@ -30,7 +30,7 @@ namespace BmecFlow {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public BmecFlowDataSet1() {
+        public BmecFlowDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BmecFlow {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected BmecFlowDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BmecFlowDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace BmecFlow {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BmecFlowDataSet1 cln = ((BmecFlowDataSet1)(base.Clone()));
+            BmecFlowDataSet cln = ((BmecFlowDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace BmecFlow {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BmecFlowDataSet1";
+            this.DataSetName = "BmecFlowDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BmecFlowDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/BmecFlowDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBFlow = new BFlowDataTable();
@@ -225,7 +225,7 @@ namespace BmecFlow {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BmecFlowDataSet1 ds = new BmecFlowDataSet1();
+            BmecFlowDataSet ds = new BmecFlowDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -906,7 +906,7 @@ namespace BmecFlow {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BmecFlowDataSet1 ds = new BmecFlowDataSet1();
+                BmecFlowDataSet ds = new BmecFlowDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1782,7 +1782,7 @@ namespace BmecFlow {
         }
     }
 }
-namespace BmecFlow.BmecFlowDataSet1TableAdapters {
+namespace BmecFlow.BmecFlowDataSetTableAdapters {
     
     
     /// <summary>
@@ -2150,7 +2150,7 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BmecFlowDataSet1.BFlowDataTable dataTable) {
+        public virtual int Fill(BmecFlowDataSet.BFlowDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2163,9 +2163,9 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BmecFlowDataSet1.BFlowDataTable GetData() {
+        public virtual BmecFlowDataSet.BFlowDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BmecFlowDataSet1.BFlowDataTable dataTable = new BmecFlowDataSet1.BFlowDataTable();
+            BmecFlowDataSet.BFlowDataTable dataTable = new BmecFlowDataSet.BFlowDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2173,14 +2173,14 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BmecFlowDataSet1.BFlowDataTable dataTable) {
+        public virtual int Update(BmecFlowDataSet.BFlowDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BmecFlowDataSet1 dataSet) {
+        public virtual int Update(BmecFlowDataSet dataSet) {
             return this.Adapter.Update(dataSet, "BFlow");
         }
         
@@ -3186,7 +3186,7 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(BmecFlowDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BmecFlowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bFlowTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.BFlow.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3205,7 +3205,7 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(BmecFlowDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BmecFlowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bFlowTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.BFlow.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3223,7 +3223,7 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(BmecFlowDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BmecFlowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._bFlowTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.BFlow.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3265,7 +3265,7 @@ namespace BmecFlow.BmecFlowDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(BmecFlowDataSet1 dataSet) {
+        public virtual int UpdateAll(BmecFlowDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
