@@ -647,7 +647,8 @@
             "UCT,FODTEST,RadioSlim,L2AR,DepthCal,DepthVal,Camera_SOIS,CFC",
             "RadioSlim,L2AR,DepthVal,CFC",
             "L2VISION,L2AR,DepthVal,CFC",
-            "RadioSlim,L2AR,CFC"});
+            "RadioSlim,L2AR,CFC",
+            "UCT,FODTEST,L2VISION,L2AR,DepthCal,DepthVal,CFC"});
             this.comboBoxRouteBE.Location = new System.Drawing.Point(16, 216);
             this.comboBoxRouteBE.Name = "comboBoxRouteBE";
             this.comboBoxRouteBE.Size = new System.Drawing.Size(459, 23);
