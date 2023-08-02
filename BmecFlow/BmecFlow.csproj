@@ -48,11 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BmecFlowDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BmecFlowDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BmecFlowDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,17 +76,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="BmecFlowDataSet.xsc">
-      <DependentUpon>BmecFlowDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BmecFlowDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BmecFlowDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BmecFlowDataSet.xss">
-      <DependentUpon>BmecFlowDataSet.xsd</DependentUpon>
-    </None>
     <None Include="BmecFlowDataSet1.xsc">
       <DependentUpon>BmecFlowDataSet1.xsd</DependentUpon>
     </None>
