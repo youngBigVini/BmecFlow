@@ -182,13 +182,14 @@
             // 
             // buttonRestrictionUnits
             // 
+            this.buttonRestrictionUnits.BackColor = System.Drawing.Color.Teal;
             this.buttonRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRestrictionUnits.Location = new System.Drawing.Point(53, 72);
             this.buttonRestrictionUnits.Name = "buttonRestrictionUnits";
             this.buttonRestrictionUnits.Size = new System.Drawing.Size(96, 39);
             this.buttonRestrictionUnits.TabIndex = 13;
             this.buttonRestrictionUnits.Text = "Buscar";
-            this.buttonRestrictionUnits.UseVisualStyleBackColor = true;
+            this.buttonRestrictionUnits.UseVisualStyleBackColor = false;
             this.buttonRestrictionUnits.Click += new System.EventHandler(this.buttonRestrictionUnits_Click);
             // 
             // label7
@@ -335,13 +336,14 @@
             // 
             // buttonTracking
             // 
+            this.buttonTracking.BackColor = System.Drawing.Color.Teal;
             this.buttonTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.buttonTracking.Location = new System.Drawing.Point(468, 400);
             this.buttonTracking.Name = "buttonTracking";
             this.buttonTracking.Size = new System.Drawing.Size(96, 39);
             this.buttonTracking.TabIndex = 10;
             this.buttonTracking.Text = "Inserir";
-            this.buttonTracking.UseVisualStyleBackColor = true;
+            this.buttonTracking.UseVisualStyleBackColor = false;
             this.buttonTracking.Click += new System.EventHandler(this.buttonTracking_Click);
             // 
             // label3
@@ -510,13 +512,14 @@
             // 
             // buttonObs
             // 
+            this.buttonObs.BackColor = System.Drawing.Color.Teal;
             this.buttonObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonObs.Location = new System.Drawing.Point(51, 470);
             this.buttonObs.Name = "buttonObs";
             this.buttonObs.Size = new System.Drawing.Size(96, 39);
             this.buttonObs.TabIndex = 11;
             this.buttonObs.Text = "Inserir";
-            this.buttonObs.UseVisualStyleBackColor = true;
+            this.buttonObs.UseVisualStyleBackColor = false;
             this.buttonObs.Click += new System.EventHandler(this.buttonObs_Click);
             // 
             // groupBoxCQA
