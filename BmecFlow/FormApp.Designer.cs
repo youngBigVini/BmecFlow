@@ -111,6 +111,8 @@
             this.lEAK101DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lEAK102DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lEAK103DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xCVRLTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pREXCVRLTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fODTESTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.l2VISIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -338,7 +340,7 @@
             // 
             this.buttonTracking.BackColor = System.Drawing.Color.Teal;
             this.buttonTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.buttonTracking.Location = new System.Drawing.Point(468, 400);
+            this.buttonTracking.Location = new System.Drawing.Point(471, 480);
             this.buttonTracking.Name = "buttonTracking";
             this.buttonTracking.Size = new System.Drawing.Size(96, 39);
             this.buttonTracking.TabIndex = 10;
@@ -359,11 +361,11 @@
             // 
             // textBoxTrackingInfos
             // 
-            this.textBoxTrackingInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackingInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 183);
             this.textBoxTrackingInfos.Multiline = true;
             this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
-            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 211);
+            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 291);
             this.textBoxTrackingInfos.TabIndex = 12;
             // 
             // labelPProduct
@@ -752,6 +754,8 @@
             this.lEAK101DataGridViewTextBoxColumn,
             this.lEAK102DataGridViewTextBoxColumn,
             this.lEAK103DataGridViewTextBoxColumn,
+            this.xCVRLTDataGridViewTextBoxColumn,
+            this.pREXCVRLTDataGridViewTextBoxColumn,
             this.uCTDataGridViewTextBoxColumn,
             this.fODTESTDataGridViewTextBoxColumn,
             this.l2VISIONDataGridViewTextBoxColumn,
@@ -1057,6 +1061,18 @@
             this.lEAK103DataGridViewTextBoxColumn.HeaderText = "LEAK103";
             this.lEAK103DataGridViewTextBoxColumn.Name = "lEAK103DataGridViewTextBoxColumn";
             // 
+            // xCVRLTDataGridViewTextBoxColumn
+            // 
+            this.xCVRLTDataGridViewTextBoxColumn.DataPropertyName = "XCVR_LT";
+            this.xCVRLTDataGridViewTextBoxColumn.HeaderText = "XCVR_LT";
+            this.xCVRLTDataGridViewTextBoxColumn.Name = "xCVRLTDataGridViewTextBoxColumn";
+            // 
+            // pREXCVRLTDataGridViewTextBoxColumn
+            // 
+            this.pREXCVRLTDataGridViewTextBoxColumn.DataPropertyName = "PRE_XCVR_LT";
+            this.pREXCVRLTDataGridViewTextBoxColumn.HeaderText = "PRE_XCVR_LT";
+            this.pREXCVRLTDataGridViewTextBoxColumn.Name = "pREXCVRLTDataGridViewTextBoxColumn";
+            // 
             // uCTDataGridViewTextBoxColumn
             // 
             this.uCTDataGridViewTextBoxColumn.DataPropertyName = "UCT";
@@ -1293,6 +1309,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lEAK101DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lEAK102DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lEAK103DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xCVRLTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pREXCVRLTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uCTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fODTESTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn l2VISIONDataGridViewTextBoxColumn;

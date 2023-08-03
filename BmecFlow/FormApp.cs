@@ -26,6 +26,8 @@ namespace BmecFlow
         {
             // TODO: This line of code loads data into the 'bmecFlowDataSet.BFlow' table. You can move, or remove it, as needed.
             this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
+            // TODO: This line of code loads data into the 'bmecFlowDataSet.BFlow' table. You can move, or remove it, as needed.
+            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
 
         }
         public void readRouteFilesAndFillComboBox()
