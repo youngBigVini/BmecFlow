@@ -179,6 +179,7 @@
             this.textBoxRestrictionUnits.Location = new System.Drawing.Point(53, 117);
             this.textBoxRestrictionUnits.Multiline = true;
             this.textBoxRestrictionUnits.Name = "textBoxRestrictionUnits";
+            this.textBoxRestrictionUnits.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxRestrictionUnits.Size = new System.Drawing.Size(940, 442);
             this.textBoxRestrictionUnits.TabIndex = 12;
             // 
@@ -365,6 +366,7 @@
             this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 183);
             this.textBoxTrackingInfos.Multiline = true;
             this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
+            this.textBoxTrackingInfos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 291);
             this.textBoxTrackingInfos.TabIndex = 12;
             // 
