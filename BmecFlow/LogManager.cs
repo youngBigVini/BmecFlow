@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Windows.Forms;
 
 namespace BmecFlow
@@ -8,6 +7,7 @@ namespace BmecFlow
     {
         string pathName = @"Q:\quality_data\test_results";
         string strLogPattern = "*.rslt*";
+        string dirError = "diretório e/ou arquivo não encontrados!!!";
 
         SQLManager sqlManager = new SQLManager();
 
@@ -91,7 +91,7 @@ namespace BmecFlow
             }
             catch
             {
-                MessageBox.Show("diretório e/ou arquivo não encontrados!!!" + fileNameTrackId);
+                MessageBox.Show(dirError + fileNameTrackId);
             }
         }
 
@@ -121,7 +121,7 @@ namespace BmecFlow
             }
             catch
             {
-                MessageBox.Show("diretório e/ou arquivo não encontrados!!!" + trackId);
+                MessageBox.Show(dirError + trackId);
             }
         }
 
