@@ -103,7 +103,7 @@ namespace BmecFlow
             string filepath = dirName + "\\" + trackId + ".txt";
             try
             {
-                string logString = folderName + "," + trackId + "," + result;
+                string logString = folderName + "," + trackId + "," + result + "," + valueResult;
                 if (!File.Exists(filepath))
                 {
                     using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
