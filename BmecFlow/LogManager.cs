@@ -100,7 +100,7 @@ namespace BmecFlow
             string dirName = FormMain.LeakResultDir + "\\" + folderName;
             Directory.CreateDirectory(dirName);
 
-            string filepath = dirName + "\\" + trackId + ".txt";
+            string filepath = dirName + "\\" + folderName + ".txt";
             try
             {
                 string logString = folderName + "," + trackId + "," + result + "," + valueResult;
