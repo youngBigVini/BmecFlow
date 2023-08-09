@@ -100,10 +100,10 @@ namespace BmecFlow
             string dirName = FormMain.LeakResultDir + "\\" + folderName;
             Directory.CreateDirectory(dirName);
 
-            string filepath = dirName + "\\" + folderName + ".txt";
+            string filepath = dirName + "\\" + folderName + "_" + stationName + ".txt";
             try
             {
-                string logString = folderName + "," + trackId + "," + result + "," + valueResult;
+                string logString = folderName + "," + trackId + "," + result + "," + stationName + "," + valueResult;
                 if (!File.Exists(filepath))
                 {
                     using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
