@@ -14,7 +14,8 @@ namespace BmecFlow
         string leak = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
         string strFieldCheck = "Preencha corretamente todos os campos para serem inseridos!!!";
-        string trackingDir = @"X:\DC\BmecFlow\tracking";
+        public static string trackingDir = @"X:\DC\BmecFlow\tracking";
+        public static string LeakResultDir = @"X:\DC\BmecFlow\LeakResults";
         string dbDir = @"X:\DC\BmecFlow\db\";
         string cfgPattern = ".cfg";
         public FormMain()
@@ -40,6 +41,7 @@ namespace BmecFlow
                     line = line.Replace(cfgPattern, "");
                     comboBoxProductName.Items.Add(line);
                     comboBoxProcessProduct.Items.Add(line);
+                    comboBoxLeakProduct.Items.Add(line);
                 }
             }
 
@@ -239,41 +241,12 @@ namespace BmecFlow
             }
             else
             {
-                UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxProcessProduct.Text + "->" + comboBoxBuild.Text + "-" + comboBoxAREA.Text + ": " + textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
+                logManager.UnitTrackingGenTxt(comboBoxProcessProduct.Text, comboBoxProcessProduct.Text + "->" + comboBoxBuild.Text + "-" + comboBoxAREA.Text + ": " + textBoxTrackingInfos.Text, textBoxTrackIdProcess.Text);
                 MessageBox.Show("informações inseridas com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 cleanPInfos();
             }
         }
-        public void UnitTrackingGenTxt(string folderName, string trackingInfos, string fileNameTrackId)
-        {
-            string dirName = trackingDir + "\\" + folderName;
-            Directory.CreateDirectory(dirName);
-
-            string filepath = dirName + "\\" + fileNameTrackId + ".tracking";
-            try
-            {
-                string logString = trackingInfos;
-                if (!File.Exists(filepath))
-                {
-                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
-                    {
-                        writer.WriteLine(logString);
-                    }
-                }
-                else
-                {
-                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Append, FileAccess.Write)))
-                    {
-                        writer.WriteLine(logString);
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("diretório e/ou arquivo não encontrados!!!" + fileNameTrackId);
-            }
-        }
-
+   
         private void buttonPASS_Click(object sender, EventArgs e)
         {
             if (textBoxOBSTrackId.TextLength != 10)
@@ -339,7 +312,7 @@ namespace BmecFlow
 
         private void buttonOpenFolder_Click(object sender, EventArgs e)
         {
-            openFolder();
+            openFolder(trackingDir);
         }
      
         public void getRestrictionUnits()
@@ -360,9 +333,9 @@ namespace BmecFlow
             { }
 
         }
-        private void openFolder()
+        private void openFolder(string dir)
         {
-            System.Diagnostics.Process.Start(trackingDir);
+            System.Diagnostics.Process.Start(dir);
         }
         private void buttonRestrictionUnits_Click(object sender, EventArgs e)
         {
@@ -371,7 +344,7 @@ namespace BmecFlow
 
         private void buttonOFolder2_Click(object sender, EventArgs e)
         {
-            openFolder();
+            openFolder(trackingDir);
         }
 
         private void buttonExportToCsv_Click(object sender, EventArgs e)
@@ -397,8 +370,12 @@ namespace BmecFlow
             {
                 leak = comboBoxLEAK.Text;
                 sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "P");
+
+                logManager.writeResult(comboBoxLeakProduct.Text,textBoxLEAKTrackid.Text,leak,"PASS",textBoxLeakResult.Text);
+
                 MessageBox.Show("LEAK result PASS adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 textBoxLEAKTrackid.Text = "";
+                textBoxLeakResult.Text = "";
             }
         }
 
@@ -413,9 +390,18 @@ namespace BmecFlow
             {
                 leak = comboBoxLEAK.Text;
                 sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "F");
+
+                logManager.writeResult(comboBoxLeakProduct.Text,textBoxLEAKTrackid.Text, leak, "FAIL", textBoxLeakResult.Text);
+
                 MessageBox.Show("LEAK result FAIL adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 textBoxLEAKTrackid.Text = "";
+                textBoxLeakResult.Text = "";
             }
+        }
+
+        private void buttonOpenLeak_Click(object sender, EventArgs e)
+        {
+            openFolder(LeakResultDir);
         }
     }
 }

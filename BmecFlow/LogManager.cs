@@ -1,14 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Windows.Forms;
 
 namespace BmecFlow
 {
     class LogManager
     {
         string pathName = @"Q:\quality_data\test_results";
-
         string strLogPattern = "*.rslt*";
-
 
         SQLManager sqlManager = new SQLManager();
 
@@ -65,6 +64,65 @@ namespace BmecFlow
             }
             catch
             { }
+        }
+        public void UnitTrackingGenTxt(string folderName, string trackingInfos, string fileNameTrackId)
+        {
+            string dirName = FormMain.trackingDir + "\\" + folderName;
+            Directory.CreateDirectory(dirName);
+
+            string filepath = dirName + "\\" + fileNameTrackId + ".tracking";
+            try
+            {
+                string logString = trackingInfos;
+                if (!File.Exists(filepath))
+                {
+                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
+                    {
+                        writer.WriteLine(logString);
+                    }
+                }
+                else
+                {
+                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Append, FileAccess.Write)))
+                    {
+                        writer.WriteLine(logString);
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("diretório e/ou arquivo não encontrados!!!" + fileNameTrackId);
+            }
+        }
+
+        public void writeResult(string folderName, string trackId, string stationName, string result, string valueResult)
+        {
+            string dirName = FormMain.LeakResultDir + "\\" + folderName;
+            Directory.CreateDirectory(dirName);
+
+            string filepath = dirName + "\\" + trackId + ".txt";
+            try
+            {
+                string logString = folderName + "," + trackId + "," + result;
+                if (!File.Exists(filepath))
+                {
+                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
+                    {
+                        writer.WriteLine(logString);
+                    }
+                }
+                else
+                {
+                    using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Append, FileAccess.Write)))
+                    {
+                        writer.WriteLine(logString);
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("diretório e/ou arquivo não encontrados!!!" + trackId);
+            }
         }
 
     }

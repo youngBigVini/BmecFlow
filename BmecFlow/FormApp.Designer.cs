@@ -31,77 +31,63 @@
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.textBoxRestrictionUnits = new System.Windows.Forms.TextBox();
-            this.buttonRestrictionUnits = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.buttonOFolder2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buttonRestrictionUnits = new System.Windows.Forms.Button();
+            this.textBoxRestrictionUnits = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textBoxRunin = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonRuninPASS = new System.Windows.Forms.Button();
             this.buttonRuninFAIL = new System.Windows.Forms.Button();
+            this.buttonRuninPASS = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxRunin = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBoxTrackIdProcess = new System.Windows.Forms.TextBox();
-            this.labelProcess = new System.Windows.Forms.Label();
-            this.buttonTracking = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTrackingInfos = new System.Windows.Forms.TextBox();
-            this.labelPProduct = new System.Windows.Forms.Label();
-            this.comboBoxProcessProduct = new System.Windows.Forms.ComboBox();
-            this.labelBuild = new System.Windows.Forms.Label();
-            this.comboBoxBuild = new System.Windows.Forms.ComboBox();
-            this.labelArea = new System.Windows.Forms.Label();
-            this.comboBoxAREA = new System.Windows.Forms.ComboBox();
-            this.buttonOpenFolder = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonOpenFolder = new System.Windows.Forms.Button();
+            this.comboBoxAREA = new System.Windows.Forms.ComboBox();
+            this.labelArea = new System.Windows.Forms.Label();
+            this.comboBoxBuild = new System.Windows.Forms.ComboBox();
+            this.labelBuild = new System.Windows.Forms.Label();
+            this.comboBoxProcessProduct = new System.Windows.Forms.ComboBox();
+            this.labelPProduct = new System.Windows.Forms.Label();
+            this.textBoxTrackingInfos = new System.Windows.Forms.TextBox();
+            this.textBoxTrackIdProcess = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonTracking = new System.Windows.Forms.Button();
+            this.labelProcess = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBoxOBSTrackId = new System.Windows.Forms.TextBox();
-            this.labelOBSTRACKID = new System.Windows.Forms.Label();
-            this.labelObs = new System.Windows.Forms.Label();
-            this.labelPInfos = new System.Windows.Forms.Label();
-            this.buttonObs = new System.Windows.Forms.Button();
-            this.groupBoxCQA = new System.Windows.Forms.GroupBox();
-            this.buttonPASS = new System.Windows.Forms.Button();
-            this.buttonFAIL = new System.Windows.Forms.Button();
-            this.comboBoxCQA = new System.Windows.Forms.ComboBox();
             this.textBoxOBSCQA = new System.Windows.Forms.TextBox();
+            this.textBoxOBSTrackId = new System.Windows.Forms.TextBox();
+            this.groupBoxCQA = new System.Windows.Forms.GroupBox();
+            this.comboBoxCQA = new System.Windows.Forms.ComboBox();
+            this.buttonFAIL = new System.Windows.Forms.Button();
+            this.buttonPASS = new System.Windows.Forms.Button();
+            this.buttonObs = new System.Windows.Forms.Button();
+            this.labelPInfos = new System.Windows.Forms.Label();
+            this.labelObs = new System.Windows.Forms.Label();
+            this.labelOBSTRACKID = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.labelRouteConfig = new System.Windows.Forms.Label();
-            this.labelME = new System.Windows.Forms.Label();
-            this.labelBE = new System.Windows.Forms.Label();
-            this.comboBoxRouteME = new System.Windows.Forms.ComboBox();
-            this.comboBoxRouteBE = new System.Windows.Forms.ComboBox();
-            this.labelProduct = new System.Windows.Forms.Label();
-            this.textBoxProductName = new System.Windows.Forms.TextBox();
             this.buttonROUTESave = new System.Windows.Forms.Button();
+            this.textBoxProductName = new System.Windows.Forms.TextBox();
+            this.labelProduct = new System.Windows.Forms.Label();
+            this.comboBoxRouteBE = new System.Windows.Forms.ComboBox();
+            this.comboBoxRouteME = new System.Windows.Forms.ComboBox();
+            this.labelBE = new System.Windows.Forms.Label();
+            this.labelME = new System.Windows.Forms.Label();
+            this.labelRouteConfig = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBoxTrackID = new System.Windows.Forms.TextBox();
-            this.buttonBkp = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewApp = new System.Windows.Forms.DataGridView();
-            this.groupBoxSettings = new System.Windows.Forms.GroupBox();
-            this.buttonRun = new System.Windows.Forms.Button();
-            this.labelStationType = new System.Windows.Forms.Label();
-            this.comboBoxStationType = new System.Windows.Forms.ComboBox();
-            this.labelProductName = new System.Windows.Forms.Label();
-            this.comboBoxProductName = new System.Windows.Forms.ComboBox();
-            this.LabelAppName = new System.Windows.Forms.Label();
-            this.labelRouteStatus = new System.Windows.Forms.Label();
-            this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonExportToCsv = new System.Windows.Forms.Button();
-            this.tabControlApp = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBoxLEAK = new System.Windows.Forms.GroupBox();
-            this.buttonFAILLEAK = new System.Windows.Forms.Button();
-            this.buttonPASSLEAK = new System.Windows.Forms.Button();
-            this.labelLEAK = new System.Windows.Forms.Label();
-            this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
-            this.comboBoxLEAK = new System.Windows.Forms.ComboBox();
-            this.bmecFlowDataSet = new BmecFlow.BmecFlowDataSet();
-            this.bFlowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSetTableAdapters.BFlowTableAdapter();
+            this.buttonRefresh = new System.Windows.Forms.Button();
+            this.labelRouteStatus = new System.Windows.Forms.Label();
+            this.LabelAppName = new System.Windows.Forms.Label();
+            this.groupBoxSettings = new System.Windows.Forms.GroupBox();
+            this.comboBoxProductName = new System.Windows.Forms.ComboBox();
+            this.labelProductName = new System.Windows.Forms.Label();
+            this.comboBoxStationType = new System.Windows.Forms.ComboBox();
+            this.labelStationType = new System.Windows.Forms.Label();
+            this.buttonRun = new System.Windows.Forms.Button();
+            this.dataGridViewApp = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trackidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iFLASHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,6 +118,26 @@
             this.bEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cQAOBSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAILDETAILSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bFlowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bmecFlowDataSet = new BmecFlow.BmecFlowDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonBkp = new System.Windows.Forms.Button();
+            this.textBoxTrackID = new System.Windows.Forms.TextBox();
+            this.tabControlApp = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBoxLEAK = new System.Windows.Forms.GroupBox();
+            this.comboBoxLeakProduct = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.labelLeakProduct = new System.Windows.Forms.Label();
+            this.textBoxLeakResult = new System.Windows.Forms.TextBox();
+            this.labelResultLeak = new System.Windows.Forms.Label();
+            this.comboBoxLEAK = new System.Windows.Forms.ComboBox();
+            this.buttonFAILLEAK = new System.Windows.Forms.Button();
+            this.buttonPASSLEAK = new System.Windows.Forms.Button();
+            this.labelLEAK = new System.Windows.Forms.Label();
+            this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
+            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSetTableAdapters.BFlowTableAdapter();
+            this.buttonOpenLeak = new System.Windows.Forms.Button();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -140,13 +146,13 @@
             this.groupBoxCQA.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).BeginInit();
             this.groupBoxSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).BeginInit();
             this.tabControlApp.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBoxLEAK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -161,6 +167,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.buttonOpenLeak);
             this.tabPage7.Controls.Add(this.buttonOFolder2);
             this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Controls.Add(this.buttonRestrictionUnits);
@@ -173,27 +180,15 @@
             this.tabPage7.Text = "RESTRICTIONS";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // textBoxRestrictionUnits
+            // buttonOFolder2
             // 
-            this.textBoxRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRestrictionUnits.Location = new System.Drawing.Point(53, 117);
-            this.textBoxRestrictionUnits.Multiline = true;
-            this.textBoxRestrictionUnits.Name = "textBoxRestrictionUnits";
-            this.textBoxRestrictionUnits.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRestrictionUnits.Size = new System.Drawing.Size(940, 442);
-            this.textBoxRestrictionUnits.TabIndex = 12;
-            // 
-            // buttonRestrictionUnits
-            // 
-            this.buttonRestrictionUnits.BackColor = System.Drawing.Color.Teal;
-            this.buttonRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRestrictionUnits.Location = new System.Drawing.Point(53, 72);
-            this.buttonRestrictionUnits.Name = "buttonRestrictionUnits";
-            this.buttonRestrictionUnits.Size = new System.Drawing.Size(96, 39);
-            this.buttonRestrictionUnits.TabIndex = 13;
-            this.buttonRestrictionUnits.Text = "Buscar";
-            this.buttonRestrictionUnits.UseVisualStyleBackColor = false;
-            this.buttonRestrictionUnits.Click += new System.EventHandler(this.buttonRestrictionUnits_Click);
+            this.buttonOFolder2.Location = new System.Drawing.Point(758, 88);
+            this.buttonOFolder2.Name = "buttonOFolder2";
+            this.buttonOFolder2.Size = new System.Drawing.Size(135, 23);
+            this.buttonOFolder2.TabIndex = 20;
+            this.buttonOFolder2.Text = "Open Restriction folder";
+            this.buttonOFolder2.UseVisualStyleBackColor = true;
+            this.buttonOFolder2.Click += new System.EventHandler(this.buttonOFolder2_Click);
             // 
             // label7
             // 
@@ -206,15 +201,27 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Restriction Units";
             // 
-            // buttonOFolder2
+            // buttonRestrictionUnits
             // 
-            this.buttonOFolder2.Location = new System.Drawing.Point(918, 88);
-            this.buttonOFolder2.Name = "buttonOFolder2";
-            this.buttonOFolder2.Size = new System.Drawing.Size(75, 23);
-            this.buttonOFolder2.TabIndex = 20;
-            this.buttonOFolder2.Text = "Open Folder";
-            this.buttonOFolder2.UseVisualStyleBackColor = true;
-            this.buttonOFolder2.Click += new System.EventHandler(this.buttonOFolder2_Click);
+            this.buttonRestrictionUnits.BackColor = System.Drawing.Color.Teal;
+            this.buttonRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRestrictionUnits.Location = new System.Drawing.Point(53, 59);
+            this.buttonRestrictionUnits.Name = "buttonRestrictionUnits";
+            this.buttonRestrictionUnits.Size = new System.Drawing.Size(96, 52);
+            this.buttonRestrictionUnits.TabIndex = 13;
+            this.buttonRestrictionUnits.Text = "Buscar";
+            this.buttonRestrictionUnits.UseVisualStyleBackColor = false;
+            this.buttonRestrictionUnits.Click += new System.EventHandler(this.buttonRestrictionUnits_Click);
+            // 
+            // textBoxRestrictionUnits
+            // 
+            this.textBoxRestrictionUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRestrictionUnits.Location = new System.Drawing.Point(53, 117);
+            this.textBoxRestrictionUnits.Multiline = true;
+            this.textBoxRestrictionUnits.Name = "textBoxRestrictionUnits";
+            this.textBoxRestrictionUnits.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxRestrictionUnits.Size = new System.Drawing.Size(940, 442);
+            this.textBoxRestrictionUnits.TabIndex = 12;
             // 
             // tabPage5
             // 
@@ -230,37 +237,6 @@
             this.tabPage5.Text = "RUNIN";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // textBoxRunin
-            // 
-            this.textBoxRunin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRunin.Location = new System.Drawing.Point(420, 53);
-            this.textBoxRunin.MaxLength = 10;
-            this.textBoxRunin.Multiline = true;
-            this.textBoxRunin.Name = "textBoxRunin";
-            this.textBoxRunin.Size = new System.Drawing.Size(190, 41);
-            this.textBoxRunin.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(478, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 18);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "TRACK-ID";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(6, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(221, 33);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "RUNIN Process";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.buttonRuninFAIL);
@@ -271,6 +247,17 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Runnin Result";
+            // 
+            // buttonRuninFAIL
+            // 
+            this.buttonRuninFAIL.BackColor = System.Drawing.Color.Red;
+            this.buttonRuninFAIL.Location = new System.Drawing.Point(287, 22);
+            this.buttonRuninFAIL.Name = "buttonRuninFAIL";
+            this.buttonRuninFAIL.Size = new System.Drawing.Size(103, 56);
+            this.buttonRuninFAIL.TabIndex = 1;
+            this.buttonRuninFAIL.Text = "FAIL";
+            this.buttonRuninFAIL.UseVisualStyleBackColor = false;
+            this.buttonRuninFAIL.Click += new System.EventHandler(this.buttonRuninFAIL_Click);
             // 
             // buttonRuninPASS
             // 
@@ -283,16 +270,36 @@
             this.buttonRuninPASS.UseVisualStyleBackColor = false;
             this.buttonRuninPASS.Click += new System.EventHandler(this.buttonRuninPASS_Click);
             // 
-            // buttonRuninFAIL
+            // label4
             // 
-            this.buttonRuninFAIL.BackColor = System.Drawing.Color.Red;
-            this.buttonRuninFAIL.Location = new System.Drawing.Point(287, 22);
-            this.buttonRuninFAIL.Name = "buttonRuninFAIL";
-            this.buttonRuninFAIL.Size = new System.Drawing.Size(103, 56);
-            this.buttonRuninFAIL.TabIndex = 1;
-            this.buttonRuninFAIL.Text = "FAIL";
-            this.buttonRuninFAIL.UseVisualStyleBackColor = false;
-            this.buttonRuninFAIL.Click += new System.EventHandler(this.buttonRuninFAIL_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Teal;
+            this.label4.Location = new System.Drawing.Point(6, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 33);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "RUNIN Process";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(478, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 18);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "TRACK-ID";
+            // 
+            // textBoxRunin
+            // 
+            this.textBoxRunin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRunin.Location = new System.Drawing.Point(420, 53);
+            this.textBoxRunin.MaxLength = 10;
+            this.textBoxRunin.Multiline = true;
+            this.textBoxRunin.Name = "textBoxRunin";
+            this.textBoxRunin.Size = new System.Drawing.Size(190, 41);
+            this.textBoxRunin.TabIndex = 14;
             // 
             // tabPage4
             // 
@@ -317,107 +324,25 @@
             this.tabPage4.Text = "PROCESS";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBoxTrackIdProcess
+            // label6
             // 
-            this.textBoxTrackIdProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrackIdProcess.Location = new System.Drawing.Point(420, 53);
-            this.textBoxTrackIdProcess.MaxLength = 10;
-            this.textBoxTrackIdProcess.Multiline = true;
-            this.textBoxTrackIdProcess.Name = "textBoxTrackIdProcess";
-            this.textBoxTrackIdProcess.Size = new System.Drawing.Size(190, 41);
-            this.textBoxTrackIdProcess.TabIndex = 9;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 24);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Descrições / Restrições:";
             // 
-            // labelProcess
+            // buttonOpenFolder
             // 
-            this.labelProcess.AutoSize = true;
-            this.labelProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProcess.Location = new System.Drawing.Point(478, 32);
-            this.labelProcess.Name = "labelProcess";
-            this.labelProcess.Size = new System.Drawing.Size(77, 18);
-            this.labelProcess.TabIndex = 8;
-            this.labelProcess.Text = "TRACK-ID";
-            // 
-            // buttonTracking
-            // 
-            this.buttonTracking.BackColor = System.Drawing.Color.Teal;
-            this.buttonTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.buttonTracking.Location = new System.Drawing.Point(471, 480);
-            this.buttonTracking.Name = "buttonTracking";
-            this.buttonTracking.Size = new System.Drawing.Size(96, 39);
-            this.buttonTracking.TabIndex = 10;
-            this.buttonTracking.Text = "Inserir";
-            this.buttonTracking.UseVisualStyleBackColor = false;
-            this.buttonTracking.Click += new System.EventHandler(this.buttonTracking_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(-4, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 33);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Process";
-            // 
-            // textBoxTrackingInfos
-            // 
-            this.textBoxTrackingInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 183);
-            this.textBoxTrackingInfos.Multiline = true;
-            this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
-            this.textBoxTrackingInfos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 291);
-            this.textBoxTrackingInfos.TabIndex = 12;
-            // 
-            // labelPProduct
-            // 
-            this.labelPProduct.AutoSize = true;
-            this.labelPProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPProduct.Location = new System.Drawing.Point(17, 53);
-            this.labelPProduct.Name = "labelPProduct";
-            this.labelPProduct.Size = new System.Drawing.Size(79, 16);
-            this.labelPProduct.TabIndex = 13;
-            this.labelPProduct.Text = "PRODUTO:";
-            // 
-            // comboBoxProcessProduct
-            // 
-            this.comboBoxProcessProduct.FormattingEnabled = true;
-            this.comboBoxProcessProduct.Location = new System.Drawing.Point(21, 73);
-            this.comboBoxProcessProduct.Name = "comboBoxProcessProduct";
-            this.comboBoxProcessProduct.Size = new System.Drawing.Size(154, 21);
-            this.comboBoxProcessProduct.TabIndex = 14;
-            // 
-            // labelBuild
-            // 
-            this.labelBuild.AutoSize = true;
-            this.labelBuild.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuild.Location = new System.Drawing.Point(182, 53);
-            this.labelBuild.Name = "labelBuild";
-            this.labelBuild.Size = new System.Drawing.Size(50, 16);
-            this.labelBuild.TabIndex = 15;
-            this.labelBuild.Text = "BUILD:";
-            // 
-            // comboBoxBuild
-            // 
-            this.comboBoxBuild.FormattingEnabled = true;
-            this.comboBoxBuild.Items.AddRange(new object[] {
-            "DVT",
-            "PVT"});
-            this.comboBoxBuild.Location = new System.Drawing.Point(186, 73);
-            this.comboBoxBuild.Name = "comboBoxBuild";
-            this.comboBoxBuild.Size = new System.Drawing.Size(75, 21);
-            this.comboBoxBuild.TabIndex = 16;
-            // 
-            // labelArea
-            // 
-            this.labelArea.AutoSize = true;
-            this.labelArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelArea.Location = new System.Drawing.Point(272, 53);
-            this.labelArea.Name = "labelArea";
-            this.labelArea.Size = new System.Drawing.Size(48, 16);
-            this.labelArea.TabIndex = 17;
-            this.labelArea.Text = "AREA:";
+            this.buttonOpenFolder.Location = new System.Drawing.Point(21, 101);
+            this.buttonOpenFolder.Name = "buttonOpenFolder";
+            this.buttonOpenFolder.Size = new System.Drawing.Size(75, 23);
+            this.buttonOpenFolder.TabIndex = 19;
+            this.buttonOpenFolder.Text = "Open Folder";
+            this.buttonOpenFolder.UseVisualStyleBackColor = true;
+            this.buttonOpenFolder.Click += new System.EventHandler(this.buttonOpenFolder_Click);
             // 
             // comboBoxAREA
             // 
@@ -436,25 +361,107 @@
             this.comboBoxAREA.Size = new System.Drawing.Size(85, 21);
             this.comboBoxAREA.TabIndex = 18;
             // 
-            // buttonOpenFolder
+            // labelArea
             // 
-            this.buttonOpenFolder.Location = new System.Drawing.Point(21, 101);
-            this.buttonOpenFolder.Name = "buttonOpenFolder";
-            this.buttonOpenFolder.Size = new System.Drawing.Size(75, 23);
-            this.buttonOpenFolder.TabIndex = 19;
-            this.buttonOpenFolder.Text = "Open Folder";
-            this.buttonOpenFolder.UseVisualStyleBackColor = true;
-            this.buttonOpenFolder.Click += new System.EventHandler(this.buttonOpenFolder_Click);
+            this.labelArea.AutoSize = true;
+            this.labelArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelArea.Location = new System.Drawing.Point(272, 53);
+            this.labelArea.Name = "labelArea";
+            this.labelArea.Size = new System.Drawing.Size(48, 16);
+            this.labelArea.TabIndex = 17;
+            this.labelArea.Text = "AREA:";
             // 
-            // label6
+            // comboBoxBuild
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 156);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 24);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Descrições / Restrições:";
+            this.comboBoxBuild.FormattingEnabled = true;
+            this.comboBoxBuild.Items.AddRange(new object[] {
+            "DVT",
+            "PVT"});
+            this.comboBoxBuild.Location = new System.Drawing.Point(186, 73);
+            this.comboBoxBuild.Name = "comboBoxBuild";
+            this.comboBoxBuild.Size = new System.Drawing.Size(75, 21);
+            this.comboBoxBuild.TabIndex = 16;
+            // 
+            // labelBuild
+            // 
+            this.labelBuild.AutoSize = true;
+            this.labelBuild.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuild.Location = new System.Drawing.Point(182, 53);
+            this.labelBuild.Name = "labelBuild";
+            this.labelBuild.Size = new System.Drawing.Size(50, 16);
+            this.labelBuild.TabIndex = 15;
+            this.labelBuild.Text = "BUILD:";
+            // 
+            // comboBoxProcessProduct
+            // 
+            this.comboBoxProcessProduct.FormattingEnabled = true;
+            this.comboBoxProcessProduct.Location = new System.Drawing.Point(21, 73);
+            this.comboBoxProcessProduct.Name = "comboBoxProcessProduct";
+            this.comboBoxProcessProduct.Size = new System.Drawing.Size(154, 21);
+            this.comboBoxProcessProduct.TabIndex = 14;
+            // 
+            // labelPProduct
+            // 
+            this.labelPProduct.AutoSize = true;
+            this.labelPProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPProduct.Location = new System.Drawing.Point(17, 53);
+            this.labelPProduct.Name = "labelPProduct";
+            this.labelPProduct.Size = new System.Drawing.Size(79, 16);
+            this.labelPProduct.TabIndex = 13;
+            this.labelPProduct.Text = "PRODUTO:";
+            // 
+            // textBoxTrackingInfos
+            // 
+            this.textBoxTrackingInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackingInfos.Location = new System.Drawing.Point(21, 183);
+            this.textBoxTrackingInfos.Multiline = true;
+            this.textBoxTrackingInfos.Name = "textBoxTrackingInfos";
+            this.textBoxTrackingInfos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTrackingInfos.Size = new System.Drawing.Size(1010, 291);
+            this.textBoxTrackingInfos.TabIndex = 12;
+            // 
+            // textBoxTrackIdProcess
+            // 
+            this.textBoxTrackIdProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackIdProcess.Location = new System.Drawing.Point(420, 53);
+            this.textBoxTrackIdProcess.MaxLength = 10;
+            this.textBoxTrackIdProcess.Multiline = true;
+            this.textBoxTrackIdProcess.Name = "textBoxTrackIdProcess";
+            this.textBoxTrackIdProcess.Size = new System.Drawing.Size(190, 41);
+            this.textBoxTrackIdProcess.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Teal;
+            this.label3.Location = new System.Drawing.Point(-4, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 33);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Process";
+            // 
+            // buttonTracking
+            // 
+            this.buttonTracking.BackColor = System.Drawing.Color.Teal;
+            this.buttonTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.buttonTracking.Location = new System.Drawing.Point(471, 480);
+            this.buttonTracking.Name = "buttonTracking";
+            this.buttonTracking.Size = new System.Drawing.Size(96, 39);
+            this.buttonTracking.TabIndex = 10;
+            this.buttonTracking.Text = "Inserir";
+            this.buttonTracking.UseVisualStyleBackColor = false;
+            this.buttonTracking.Click += new System.EventHandler(this.buttonTracking_Click);
+            // 
+            // labelProcess
+            // 
+            this.labelProcess.AutoSize = true;
+            this.labelProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProcess.Location = new System.Drawing.Point(478, 32);
+            this.labelProcess.Name = "labelProcess";
+            this.labelProcess.Size = new System.Drawing.Size(77, 18);
+            this.labelProcess.TabIndex = 8;
+            this.labelProcess.Text = "TRACK-ID";
             // 
             // tabPage3
             // 
@@ -473,6 +480,15 @@
             this.tabPage3.Text = "CQA";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // textBoxOBSCQA
+            // 
+            this.textBoxOBSCQA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxOBSCQA.Location = new System.Drawing.Point(51, 418);
+            this.textBoxOBSCQA.Multiline = true;
+            this.textBoxOBSCQA.Name = "textBoxOBSCQA";
+            this.textBoxOBSCQA.Size = new System.Drawing.Size(929, 46);
+            this.textBoxOBSCQA.TabIndex = 13;
+            // 
             // textBoxOBSTrackId
             // 
             this.textBoxOBSTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,49 +498,6 @@
             this.textBoxOBSTrackId.Name = "textBoxOBSTrackId";
             this.textBoxOBSTrackId.Size = new System.Drawing.Size(190, 41);
             this.textBoxOBSTrackId.TabIndex = 7;
-            // 
-            // labelOBSTRACKID
-            // 
-            this.labelOBSTRACKID.AutoSize = true;
-            this.labelOBSTRACKID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOBSTRACKID.Location = new System.Drawing.Point(478, 32);
-            this.labelOBSTRACKID.Name = "labelOBSTRACKID";
-            this.labelOBSTRACKID.Size = new System.Drawing.Size(77, 18);
-            this.labelOBSTRACKID.TabIndex = 6;
-            this.labelOBSTRACKID.Text = "TRACK-ID";
-            // 
-            // labelObs
-            // 
-            this.labelObs.AutoSize = true;
-            this.labelObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelObs.Location = new System.Drawing.Point(47, 391);
-            this.labelObs.Name = "labelObs";
-            this.labelObs.Size = new System.Drawing.Size(173, 24);
-            this.labelObs.TabIndex = 8;
-            this.labelObs.Text = "Observações CQA:";
-            // 
-            // labelPInfos
-            // 
-            this.labelPInfos.AutoSize = true;
-            this.labelPInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPInfos.ForeColor = System.Drawing.Color.Teal;
-            this.labelPInfos.Location = new System.Drawing.Point(6, 3);
-            this.labelPInfos.Name = "labelPInfos";
-            this.labelPInfos.Size = new System.Drawing.Size(192, 33);
-            this.labelPInfos.TabIndex = 9;
-            this.labelPInfos.Text = "CQA Process";
-            // 
-            // buttonObs
-            // 
-            this.buttonObs.BackColor = System.Drawing.Color.Teal;
-            this.buttonObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonObs.Location = new System.Drawing.Point(51, 470);
-            this.buttonObs.Name = "buttonObs";
-            this.buttonObs.Size = new System.Drawing.Size(96, 39);
-            this.buttonObs.TabIndex = 11;
-            this.buttonObs.Text = "Inserir";
-            this.buttonObs.UseVisualStyleBackColor = false;
-            this.buttonObs.Click += new System.EventHandler(this.buttonObs_Click);
             // 
             // groupBoxCQA
             // 
@@ -538,28 +511,6 @@
             this.groupBoxCQA.TabStop = false;
             this.groupBoxCQA.Text = "CQA result";
             // 
-            // buttonPASS
-            // 
-            this.buttonPASS.BackColor = System.Drawing.Color.Green;
-            this.buttonPASS.Location = new System.Drawing.Point(6, 72);
-            this.buttonPASS.Name = "buttonPASS";
-            this.buttonPASS.Size = new System.Drawing.Size(103, 56);
-            this.buttonPASS.TabIndex = 0;
-            this.buttonPASS.Text = "PASS";
-            this.buttonPASS.UseVisualStyleBackColor = false;
-            this.buttonPASS.Click += new System.EventHandler(this.buttonPASS_Click);
-            // 
-            // buttonFAIL
-            // 
-            this.buttonFAIL.BackColor = System.Drawing.Color.Red;
-            this.buttonFAIL.Location = new System.Drawing.Point(290, 72);
-            this.buttonFAIL.Name = "buttonFAIL";
-            this.buttonFAIL.Size = new System.Drawing.Size(103, 56);
-            this.buttonFAIL.TabIndex = 1;
-            this.buttonFAIL.Text = "FAIL";
-            this.buttonFAIL.UseVisualStyleBackColor = false;
-            this.buttonFAIL.Click += new System.EventHandler(this.buttonFAIL_Click);
-            // 
             // comboBoxCQA
             // 
             this.comboBoxCQA.FormattingEnabled = true;
@@ -572,14 +523,70 @@
             this.comboBoxCQA.TabIndex = 2;
             this.comboBoxCQA.Text = "CQA";
             // 
-            // textBoxOBSCQA
+            // buttonFAIL
             // 
-            this.textBoxOBSCQA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOBSCQA.Location = new System.Drawing.Point(51, 418);
-            this.textBoxOBSCQA.Multiline = true;
-            this.textBoxOBSCQA.Name = "textBoxOBSCQA";
-            this.textBoxOBSCQA.Size = new System.Drawing.Size(929, 46);
-            this.textBoxOBSCQA.TabIndex = 13;
+            this.buttonFAIL.BackColor = System.Drawing.Color.Red;
+            this.buttonFAIL.Location = new System.Drawing.Point(290, 72);
+            this.buttonFAIL.Name = "buttonFAIL";
+            this.buttonFAIL.Size = new System.Drawing.Size(103, 56);
+            this.buttonFAIL.TabIndex = 1;
+            this.buttonFAIL.Text = "FAIL";
+            this.buttonFAIL.UseVisualStyleBackColor = false;
+            this.buttonFAIL.Click += new System.EventHandler(this.buttonFAIL_Click);
+            // 
+            // buttonPASS
+            // 
+            this.buttonPASS.BackColor = System.Drawing.Color.Green;
+            this.buttonPASS.Location = new System.Drawing.Point(6, 72);
+            this.buttonPASS.Name = "buttonPASS";
+            this.buttonPASS.Size = new System.Drawing.Size(103, 56);
+            this.buttonPASS.TabIndex = 0;
+            this.buttonPASS.Text = "PASS";
+            this.buttonPASS.UseVisualStyleBackColor = false;
+            this.buttonPASS.Click += new System.EventHandler(this.buttonPASS_Click);
+            // 
+            // buttonObs
+            // 
+            this.buttonObs.BackColor = System.Drawing.Color.Teal;
+            this.buttonObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonObs.Location = new System.Drawing.Point(51, 470);
+            this.buttonObs.Name = "buttonObs";
+            this.buttonObs.Size = new System.Drawing.Size(96, 39);
+            this.buttonObs.TabIndex = 11;
+            this.buttonObs.Text = "Inserir";
+            this.buttonObs.UseVisualStyleBackColor = false;
+            this.buttonObs.Click += new System.EventHandler(this.buttonObs_Click);
+            // 
+            // labelPInfos
+            // 
+            this.labelPInfos.AutoSize = true;
+            this.labelPInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPInfos.ForeColor = System.Drawing.Color.Teal;
+            this.labelPInfos.Location = new System.Drawing.Point(6, 3);
+            this.labelPInfos.Name = "labelPInfos";
+            this.labelPInfos.Size = new System.Drawing.Size(192, 33);
+            this.labelPInfos.TabIndex = 9;
+            this.labelPInfos.Text = "CQA Process";
+            // 
+            // labelObs
+            // 
+            this.labelObs.AutoSize = true;
+            this.labelObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelObs.Location = new System.Drawing.Point(47, 391);
+            this.labelObs.Name = "labelObs";
+            this.labelObs.Size = new System.Drawing.Size(173, 24);
+            this.labelObs.TabIndex = 8;
+            this.labelObs.Text = "Observações CQA:";
+            // 
+            // labelOBSTRACKID
+            // 
+            this.labelOBSTRACKID.AutoSize = true;
+            this.labelOBSTRACKID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOBSTRACKID.Location = new System.Drawing.Point(478, 32);
+            this.labelOBSTRACKID.Name = "labelOBSTRACKID";
+            this.labelOBSTRACKID.Size = new System.Drawing.Size(77, 18);
+            this.labelOBSTRACKID.TabIndex = 6;
+            this.labelOBSTRACKID.Text = "TRACK-ID";
             // 
             // tabPage2
             // 
@@ -599,49 +606,35 @@
             this.tabPage2.Text = "ROUTE CFG";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // labelRouteConfig
+            // buttonROUTESave
             // 
-            this.labelRouteConfig.AutoSize = true;
-            this.labelRouteConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRouteConfig.ForeColor = System.Drawing.Color.Teal;
-            this.labelRouteConfig.Location = new System.Drawing.Point(-4, 3);
-            this.labelRouteConfig.Name = "labelRouteConfig";
-            this.labelRouteConfig.Size = new System.Drawing.Size(184, 33);
-            this.labelRouteConfig.TabIndex = 2;
-            this.labelRouteConfig.Text = "Route Config";
+            this.buttonROUTESave.BackColor = System.Drawing.Color.Teal;
+            this.buttonROUTESave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonROUTESave.ForeColor = System.Drawing.Color.White;
+            this.buttonROUTESave.Location = new System.Drawing.Point(186, 260);
+            this.buttonROUTESave.Name = "buttonROUTESave";
+            this.buttonROUTESave.Size = new System.Drawing.Size(135, 35);
+            this.buttonROUTESave.TabIndex = 9;
+            this.buttonROUTESave.Text = "Salvar ROTA";
+            this.buttonROUTESave.UseVisualStyleBackColor = false;
+            this.buttonROUTESave.Click += new System.EventHandler(this.buttonROUTESave_Click);
             // 
-            // labelME
+            // textBoxProductName
             // 
-            this.labelME.AutoSize = true;
-            this.labelME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelME.Location = new System.Drawing.Point(12, 124);
-            this.labelME.Name = "labelME";
-            this.labelME.Size = new System.Drawing.Size(35, 20);
-            this.labelME.TabIndex = 3;
-            this.labelME.Text = "ME";
+            this.textBoxProductName.Location = new System.Drawing.Point(18, 88);
+            this.textBoxProductName.Name = "textBoxProductName";
+            this.textBoxProductName.Size = new System.Drawing.Size(172, 20);
+            this.textBoxProductName.TabIndex = 8;
             // 
-            // labelBE
+            // labelProduct
             // 
-            this.labelBE.AutoSize = true;
-            this.labelBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBE.Location = new System.Drawing.Point(14, 184);
-            this.labelBE.Name = "labelBE";
-            this.labelBE.Size = new System.Drawing.Size(33, 20);
-            this.labelBE.TabIndex = 4;
-            this.labelBE.Text = "BE";
-            // 
-            // comboBoxRouteME
-            // 
-            this.comboBoxRouteME.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxRouteME.FormattingEnabled = true;
-            this.comboBoxRouteME.Items.AddRange(new object[] {
-            "IFLASH,BrdTest,T5GFR1BdTst",
-            "IFLASH,BrdTest"});
-            this.comboBoxRouteME.Location = new System.Drawing.Point(16, 148);
-            this.comboBoxRouteME.Name = "comboBoxRouteME";
-            this.comboBoxRouteME.Size = new System.Drawing.Size(459, 23);
-            this.comboBoxRouteME.TabIndex = 5;
-            this.comboBoxRouteME.Text = "IFLASH,BrdTest,T5GFR1BdTst";
+            this.labelProduct.AutoSize = true;
+            this.labelProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProduct.Location = new System.Drawing.Point(14, 64);
+            this.labelProduct.Name = "labelProduct";
+            this.labelProduct.Size = new System.Drawing.Size(94, 20);
+            this.labelProduct.TabIndex = 7;
+            this.labelProduct.Text = "PRODUCT";
             // 
             // comboBoxRouteBE
             // 
@@ -662,35 +655,49 @@
             this.comboBoxRouteBE.TabIndex = 6;
             this.comboBoxRouteBE.Text = "FODTEST,RadioSlim,L2AR,DepthCal,DepthVal,CFC";
             // 
-            // labelProduct
+            // comboBoxRouteME
             // 
-            this.labelProduct.AutoSize = true;
-            this.labelProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProduct.Location = new System.Drawing.Point(14, 64);
-            this.labelProduct.Name = "labelProduct";
-            this.labelProduct.Size = new System.Drawing.Size(94, 20);
-            this.labelProduct.TabIndex = 7;
-            this.labelProduct.Text = "PRODUCT";
+            this.comboBoxRouteME.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRouteME.FormattingEnabled = true;
+            this.comboBoxRouteME.Items.AddRange(new object[] {
+            "IFLASH,BrdTest,T5GFR1BdTst",
+            "IFLASH,BrdTest"});
+            this.comboBoxRouteME.Location = new System.Drawing.Point(16, 148);
+            this.comboBoxRouteME.Name = "comboBoxRouteME";
+            this.comboBoxRouteME.Size = new System.Drawing.Size(459, 23);
+            this.comboBoxRouteME.TabIndex = 5;
+            this.comboBoxRouteME.Text = "IFLASH,BrdTest,T5GFR1BdTst";
             // 
-            // textBoxProductName
+            // labelBE
             // 
-            this.textBoxProductName.Location = new System.Drawing.Point(18, 88);
-            this.textBoxProductName.Name = "textBoxProductName";
-            this.textBoxProductName.Size = new System.Drawing.Size(172, 20);
-            this.textBoxProductName.TabIndex = 8;
+            this.labelBE.AutoSize = true;
+            this.labelBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBE.Location = new System.Drawing.Point(14, 184);
+            this.labelBE.Name = "labelBE";
+            this.labelBE.Size = new System.Drawing.Size(33, 20);
+            this.labelBE.TabIndex = 4;
+            this.labelBE.Text = "BE";
             // 
-            // buttonROUTESave
+            // labelME
             // 
-            this.buttonROUTESave.BackColor = System.Drawing.Color.Teal;
-            this.buttonROUTESave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonROUTESave.ForeColor = System.Drawing.Color.White;
-            this.buttonROUTESave.Location = new System.Drawing.Point(186, 260);
-            this.buttonROUTESave.Name = "buttonROUTESave";
-            this.buttonROUTESave.Size = new System.Drawing.Size(135, 35);
-            this.buttonROUTESave.TabIndex = 9;
-            this.buttonROUTESave.Text = "Salvar ROTA";
-            this.buttonROUTESave.UseVisualStyleBackColor = false;
-            this.buttonROUTESave.Click += new System.EventHandler(this.buttonROUTESave_Click);
+            this.labelME.AutoSize = true;
+            this.labelME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelME.Location = new System.Drawing.Point(12, 124);
+            this.labelME.Name = "labelME";
+            this.labelME.Size = new System.Drawing.Size(35, 20);
+            this.labelME.TabIndex = 3;
+            this.labelME.Text = "ME";
+            // 
+            // labelRouteConfig
+            // 
+            this.labelRouteConfig.AutoSize = true;
+            this.labelRouteConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRouteConfig.ForeColor = System.Drawing.Color.Teal;
+            this.labelRouteConfig.Location = new System.Drawing.Point(-4, 3);
+            this.labelRouteConfig.Name = "labelRouteConfig";
+            this.labelRouteConfig.Size = new System.Drawing.Size(184, 33);
+            this.labelRouteConfig.TabIndex = 2;
+            this.labelRouteConfig.Text = "Route Config";
             // 
             // tabPage1
             // 
@@ -711,36 +718,121 @@
             this.tabPage1.Text = "BMECFLOW";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBoxTrackID
+            // buttonExportToCsv
             // 
-            this.textBoxTrackID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrackID.Location = new System.Drawing.Point(420, 53);
-            this.textBoxTrackID.Multiline = true;
-            this.textBoxTrackID.Name = "textBoxTrackID";
-            this.textBoxTrackID.Size = new System.Drawing.Size(190, 41);
-            this.textBoxTrackID.TabIndex = 5;
-            this.textBoxTrackID.TextChanged += new System.EventHandler(this.textBoxTrackID_TextChanged);
+            this.buttonExportToCsv.Location = new System.Drawing.Point(933, 124);
+            this.buttonExportToCsv.Name = "buttonExportToCsv";
+            this.buttonExportToCsv.Size = new System.Drawing.Size(93, 23);
+            this.buttonExportToCsv.TabIndex = 14;
+            this.buttonExportToCsv.Text = "Export to csv";
+            this.buttonExportToCsv.UseVisualStyleBackColor = true;
+            this.buttonExportToCsv.Click += new System.EventHandler(this.buttonExportToCsv_Click);
             // 
-            // buttonBkp
+            // buttonRefresh
             // 
-            this.buttonBkp.BackColor = System.Drawing.Color.Teal;
-            this.buttonBkp.Location = new System.Drawing.Point(951, 15);
-            this.buttonBkp.Name = "buttonBkp";
-            this.buttonBkp.Size = new System.Drawing.Size(75, 36);
-            this.buttonBkp.TabIndex = 8;
-            this.buttonBkp.Text = "BackupDB";
-            this.buttonBkp.UseVisualStyleBackColor = false;
-            this.buttonBkp.Click += new System.EventHandler(this.buttonBkp_Click);
+            this.buttonRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonRefresh.Location = new System.Drawing.Point(951, 58);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(75, 28);
+            this.buttonRefresh.TabIndex = 13;
+            this.buttonRefresh.Text = "Refresh DB";
+            this.buttonRefresh.UseVisualStyleBackColor = false;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
-            // label1
+            // labelRouteStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(478, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "TRACK-ID";
+            this.labelRouteStatus.AutoSize = true;
+            this.labelRouteStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRouteStatus.Location = new System.Drawing.Point(304, 101);
+            this.labelRouteStatus.Name = "labelRouteStatus";
+            this.labelRouteStatus.Size = new System.Drawing.Size(0, 39);
+            this.labelRouteStatus.TabIndex = 12;
+            // 
+            // LabelAppName
+            // 
+            this.LabelAppName.AutoSize = true;
+            this.LabelAppName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelAppName.ForeColor = System.Drawing.Color.Teal;
+            this.LabelAppName.Location = new System.Drawing.Point(3, 3);
+            this.LabelAppName.Name = "LabelAppName";
+            this.LabelAppName.Size = new System.Drawing.Size(152, 33);
+            this.LabelAppName.TabIndex = 1;
+            this.LabelAppName.Text = "BmecFlow";
+            // 
+            // groupBoxSettings
+            // 
+            this.groupBoxSettings.Controls.Add(this.comboBoxProductName);
+            this.groupBoxSettings.Controls.Add(this.labelProductName);
+            this.groupBoxSettings.Controls.Add(this.comboBoxStationType);
+            this.groupBoxSettings.Controls.Add(this.labelStationType);
+            this.groupBoxSettings.Controls.Add(this.buttonRun);
+            this.groupBoxSettings.Location = new System.Drawing.Point(9, 39);
+            this.groupBoxSettings.Name = "groupBoxSettings";
+            this.groupBoxSettings.Size = new System.Drawing.Size(248, 113);
+            this.groupBoxSettings.TabIndex = 11;
+            this.groupBoxSettings.TabStop = false;
+            this.groupBoxSettings.Text = "Setting";
+            // 
+            // comboBoxProductName
+            // 
+            this.comboBoxProductName.FormattingEnabled = true;
+            this.comboBoxProductName.Location = new System.Drawing.Point(7, 36);
+            this.comboBoxProductName.Name = "comboBoxProductName";
+            this.comboBoxProductName.Size = new System.Drawing.Size(154, 21);
+            this.comboBoxProductName.TabIndex = 9;
+            // 
+            // labelProductName
+            // 
+            this.labelProductName.AutoSize = true;
+            this.labelProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProductName.Location = new System.Drawing.Point(3, 16);
+            this.labelProductName.Name = "labelProductName";
+            this.labelProductName.Size = new System.Drawing.Size(79, 16);
+            this.labelProductName.TabIndex = 8;
+            this.labelProductName.Text = "PRODUTO:";
+            // 
+            // comboBoxStationType
+            // 
+            this.comboBoxStationType.FormattingEnabled = true;
+            this.comboBoxStationType.Items.AddRange(new object[] {
+            "IFLASH",
+            "BrdTest",
+            "T5GFR1BdTst",
+            "L2AR",
+            "L2VISION",
+            "DepthCal",
+            "DepthVal",
+            "FODTEST",
+            "RadioSlim",
+            "CFC",
+            "UCT",
+            "BE",
+            "CQA",
+            "PRODUTO"});
+            this.comboBoxStationType.Location = new System.Drawing.Point(6, 85);
+            this.comboBoxStationType.Name = "comboBoxStationType";
+            this.comboBoxStationType.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxStationType.TabIndex = 2;
+            // 
+            // labelStationType
+            // 
+            this.labelStationType.AutoSize = true;
+            this.labelStationType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStationType.Location = new System.Drawing.Point(4, 66);
+            this.labelStationType.Name = "labelStationType";
+            this.labelStationType.Size = new System.Drawing.Size(75, 16);
+            this.labelStationType.TabIndex = 3;
+            this.labelStationType.Text = "ESTAÇÃO:";
+            // 
+            // buttonRun
+            // 
+            this.buttonRun.Location = new System.Drawing.Point(167, 77);
+            this.buttonRun.Name = "buttonRun";
+            this.buttonRun.Size = new System.Drawing.Size(75, 30);
+            this.buttonRun.TabIndex = 6;
+            this.buttonRun.Text = "Run";
+            this.buttonRun.UseVisualStyleBackColor = true;
+            this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
             // 
             // dataGridViewApp
             // 
@@ -782,231 +874,6 @@
             this.dataGridViewApp.Name = "dataGridViewApp";
             this.dataGridViewApp.Size = new System.Drawing.Size(1040, 423);
             this.dataGridViewApp.TabIndex = 0;
-            // 
-            // groupBoxSettings
-            // 
-            this.groupBoxSettings.Controls.Add(this.comboBoxProductName);
-            this.groupBoxSettings.Controls.Add(this.labelProductName);
-            this.groupBoxSettings.Controls.Add(this.comboBoxStationType);
-            this.groupBoxSettings.Controls.Add(this.labelStationType);
-            this.groupBoxSettings.Controls.Add(this.buttonRun);
-            this.groupBoxSettings.Location = new System.Drawing.Point(9, 39);
-            this.groupBoxSettings.Name = "groupBoxSettings";
-            this.groupBoxSettings.Size = new System.Drawing.Size(248, 113);
-            this.groupBoxSettings.TabIndex = 11;
-            this.groupBoxSettings.TabStop = false;
-            this.groupBoxSettings.Text = "Setting";
-            // 
-            // buttonRun
-            // 
-            this.buttonRun.Location = new System.Drawing.Point(167, 77);
-            this.buttonRun.Name = "buttonRun";
-            this.buttonRun.Size = new System.Drawing.Size(75, 30);
-            this.buttonRun.TabIndex = 6;
-            this.buttonRun.Text = "Run";
-            this.buttonRun.UseVisualStyleBackColor = true;
-            this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
-            // 
-            // labelStationType
-            // 
-            this.labelStationType.AutoSize = true;
-            this.labelStationType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStationType.Location = new System.Drawing.Point(4, 66);
-            this.labelStationType.Name = "labelStationType";
-            this.labelStationType.Size = new System.Drawing.Size(75, 16);
-            this.labelStationType.TabIndex = 3;
-            this.labelStationType.Text = "ESTAÇÃO:";
-            // 
-            // comboBoxStationType
-            // 
-            this.comboBoxStationType.FormattingEnabled = true;
-            this.comboBoxStationType.Items.AddRange(new object[] {
-            "IFLASH",
-            "BrdTest",
-            "T5GFR1BdTst",
-            "L2AR",
-            "L2VISION",
-            "DepthCal",
-            "DepthVal",
-            "FODTEST",
-            "RadioSlim",
-            "CFC",
-            "UCT",
-            "BE",
-            "CQA",
-            "PRODUTO"});
-            this.comboBoxStationType.Location = new System.Drawing.Point(6, 85);
-            this.comboBoxStationType.Name = "comboBoxStationType";
-            this.comboBoxStationType.Size = new System.Drawing.Size(155, 21);
-            this.comboBoxStationType.TabIndex = 2;
-            // 
-            // labelProductName
-            // 
-            this.labelProductName.AutoSize = true;
-            this.labelProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProductName.Location = new System.Drawing.Point(3, 16);
-            this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(79, 16);
-            this.labelProductName.TabIndex = 8;
-            this.labelProductName.Text = "PRODUTO:";
-            // 
-            // comboBoxProductName
-            // 
-            this.comboBoxProductName.FormattingEnabled = true;
-            this.comboBoxProductName.Location = new System.Drawing.Point(7, 36);
-            this.comboBoxProductName.Name = "comboBoxProductName";
-            this.comboBoxProductName.Size = new System.Drawing.Size(154, 21);
-            this.comboBoxProductName.TabIndex = 9;
-            // 
-            // LabelAppName
-            // 
-            this.LabelAppName.AutoSize = true;
-            this.LabelAppName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAppName.ForeColor = System.Drawing.Color.Teal;
-            this.LabelAppName.Location = new System.Drawing.Point(3, 3);
-            this.LabelAppName.Name = "LabelAppName";
-            this.LabelAppName.Size = new System.Drawing.Size(152, 33);
-            this.LabelAppName.TabIndex = 1;
-            this.LabelAppName.Text = "BmecFlow";
-            // 
-            // labelRouteStatus
-            // 
-            this.labelRouteStatus.AutoSize = true;
-            this.labelRouteStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRouteStatus.Location = new System.Drawing.Point(304, 101);
-            this.labelRouteStatus.Name = "labelRouteStatus";
-            this.labelRouteStatus.Size = new System.Drawing.Size(0, 39);
-            this.labelRouteStatus.TabIndex = 12;
-            // 
-            // buttonRefresh
-            // 
-            this.buttonRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonRefresh.Location = new System.Drawing.Point(951, 58);
-            this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(75, 28);
-            this.buttonRefresh.TabIndex = 13;
-            this.buttonRefresh.Text = "Refresh DB";
-            this.buttonRefresh.UseVisualStyleBackColor = false;
-            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
-            // 
-            // buttonExportToCsv
-            // 
-            this.buttonExportToCsv.Location = new System.Drawing.Point(933, 124);
-            this.buttonExportToCsv.Name = "buttonExportToCsv";
-            this.buttonExportToCsv.Size = new System.Drawing.Size(93, 23);
-            this.buttonExportToCsv.TabIndex = 14;
-            this.buttonExportToCsv.Text = "Export to csv";
-            this.buttonExportToCsv.UseVisualStyleBackColor = true;
-            this.buttonExportToCsv.Click += new System.EventHandler(this.buttonExportToCsv_Click);
-            // 
-            // tabControlApp
-            // 
-            this.tabControlApp.Controls.Add(this.tabPage1);
-            this.tabControlApp.Controls.Add(this.tabPage2);
-            this.tabControlApp.Controls.Add(this.tabPage3);
-            this.tabControlApp.Controls.Add(this.tabPage4);
-            this.tabControlApp.Controls.Add(this.tabPage5);
-            this.tabControlApp.Controls.Add(this.tabPage7);
-            this.tabControlApp.Controls.Add(this.tabPage6);
-            this.tabControlApp.Location = new System.Drawing.Point(12, 4);
-            this.tabControlApp.Name = "tabControlApp";
-            this.tabControlApp.SelectedIndex = 0;
-            this.tabControlApp.Size = new System.Drawing.Size(1063, 613);
-            this.tabControlApp.TabIndex = 12;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBoxLEAK);
-            this.tabPage6.Controls.Add(this.labelLEAK);
-            this.tabPage6.Controls.Add(this.textBoxLEAKTrackid);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1055, 587);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "LEAK TEST";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxLEAK
-            // 
-            this.groupBoxLEAK.Controls.Add(this.comboBoxLEAK);
-            this.groupBoxLEAK.Controls.Add(this.buttonFAILLEAK);
-            this.groupBoxLEAK.Controls.Add(this.buttonPASSLEAK);
-            this.groupBoxLEAK.Location = new System.Drawing.Point(306, 119);
-            this.groupBoxLEAK.Name = "groupBoxLEAK";
-            this.groupBoxLEAK.Size = new System.Drawing.Size(399, 143);
-            this.groupBoxLEAK.TabIndex = 19;
-            this.groupBoxLEAK.TabStop = false;
-            this.groupBoxLEAK.Text = "Runnin Result";
-            // 
-            // buttonFAILLEAK
-            // 
-            this.buttonFAILLEAK.BackColor = System.Drawing.Color.Red;
-            this.buttonFAILLEAK.Location = new System.Drawing.Point(290, 72);
-            this.buttonFAILLEAK.Name = "buttonFAILLEAK";
-            this.buttonFAILLEAK.Size = new System.Drawing.Size(103, 56);
-            this.buttonFAILLEAK.TabIndex = 1;
-            this.buttonFAILLEAK.Text = "FAIL";
-            this.buttonFAILLEAK.UseVisualStyleBackColor = false;
-            this.buttonFAILLEAK.Click += new System.EventHandler(this.buttonFAILLEAK_Click);
-            // 
-            // buttonPASSLEAK
-            // 
-            this.buttonPASSLEAK.BackColor = System.Drawing.Color.Green;
-            this.buttonPASSLEAK.Location = new System.Drawing.Point(6, 72);
-            this.buttonPASSLEAK.Name = "buttonPASSLEAK";
-            this.buttonPASSLEAK.Size = new System.Drawing.Size(103, 56);
-            this.buttonPASSLEAK.TabIndex = 0;
-            this.buttonPASSLEAK.Text = "PASS";
-            this.buttonPASSLEAK.UseVisualStyleBackColor = false;
-            this.buttonPASSLEAK.Click += new System.EventHandler(this.buttonPASSLEAK_Click);
-            // 
-            // labelLEAK
-            // 
-            this.labelLEAK.AutoSize = true;
-            this.labelLEAK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLEAK.Location = new System.Drawing.Point(478, 32);
-            this.labelLEAK.Name = "labelLEAK";
-            this.labelLEAK.Size = new System.Drawing.Size(77, 18);
-            this.labelLEAK.TabIndex = 17;
-            this.labelLEAK.Text = "TRACK-ID";
-            // 
-            // textBoxLEAKTrackid
-            // 
-            this.textBoxLEAKTrackid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLEAKTrackid.Location = new System.Drawing.Point(420, 53);
-            this.textBoxLEAKTrackid.MaxLength = 10;
-            this.textBoxLEAKTrackid.Multiline = true;
-            this.textBoxLEAKTrackid.Name = "textBoxLEAKTrackid";
-            this.textBoxLEAKTrackid.Size = new System.Drawing.Size(190, 41);
-            this.textBoxLEAKTrackid.TabIndex = 18;
-            // 
-            // comboBoxLEAK
-            // 
-            this.comboBoxLEAK.FormattingEnabled = true;
-            this.comboBoxLEAK.Items.AddRange(new object[] {
-            "LEAK101",
-            "LEAK102",
-            "LEAK103"});
-            this.comboBoxLEAK.Location = new System.Drawing.Point(169, 19);
-            this.comboBoxLEAK.Name = "comboBoxLEAK";
-            this.comboBoxLEAK.Size = new System.Drawing.Size(78, 21);
-            this.comboBoxLEAK.TabIndex = 3;
-            this.comboBoxLEAK.Text = "LEAK101";
-            // 
-            // bmecFlowDataSet
-            // 
-            this.bmecFlowDataSet.DataSetName = "BmecFlowDataSet";
-            this.bmecFlowDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bFlowBindingSource
-            // 
-            this.bFlowBindingSource.DataMember = "BFlow";
-            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet;
-            // 
-            // bFlowTableAdapter
-            // 
-            this.bFlowTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -1189,6 +1056,210 @@
             this.fAILDETAILSDataGridViewTextBoxColumn.HeaderText = "FAILDETAILS";
             this.fAILDETAILSDataGridViewTextBoxColumn.Name = "fAILDETAILSDataGridViewTextBoxColumn";
             // 
+            // bFlowBindingSource
+            // 
+            this.bFlowBindingSource.DataMember = "BFlow";
+            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet;
+            // 
+            // bmecFlowDataSet
+            // 
+            this.bmecFlowDataSet.DataSetName = "BmecFlowDataSet";
+            this.bmecFlowDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(478, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 18);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "TRACK-ID";
+            // 
+            // buttonBkp
+            // 
+            this.buttonBkp.BackColor = System.Drawing.Color.Teal;
+            this.buttonBkp.Location = new System.Drawing.Point(951, 15);
+            this.buttonBkp.Name = "buttonBkp";
+            this.buttonBkp.Size = new System.Drawing.Size(75, 36);
+            this.buttonBkp.TabIndex = 8;
+            this.buttonBkp.Text = "BackupDB";
+            this.buttonBkp.UseVisualStyleBackColor = false;
+            this.buttonBkp.Click += new System.EventHandler(this.buttonBkp_Click);
+            // 
+            // textBoxTrackID
+            // 
+            this.textBoxTrackID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackID.Location = new System.Drawing.Point(420, 53);
+            this.textBoxTrackID.Multiline = true;
+            this.textBoxTrackID.Name = "textBoxTrackID";
+            this.textBoxTrackID.Size = new System.Drawing.Size(190, 41);
+            this.textBoxTrackID.TabIndex = 5;
+            this.textBoxTrackID.TextChanged += new System.EventHandler(this.textBoxTrackID_TextChanged);
+            // 
+            // tabControlApp
+            // 
+            this.tabControlApp.Controls.Add(this.tabPage1);
+            this.tabControlApp.Controls.Add(this.tabPage2);
+            this.tabControlApp.Controls.Add(this.tabPage3);
+            this.tabControlApp.Controls.Add(this.tabPage4);
+            this.tabControlApp.Controls.Add(this.tabPage5);
+            this.tabControlApp.Controls.Add(this.tabPage7);
+            this.tabControlApp.Controls.Add(this.tabPage6);
+            this.tabControlApp.Location = new System.Drawing.Point(12, 4);
+            this.tabControlApp.Name = "tabControlApp";
+            this.tabControlApp.SelectedIndex = 0;
+            this.tabControlApp.Size = new System.Drawing.Size(1063, 613);
+            this.tabControlApp.TabIndex = 12;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBoxLEAK);
+            this.tabPage6.Controls.Add(this.labelLEAK);
+            this.tabPage6.Controls.Add(this.textBoxLEAKTrackid);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1055, 587);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "LEAK TEST";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxLEAK
+            // 
+            this.groupBoxLEAK.Controls.Add(this.comboBoxLeakProduct);
+            this.groupBoxLEAK.Controls.Add(this.label9);
+            this.groupBoxLEAK.Controls.Add(this.labelLeakProduct);
+            this.groupBoxLEAK.Controls.Add(this.textBoxLeakResult);
+            this.groupBoxLEAK.Controls.Add(this.labelResultLeak);
+            this.groupBoxLEAK.Controls.Add(this.comboBoxLEAK);
+            this.groupBoxLEAK.Controls.Add(this.buttonFAILLEAK);
+            this.groupBoxLEAK.Controls.Add(this.buttonPASSLEAK);
+            this.groupBoxLEAK.Location = new System.Drawing.Point(320, 119);
+            this.groupBoxLEAK.Name = "groupBoxLEAK";
+            this.groupBoxLEAK.Size = new System.Drawing.Size(399, 264);
+            this.groupBoxLEAK.TabIndex = 19;
+            this.groupBoxLEAK.TabStop = false;
+            this.groupBoxLEAK.Text = "Runnin Result";
+            // 
+            // comboBoxLeakProduct
+            // 
+            this.comboBoxLeakProduct.FormattingEnabled = true;
+            this.comboBoxLeakProduct.Location = new System.Drawing.Point(193, 59);
+            this.comboBoxLeakProduct.Name = "comboBoxLeakProduct";
+            this.comboBoxLeakProduct.Size = new System.Drawing.Size(130, 21);
+            this.comboBoxLeakProduct.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(91, 35);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 16);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "ESTAÇÃO:";
+            // 
+            // labelLeakProduct
+            // 
+            this.labelLeakProduct.AutoSize = true;
+            this.labelLeakProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLeakProduct.Location = new System.Drawing.Point(91, 64);
+            this.labelLeakProduct.Name = "labelLeakProduct";
+            this.labelLeakProduct.Size = new System.Drawing.Size(79, 16);
+            this.labelLeakProduct.TabIndex = 21;
+            this.labelLeakProduct.Text = "PRODUTO:";
+            // 
+            // textBoxLeakResult
+            // 
+            this.textBoxLeakResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeakResult.Location = new System.Drawing.Point(147, 124);
+            this.textBoxLeakResult.MaxLength = 10;
+            this.textBoxLeakResult.Multiline = true;
+            this.textBoxLeakResult.Name = "textBoxLeakResult";
+            this.textBoxLeakResult.Size = new System.Drawing.Size(107, 41);
+            this.textBoxLeakResult.TabIndex = 20;
+            this.textBoxLeakResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelResultLeak
+            // 
+            this.labelResultLeak.AutoSize = true;
+            this.labelResultLeak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultLeak.Location = new System.Drawing.Point(144, 103);
+            this.labelResultLeak.Name = "labelResultLeak";
+            this.labelResultLeak.Size = new System.Drawing.Size(122, 18);
+            this.labelResultLeak.TabIndex = 20;
+            this.labelResultLeak.Text = "VALUE RESULT:";
+            // 
+            // comboBoxLEAK
+            // 
+            this.comboBoxLEAK.FormattingEnabled = true;
+            this.comboBoxLEAK.Items.AddRange(new object[] {
+            "LEAK101",
+            "LEAK102",
+            "LEAK103"});
+            this.comboBoxLEAK.Location = new System.Drawing.Point(193, 30);
+            this.comboBoxLEAK.Name = "comboBoxLEAK";
+            this.comboBoxLEAK.Size = new System.Drawing.Size(130, 21);
+            this.comboBoxLEAK.TabIndex = 3;
+            this.comboBoxLEAK.Text = "LEAK101";
+            // 
+            // buttonFAILLEAK
+            // 
+            this.buttonFAILLEAK.BackColor = System.Drawing.Color.Red;
+            this.buttonFAILLEAK.Location = new System.Drawing.Point(290, 194);
+            this.buttonFAILLEAK.Name = "buttonFAILLEAK";
+            this.buttonFAILLEAK.Size = new System.Drawing.Size(103, 56);
+            this.buttonFAILLEAK.TabIndex = 1;
+            this.buttonFAILLEAK.Text = "FAIL";
+            this.buttonFAILLEAK.UseVisualStyleBackColor = false;
+            this.buttonFAILLEAK.Click += new System.EventHandler(this.buttonFAILLEAK_Click);
+            // 
+            // buttonPASSLEAK
+            // 
+            this.buttonPASSLEAK.BackColor = System.Drawing.Color.Green;
+            this.buttonPASSLEAK.Location = new System.Drawing.Point(6, 194);
+            this.buttonPASSLEAK.Name = "buttonPASSLEAK";
+            this.buttonPASSLEAK.Size = new System.Drawing.Size(103, 56);
+            this.buttonPASSLEAK.TabIndex = 0;
+            this.buttonPASSLEAK.Text = "PASS";
+            this.buttonPASSLEAK.UseVisualStyleBackColor = false;
+            this.buttonPASSLEAK.Click += new System.EventHandler(this.buttonPASSLEAK_Click);
+            // 
+            // labelLEAK
+            // 
+            this.labelLEAK.AutoSize = true;
+            this.labelLEAK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLEAK.Location = new System.Drawing.Point(478, 32);
+            this.labelLEAK.Name = "labelLEAK";
+            this.labelLEAK.Size = new System.Drawing.Size(77, 18);
+            this.labelLEAK.TabIndex = 17;
+            this.labelLEAK.Text = "TRACK-ID";
+            // 
+            // textBoxLEAKTrackid
+            // 
+            this.textBoxLEAKTrackid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLEAKTrackid.Location = new System.Drawing.Point(420, 53);
+            this.textBoxLEAKTrackid.MaxLength = 10;
+            this.textBoxLEAKTrackid.Multiline = true;
+            this.textBoxLEAKTrackid.Name = "textBoxLEAKTrackid";
+            this.textBoxLEAKTrackid.Size = new System.Drawing.Size(190, 41);
+            this.textBoxLEAKTrackid.TabIndex = 18;
+            // 
+            // bFlowTableAdapter
+            // 
+            this.bFlowTableAdapter.ClearBeforeFill = true;
+            // 
+            // buttonOpenLeak
+            // 
+            this.buttonOpenLeak.Location = new System.Drawing.Point(907, 88);
+            this.buttonOpenLeak.Name = "buttonOpenLeak";
+            this.buttonOpenLeak.Size = new System.Drawing.Size(86, 23);
+            this.buttonOpenLeak.TabIndex = 21;
+            this.buttonOpenLeak.Text = "Leak Results";
+            this.buttonOpenLeak.UseVisualStyleBackColor = true;
+            this.buttonOpenLeak.Click += new System.EventHandler(this.buttonOpenLeak_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1198,7 +1269,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.3";
+            this.Text = "BmecFlow v1.4";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
@@ -1214,15 +1285,16 @@
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).EndInit();
             this.groupBoxSettings.ResumeLayout(false);
             this.groupBoxSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).EndInit();
             this.tabControlApp.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.groupBoxLEAK.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
+            this.groupBoxLEAK.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1332,6 +1404,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cQAOBSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAILDETAILSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBoxLeakResult;
+        private System.Windows.Forms.Label labelResultLeak;
+        private System.Windows.Forms.ComboBox comboBoxLeakProduct;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelLeakProduct;
+        private System.Windows.Forms.Button buttonOpenLeak;
     }
 }
 
