@@ -134,9 +134,7 @@ namespace BmecFlow
                 result = false;
             }
             return result;
-
         }
-
         public bool CheckRouteStatus(string trackID, string stationType)
         {
             bool result = false;
