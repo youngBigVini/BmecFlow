@@ -95,15 +95,15 @@ namespace BmecFlow
             }
         }
 
-        public void writeResult(string folderName, string trackId, string stationName, string result, string valueResult)
+        public void writeResult(string productName, string trackId, string stationName, string result, string valueResult)
         {
-            string dirName = FormMain.LeakResultDir + "\\" + folderName;
+            string dirName = FormMain.LeakResultDir + "\\" + productName;
             Directory.CreateDirectory(dirName);
 
-            string filepath = dirName + "\\" + folderName + "_" + stationName + ".txt";
+            string filepath = dirName + "\\" + productName + "_" + stationName + ".txt";
             try
             {
-                string logString = folderName + "," + trackId + "," + result + "," + stationName + "," + valueResult;
+                string logString = productName + "," + trackId + "," + result + "," + stationName + "," + valueResult;
                 if (!File.Exists(filepath))
                 {
                     using (StreamWriter writer = new StreamWriter(new FileStream(filepath, FileMode.Create, FileAccess.Write)))
