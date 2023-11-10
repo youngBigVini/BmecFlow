@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.buttonOpenLeak = new System.Windows.Forms.Button();
             this.buttonOFolder2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.buttonRestrictionUnits = new System.Windows.Forms.Button();
@@ -137,7 +138,6 @@
             this.labelLEAK = new System.Windows.Forms.Label();
             this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
             this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSetTableAdapters.BFlowTableAdapter();
-            this.buttonOpenLeak = new System.Windows.Forms.Button();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -179,6 +179,16 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "RESTRICTIONS";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // buttonOpenLeak
+            // 
+            this.buttonOpenLeak.Location = new System.Drawing.Point(907, 88);
+            this.buttonOpenLeak.Name = "buttonOpenLeak";
+            this.buttonOpenLeak.Size = new System.Drawing.Size(86, 23);
+            this.buttonOpenLeak.TabIndex = 21;
+            this.buttonOpenLeak.Text = "Leak Results";
+            this.buttonOpenLeak.UseVisualStyleBackColor = true;
+            this.buttonOpenLeak.Click += new System.EventHandler(this.buttonOpenLeak_Click);
             // 
             // buttonOFolder2
             // 
@@ -1250,16 +1260,6 @@
             // 
             this.bFlowTableAdapter.ClearBeforeFill = true;
             // 
-            // buttonOpenLeak
-            // 
-            this.buttonOpenLeak.Location = new System.Drawing.Point(907, 88);
-            this.buttonOpenLeak.Name = "buttonOpenLeak";
-            this.buttonOpenLeak.Size = new System.Drawing.Size(86, 23);
-            this.buttonOpenLeak.TabIndex = 21;
-            this.buttonOpenLeak.Text = "Leak Results";
-            this.buttonOpenLeak.UseVisualStyleBackColor = true;
-            this.buttonOpenLeak.Click += new System.EventHandler(this.buttonOpenLeak_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1269,7 +1269,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.4";
+            this.Text = "BmecFlow v1.5";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
