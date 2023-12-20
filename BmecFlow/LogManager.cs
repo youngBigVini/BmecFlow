@@ -34,7 +34,8 @@ namespace BmecFlow
             string stationType = tempSplit[4];
             string passFail = tempSplit[9];
 
-            sqlManager.InsertToMdb(logTrackId, stationType, passFail);
+            if (logTrackId.Length == 10)
+                sqlManager.InsertToMdb(logTrackId, stationType, passFail);
         }
 
         public void getLogResult()
