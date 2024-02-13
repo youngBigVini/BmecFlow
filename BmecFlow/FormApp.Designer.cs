@@ -89,25 +89,6 @@
             this.labelStationType = new System.Windows.Forms.Label();
             this.buttonRun = new System.Windows.Forms.Button();
             this.dataGridViewApp = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonBkp = new System.Windows.Forms.Button();
-            this.textBoxTrackID = new System.Windows.Forms.TextBox();
-            this.tabControlApp = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBoxLEAK = new System.Windows.Forms.GroupBox();
-            this.comboBoxLeakProduct = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.labelLeakProduct = new System.Windows.Forms.Label();
-            this.textBoxLeakResult = new System.Windows.Forms.TextBox();
-            this.labelResultLeak = new System.Windows.Forms.Label();
-            this.comboBoxLEAK = new System.Windows.Forms.ComboBox();
-            this.buttonFAILLEAK = new System.Windows.Forms.Button();
-            this.buttonPASSLEAK = new System.Windows.Forms.Button();
-            this.labelLEAK = new System.Windows.Forms.Label();
-            this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
-            this.bmecFlowDataSet1 = new BmecFlow.BmecFlowDataSet1();
-            this.bFlowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSet1TableAdapters.BFlowTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trackidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iFLASHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -140,6 +121,27 @@
             this.bEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cQAOBSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAILDETAILSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bFlowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bmecFlowDataSet1 = new BmecFlow.BmecFlowDataSet1();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonBkp = new System.Windows.Forms.Button();
+            this.textBoxTrackID = new System.Windows.Forms.TextBox();
+            this.tabControlApp = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBoxLEAK = new System.Windows.Forms.GroupBox();
+            this.comboBoxLeakProduct = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.labelLeakProduct = new System.Windows.Forms.Label();
+            this.textBoxLeakResult = new System.Windows.Forms.TextBox();
+            this.labelResultLeak = new System.Windows.Forms.Label();
+            this.comboBoxLEAK = new System.Windows.Forms.ComboBox();
+            this.buttonFAILLEAK = new System.Windows.Forms.Button();
+            this.buttonPASSLEAK = new System.Windows.Forms.Button();
+            this.labelLEAK = new System.Windows.Forms.Label();
+            this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
+            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSet1TableAdapters.BFlowTableAdapter();
+            this.labelTimer = new System.Windows.Forms.Label();
+            this.textBoxTimer = new System.Windows.Forms.TextBox();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -150,11 +152,11 @@
             this.tabPage1.SuspendLayout();
             this.groupBoxSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).BeginInit();
             this.tabControlApp.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBoxLEAK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -500,6 +502,7 @@
             this.textBoxOBSCQA.Name = "textBoxOBSCQA";
             this.textBoxOBSCQA.Size = new System.Drawing.Size(929, 46);
             this.textBoxOBSCQA.TabIndex = 13;
+            this.textBoxOBSCQA.Visible = false;
             // 
             // textBoxOBSTrackId
             // 
@@ -567,6 +570,7 @@
             this.buttonObs.TabIndex = 11;
             this.buttonObs.Text = "Inserir";
             this.buttonObs.UseVisualStyleBackColor = false;
+            this.buttonObs.Visible = false;
             this.buttonObs.Click += new System.EventHandler(this.buttonObs_Click);
             // 
             // labelPInfos
@@ -589,6 +593,7 @@
             this.labelObs.Size = new System.Drawing.Size(173, 24);
             this.labelObs.TabIndex = 8;
             this.labelObs.Text = "Observações CQA:";
+            this.labelObs.Visible = false;
             // 
             // labelOBSTRACKID
             // 
@@ -774,6 +779,8 @@
             // 
             // groupBoxSettings
             // 
+            this.groupBoxSettings.Controls.Add(this.textBoxTimer);
+            this.groupBoxSettings.Controls.Add(this.labelTimer);
             this.groupBoxSettings.Controls.Add(this.comboBoxProductName);
             this.groupBoxSettings.Controls.Add(this.labelProductName);
             this.groupBoxSettings.Controls.Add(this.comboBoxStationType);
@@ -826,6 +833,7 @@
             this.comboBoxStationType.Name = "comboBoxStationType";
             this.comboBoxStationType.Size = new System.Drawing.Size(155, 21);
             this.comboBoxStationType.TabIndex = 2;
+            this.comboBoxStationType.SelectedIndexChanged += new System.EventHandler(this.comboBoxStationType_SelectedIndexChanged);
             // 
             // labelStationType
             // 
@@ -889,200 +897,6 @@
             this.dataGridViewApp.Name = "dataGridViewApp";
             this.dataGridViewApp.Size = new System.Drawing.Size(1040, 423);
             this.dataGridViewApp.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(478, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "TRACK-ID";
-            // 
-            // buttonBkp
-            // 
-            this.buttonBkp.BackColor = System.Drawing.Color.Teal;
-            this.buttonBkp.Location = new System.Drawing.Point(951, 15);
-            this.buttonBkp.Name = "buttonBkp";
-            this.buttonBkp.Size = new System.Drawing.Size(75, 36);
-            this.buttonBkp.TabIndex = 8;
-            this.buttonBkp.Text = "BackupDB";
-            this.buttonBkp.UseVisualStyleBackColor = false;
-            this.buttonBkp.Click += new System.EventHandler(this.buttonBkp_Click);
-            // 
-            // textBoxTrackID
-            // 
-            this.textBoxTrackID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrackID.Location = new System.Drawing.Point(420, 53);
-            this.textBoxTrackID.Multiline = true;
-            this.textBoxTrackID.Name = "textBoxTrackID";
-            this.textBoxTrackID.Size = new System.Drawing.Size(190, 41);
-            this.textBoxTrackID.TabIndex = 5;
-            this.textBoxTrackID.TextChanged += new System.EventHandler(this.textBoxTrackID_TextChanged);
-            // 
-            // tabControlApp
-            // 
-            this.tabControlApp.Controls.Add(this.tabPage1);
-            this.tabControlApp.Controls.Add(this.tabPage2);
-            this.tabControlApp.Controls.Add(this.tabPage3);
-            this.tabControlApp.Controls.Add(this.tabPage4);
-            this.tabControlApp.Controls.Add(this.tabPage5);
-            this.tabControlApp.Controls.Add(this.tabPage7);
-            this.tabControlApp.Controls.Add(this.tabPage6);
-            this.tabControlApp.Location = new System.Drawing.Point(12, 4);
-            this.tabControlApp.Name = "tabControlApp";
-            this.tabControlApp.SelectedIndex = 0;
-            this.tabControlApp.Size = new System.Drawing.Size(1063, 613);
-            this.tabControlApp.TabIndex = 12;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBoxLEAK);
-            this.tabPage6.Controls.Add(this.labelLEAK);
-            this.tabPage6.Controls.Add(this.textBoxLEAKTrackid);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1055, 587);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "LEAK TEST";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxLEAK
-            // 
-            this.groupBoxLEAK.Controls.Add(this.comboBoxLeakProduct);
-            this.groupBoxLEAK.Controls.Add(this.label9);
-            this.groupBoxLEAK.Controls.Add(this.labelLeakProduct);
-            this.groupBoxLEAK.Controls.Add(this.textBoxLeakResult);
-            this.groupBoxLEAK.Controls.Add(this.labelResultLeak);
-            this.groupBoxLEAK.Controls.Add(this.comboBoxLEAK);
-            this.groupBoxLEAK.Controls.Add(this.buttonFAILLEAK);
-            this.groupBoxLEAK.Controls.Add(this.buttonPASSLEAK);
-            this.groupBoxLEAK.Location = new System.Drawing.Point(320, 119);
-            this.groupBoxLEAK.Name = "groupBoxLEAK";
-            this.groupBoxLEAK.Size = new System.Drawing.Size(399, 264);
-            this.groupBoxLEAK.TabIndex = 19;
-            this.groupBoxLEAK.TabStop = false;
-            this.groupBoxLEAK.Text = "Runnin Result";
-            // 
-            // comboBoxLeakProduct
-            // 
-            this.comboBoxLeakProduct.FormattingEnabled = true;
-            this.comboBoxLeakProduct.Location = new System.Drawing.Point(193, 59);
-            this.comboBoxLeakProduct.Name = "comboBoxLeakProduct";
-            this.comboBoxLeakProduct.Size = new System.Drawing.Size(130, 21);
-            this.comboBoxLeakProduct.TabIndex = 23;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(91, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 16);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "ESTAÇÃO:";
-            // 
-            // labelLeakProduct
-            // 
-            this.labelLeakProduct.AutoSize = true;
-            this.labelLeakProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLeakProduct.Location = new System.Drawing.Point(91, 64);
-            this.labelLeakProduct.Name = "labelLeakProduct";
-            this.labelLeakProduct.Size = new System.Drawing.Size(79, 16);
-            this.labelLeakProduct.TabIndex = 21;
-            this.labelLeakProduct.Text = "PRODUTO:";
-            // 
-            // textBoxLeakResult
-            // 
-            this.textBoxLeakResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLeakResult.Location = new System.Drawing.Point(147, 124);
-            this.textBoxLeakResult.MaxLength = 10;
-            this.textBoxLeakResult.Multiline = true;
-            this.textBoxLeakResult.Name = "textBoxLeakResult";
-            this.textBoxLeakResult.Size = new System.Drawing.Size(107, 41);
-            this.textBoxLeakResult.TabIndex = 20;
-            this.textBoxLeakResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelResultLeak
-            // 
-            this.labelResultLeak.AutoSize = true;
-            this.labelResultLeak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResultLeak.Location = new System.Drawing.Point(144, 103);
-            this.labelResultLeak.Name = "labelResultLeak";
-            this.labelResultLeak.Size = new System.Drawing.Size(122, 18);
-            this.labelResultLeak.TabIndex = 20;
-            this.labelResultLeak.Text = "VALUE RESULT:";
-            // 
-            // comboBoxLEAK
-            // 
-            this.comboBoxLEAK.FormattingEnabled = true;
-            this.comboBoxLEAK.Items.AddRange(new object[] {
-            "LEAK101",
-            "LEAK102",
-            "LEAK103"});
-            this.comboBoxLEAK.Location = new System.Drawing.Point(193, 30);
-            this.comboBoxLEAK.Name = "comboBoxLEAK";
-            this.comboBoxLEAK.Size = new System.Drawing.Size(130, 21);
-            this.comboBoxLEAK.TabIndex = 3;
-            this.comboBoxLEAK.Text = "LEAK101";
-            // 
-            // buttonFAILLEAK
-            // 
-            this.buttonFAILLEAK.BackColor = System.Drawing.Color.Red;
-            this.buttonFAILLEAK.Location = new System.Drawing.Point(290, 194);
-            this.buttonFAILLEAK.Name = "buttonFAILLEAK";
-            this.buttonFAILLEAK.Size = new System.Drawing.Size(103, 56);
-            this.buttonFAILLEAK.TabIndex = 1;
-            this.buttonFAILLEAK.Text = "FAIL";
-            this.buttonFAILLEAK.UseVisualStyleBackColor = false;
-            this.buttonFAILLEAK.Click += new System.EventHandler(this.buttonFAILLEAK_Click);
-            // 
-            // buttonPASSLEAK
-            // 
-            this.buttonPASSLEAK.BackColor = System.Drawing.Color.Green;
-            this.buttonPASSLEAK.Location = new System.Drawing.Point(6, 194);
-            this.buttonPASSLEAK.Name = "buttonPASSLEAK";
-            this.buttonPASSLEAK.Size = new System.Drawing.Size(103, 56);
-            this.buttonPASSLEAK.TabIndex = 0;
-            this.buttonPASSLEAK.Text = "PASS";
-            this.buttonPASSLEAK.UseVisualStyleBackColor = false;
-            this.buttonPASSLEAK.Click += new System.EventHandler(this.buttonPASSLEAK_Click);
-            // 
-            // labelLEAK
-            // 
-            this.labelLEAK.AutoSize = true;
-            this.labelLEAK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLEAK.Location = new System.Drawing.Point(478, 32);
-            this.labelLEAK.Name = "labelLEAK";
-            this.labelLEAK.Size = new System.Drawing.Size(77, 18);
-            this.labelLEAK.TabIndex = 17;
-            this.labelLEAK.Text = "TRACK-ID";
-            // 
-            // textBoxLEAKTrackid
-            // 
-            this.textBoxLEAKTrackid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLEAKTrackid.Location = new System.Drawing.Point(420, 53);
-            this.textBoxLEAKTrackid.MaxLength = 10;
-            this.textBoxLEAKTrackid.Multiline = true;
-            this.textBoxLEAKTrackid.Name = "textBoxLEAKTrackid";
-            this.textBoxLEAKTrackid.Size = new System.Drawing.Size(190, 41);
-            this.textBoxLEAKTrackid.TabIndex = 18;
-            // 
-            // bmecFlowDataSet1
-            // 
-            this.bmecFlowDataSet1.DataSetName = "BmecFlowDataSet1";
-            this.bmecFlowDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bFlowBindingSource
-            // 
-            this.bFlowBindingSource.DataMember = "BFlow";
-            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet1;
-            // 
-            // bFlowTableAdapter
-            // 
-            this.bFlowTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -1277,6 +1091,218 @@
             this.fAILDETAILSDataGridViewTextBoxColumn.HeaderText = "FAILDETAILS";
             this.fAILDETAILSDataGridViewTextBoxColumn.Name = "fAILDETAILSDataGridViewTextBoxColumn";
             // 
+            // bFlowBindingSource
+            // 
+            this.bFlowBindingSource.DataMember = "BFlow";
+            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet1;
+            // 
+            // bmecFlowDataSet1
+            // 
+            this.bmecFlowDataSet1.DataSetName = "BmecFlowDataSet1";
+            this.bmecFlowDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(478, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 18);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "TRACK-ID";
+            // 
+            // buttonBkp
+            // 
+            this.buttonBkp.BackColor = System.Drawing.Color.Teal;
+            this.buttonBkp.Location = new System.Drawing.Point(951, 15);
+            this.buttonBkp.Name = "buttonBkp";
+            this.buttonBkp.Size = new System.Drawing.Size(75, 36);
+            this.buttonBkp.TabIndex = 8;
+            this.buttonBkp.Text = "BackupDB";
+            this.buttonBkp.UseVisualStyleBackColor = false;
+            this.buttonBkp.Click += new System.EventHandler(this.buttonBkp_Click);
+            // 
+            // textBoxTrackID
+            // 
+            this.textBoxTrackID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTrackID.Location = new System.Drawing.Point(420, 53);
+            this.textBoxTrackID.Multiline = true;
+            this.textBoxTrackID.Name = "textBoxTrackID";
+            this.textBoxTrackID.Size = new System.Drawing.Size(190, 41);
+            this.textBoxTrackID.TabIndex = 5;
+            this.textBoxTrackID.TextChanged += new System.EventHandler(this.textBoxTrackID_TextChanged);
+            // 
+            // tabControlApp
+            // 
+            this.tabControlApp.Controls.Add(this.tabPage1);
+            this.tabControlApp.Controls.Add(this.tabPage2);
+            this.tabControlApp.Controls.Add(this.tabPage3);
+            this.tabControlApp.Controls.Add(this.tabPage4);
+            this.tabControlApp.Controls.Add(this.tabPage5);
+            this.tabControlApp.Controls.Add(this.tabPage7);
+            this.tabControlApp.Controls.Add(this.tabPage6);
+            this.tabControlApp.Location = new System.Drawing.Point(12, 4);
+            this.tabControlApp.Name = "tabControlApp";
+            this.tabControlApp.SelectedIndex = 0;
+            this.tabControlApp.Size = new System.Drawing.Size(1063, 613);
+            this.tabControlApp.TabIndex = 12;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBoxLEAK);
+            this.tabPage6.Controls.Add(this.labelLEAK);
+            this.tabPage6.Controls.Add(this.textBoxLEAKTrackid);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1055, 587);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "LEAK TEST";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxLEAK
+            // 
+            this.groupBoxLEAK.Controls.Add(this.comboBoxLeakProduct);
+            this.groupBoxLEAK.Controls.Add(this.label9);
+            this.groupBoxLEAK.Controls.Add(this.labelLeakProduct);
+            this.groupBoxLEAK.Controls.Add(this.textBoxLeakResult);
+            this.groupBoxLEAK.Controls.Add(this.labelResultLeak);
+            this.groupBoxLEAK.Controls.Add(this.comboBoxLEAK);
+            this.groupBoxLEAK.Controls.Add(this.buttonFAILLEAK);
+            this.groupBoxLEAK.Controls.Add(this.buttonPASSLEAK);
+            this.groupBoxLEAK.Location = new System.Drawing.Point(320, 119);
+            this.groupBoxLEAK.Name = "groupBoxLEAK";
+            this.groupBoxLEAK.Size = new System.Drawing.Size(399, 264);
+            this.groupBoxLEAK.TabIndex = 19;
+            this.groupBoxLEAK.TabStop = false;
+            this.groupBoxLEAK.Text = "Runnin Result";
+            // 
+            // comboBoxLeakProduct
+            // 
+            this.comboBoxLeakProduct.FormattingEnabled = true;
+            this.comboBoxLeakProduct.Location = new System.Drawing.Point(193, 59);
+            this.comboBoxLeakProduct.Name = "comboBoxLeakProduct";
+            this.comboBoxLeakProduct.Size = new System.Drawing.Size(130, 21);
+            this.comboBoxLeakProduct.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(91, 35);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 16);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "ESTAÇÃO:";
+            // 
+            // labelLeakProduct
+            // 
+            this.labelLeakProduct.AutoSize = true;
+            this.labelLeakProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLeakProduct.Location = new System.Drawing.Point(91, 64);
+            this.labelLeakProduct.Name = "labelLeakProduct";
+            this.labelLeakProduct.Size = new System.Drawing.Size(79, 16);
+            this.labelLeakProduct.TabIndex = 21;
+            this.labelLeakProduct.Text = "PRODUTO:";
+            // 
+            // textBoxLeakResult
+            // 
+            this.textBoxLeakResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeakResult.Location = new System.Drawing.Point(147, 124);
+            this.textBoxLeakResult.MaxLength = 10;
+            this.textBoxLeakResult.Multiline = true;
+            this.textBoxLeakResult.Name = "textBoxLeakResult";
+            this.textBoxLeakResult.Size = new System.Drawing.Size(107, 41);
+            this.textBoxLeakResult.TabIndex = 20;
+            this.textBoxLeakResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelResultLeak
+            // 
+            this.labelResultLeak.AutoSize = true;
+            this.labelResultLeak.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultLeak.Location = new System.Drawing.Point(144, 103);
+            this.labelResultLeak.Name = "labelResultLeak";
+            this.labelResultLeak.Size = new System.Drawing.Size(122, 18);
+            this.labelResultLeak.TabIndex = 20;
+            this.labelResultLeak.Text = "VALUE RESULT:";
+            // 
+            // comboBoxLEAK
+            // 
+            this.comboBoxLEAK.FormattingEnabled = true;
+            this.comboBoxLEAK.Items.AddRange(new object[] {
+            "LEAK101",
+            "LEAK102",
+            "LEAK103"});
+            this.comboBoxLEAK.Location = new System.Drawing.Point(193, 30);
+            this.comboBoxLEAK.Name = "comboBoxLEAK";
+            this.comboBoxLEAK.Size = new System.Drawing.Size(130, 21);
+            this.comboBoxLEAK.TabIndex = 3;
+            this.comboBoxLEAK.Text = "LEAK101";
+            // 
+            // buttonFAILLEAK
+            // 
+            this.buttonFAILLEAK.BackColor = System.Drawing.Color.Red;
+            this.buttonFAILLEAK.Location = new System.Drawing.Point(290, 194);
+            this.buttonFAILLEAK.Name = "buttonFAILLEAK";
+            this.buttonFAILLEAK.Size = new System.Drawing.Size(103, 56);
+            this.buttonFAILLEAK.TabIndex = 1;
+            this.buttonFAILLEAK.Text = "FAIL";
+            this.buttonFAILLEAK.UseVisualStyleBackColor = false;
+            this.buttonFAILLEAK.Click += new System.EventHandler(this.buttonFAILLEAK_Click);
+            // 
+            // buttonPASSLEAK
+            // 
+            this.buttonPASSLEAK.BackColor = System.Drawing.Color.Green;
+            this.buttonPASSLEAK.Location = new System.Drawing.Point(6, 194);
+            this.buttonPASSLEAK.Name = "buttonPASSLEAK";
+            this.buttonPASSLEAK.Size = new System.Drawing.Size(103, 56);
+            this.buttonPASSLEAK.TabIndex = 0;
+            this.buttonPASSLEAK.Text = "PASS";
+            this.buttonPASSLEAK.UseVisualStyleBackColor = false;
+            this.buttonPASSLEAK.Click += new System.EventHandler(this.buttonPASSLEAK_Click);
+            // 
+            // labelLEAK
+            // 
+            this.labelLEAK.AutoSize = true;
+            this.labelLEAK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLEAK.Location = new System.Drawing.Point(478, 32);
+            this.labelLEAK.Name = "labelLEAK";
+            this.labelLEAK.Size = new System.Drawing.Size(77, 18);
+            this.labelLEAK.TabIndex = 17;
+            this.labelLEAK.Text = "TRACK-ID";
+            // 
+            // textBoxLEAKTrackid
+            // 
+            this.textBoxLEAKTrackid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLEAKTrackid.Location = new System.Drawing.Point(420, 53);
+            this.textBoxLEAKTrackid.MaxLength = 10;
+            this.textBoxLEAKTrackid.Multiline = true;
+            this.textBoxLEAKTrackid.Name = "textBoxLEAKTrackid";
+            this.textBoxLEAKTrackid.Size = new System.Drawing.Size(190, 41);
+            this.textBoxLEAKTrackid.TabIndex = 18;
+            // 
+            // bFlowTableAdapter
+            // 
+            this.bFlowTableAdapter.ClearBeforeFill = true;
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.AutoSize = true;
+            this.labelTimer.Location = new System.Drawing.Point(167, 18);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(58, 13);
+            this.labelTimer.TabIndex = 10;
+            this.labelTimer.Text = "TIMER (s):";
+            // 
+            // textBoxTimer
+            // 
+            this.textBoxTimer.Enabled = false;
+            this.textBoxTimer.Location = new System.Drawing.Point(170, 37);
+            this.textBoxTimer.Name = "textBoxTimer";
+            this.textBoxTimer.Size = new System.Drawing.Size(41, 20);
+            this.textBoxTimer.TabIndex = 11;
+            this.textBoxTimer.Text = "10";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1286,7 +1312,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.7";
+            this.Text = "BmecFlow v1.8";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
@@ -1305,13 +1331,13 @@
             this.groupBoxSettings.ResumeLayout(false);
             this.groupBoxSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).EndInit();
             this.tabControlApp.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.groupBoxLEAK.ResumeLayout(false);
             this.groupBoxLEAK.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1429,6 +1455,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cQAOBSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAILDETAILSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBoxTimer;
+        private System.Windows.Forms.Label labelTimer;
     }
 }
 

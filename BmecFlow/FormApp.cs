@@ -67,8 +67,9 @@ namespace BmecFlow
         }
         private void startTimer()
         {
+            int timerCycle = Convert.ToInt32(textBoxTimer.Text);
             var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromSeconds(10);
+            var periodTimeSpan = TimeSpan.FromSeconds(timerCycle);
             timer = new System.Threading.Timer((obj) =>
             {
                 buttonRun.BackColor = Color.Green;
@@ -402,6 +403,12 @@ namespace BmecFlow
         private void buttonOpenLeak_Click(object sender, EventArgs e)
         {
             openFolder(LeakResultDir);
+        }
+
+        private void comboBoxStationType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxStationType.Text == "IFLASH")
+                textBoxTimer.Enabled = true;
         }
     }
 }
