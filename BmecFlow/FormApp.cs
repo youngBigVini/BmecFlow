@@ -25,8 +25,8 @@ namespace BmecFlow
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bmecFlowDataSet.BFlow' table. You can move, or remove it, as needed.
-            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
+            // TODO: This line of code loads data into the 'bmecFlowDataSet1.BFlow' table. You can move, or remove it, as needed.
+            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet1.BFlow);
 
         }
         public void readRouteFilesAndFillComboBox()
@@ -169,7 +169,7 @@ namespace BmecFlow
         }
         private void datagridViewUpdateData()
         {
-            bFlowTableAdapter.Fill(bmecFlowDataSet.BFlow);
+            bFlowTableAdapter.Fill(bmecFlowDataSet1.BFlow);
         }
         private void buttonROUTESave_Click(object sender, EventArgs e)
         {
