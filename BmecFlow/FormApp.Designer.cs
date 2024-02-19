@@ -83,6 +83,8 @@
             this.labelRouteStatus = new System.Windows.Forms.Label();
             this.LabelAppName = new System.Windows.Forms.Label();
             this.groupBoxSettings = new System.Windows.Forms.GroupBox();
+            this.textBoxTimer = new System.Windows.Forms.TextBox();
+            this.labelTimer = new System.Windows.Forms.Label();
             this.comboBoxProductName = new System.Windows.Forms.ComboBox();
             this.labelProductName = new System.Windows.Forms.Label();
             this.comboBoxStationType = new System.Windows.Forms.ComboBox();
@@ -140,8 +142,6 @@
             this.labelLEAK = new System.Windows.Forms.Label();
             this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
             this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSet1TableAdapters.BFlowTableAdapter();
-            this.labelTimer = new System.Windows.Forms.Label();
-            this.textBoxTimer = new System.Windows.Forms.TextBox();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -666,7 +666,9 @@
             "L2VISION,L2AR,DepthVal,CFC",
             "RadioSlim,L2AR,CFC",
             "UCT,FODTEST,L2VISION,L2AR,DepthCal,DepthVal,CFC",
-            "UCT,FODTEST,L2VISION,L2AR,LCDCAL,DepthCal,DepthVal,TELECAL,TELEVAL,TOF,CFC"});
+            "UCT,FODTEST,L2VISION,L2AR,LCDCAL,DepthCal,DepthVal,TELECAL,TELEVAL,TOF,CFC",
+            "UCT,FODTEST,L2VISION,L2AR,LCDCAL,DepthCal,DepthVal,TELECAL,TELEVAL,TOF,UWBRadTst," +
+                "CFC"});
             this.comboBoxRouteBE.Location = new System.Drawing.Point(16, 216);
             this.comboBoxRouteBE.Name = "comboBoxRouteBE";
             this.comboBoxRouteBE.Size = new System.Drawing.Size(459, 23);
@@ -679,7 +681,8 @@
             this.comboBoxRouteME.FormattingEnabled = true;
             this.comboBoxRouteME.Items.AddRange(new object[] {
             "IFLASH,BrdTest,T5GFR1BdTst",
-            "IFLASH,BrdTest"});
+            "IFLASH,BrdTest",
+            "IFLASH,BrdTest,T5GFR1BdTst,UWBdTst"});
             this.comboBoxRouteME.Location = new System.Drawing.Point(16, 148);
             this.comboBoxRouteME.Name = "comboBoxRouteME";
             this.comboBoxRouteME.Size = new System.Drawing.Size(459, 23);
@@ -792,6 +795,24 @@
             this.groupBoxSettings.TabIndex = 11;
             this.groupBoxSettings.TabStop = false;
             this.groupBoxSettings.Text = "Setting";
+            // 
+            // textBoxTimer
+            // 
+            this.textBoxTimer.Enabled = false;
+            this.textBoxTimer.Location = new System.Drawing.Point(170, 37);
+            this.textBoxTimer.Name = "textBoxTimer";
+            this.textBoxTimer.Size = new System.Drawing.Size(41, 20);
+            this.textBoxTimer.TabIndex = 11;
+            this.textBoxTimer.Text = "10";
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.AutoSize = true;
+            this.labelTimer.Location = new System.Drawing.Point(167, 18);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(58, 13);
+            this.labelTimer.TabIndex = 10;
+            this.labelTimer.Text = "TIMER (s):";
             // 
             // comboBoxProductName
             // 
@@ -1285,24 +1306,6 @@
             // 
             this.bFlowTableAdapter.ClearBeforeFill = true;
             // 
-            // labelTimer
-            // 
-            this.labelTimer.AutoSize = true;
-            this.labelTimer.Location = new System.Drawing.Point(167, 18);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(58, 13);
-            this.labelTimer.TabIndex = 10;
-            this.labelTimer.Text = "TIMER (s):";
-            // 
-            // textBoxTimer
-            // 
-            this.textBoxTimer.Enabled = false;
-            this.textBoxTimer.Location = new System.Drawing.Point(170, 37);
-            this.textBoxTimer.Name = "textBoxTimer";
-            this.textBoxTimer.Size = new System.Drawing.Size(41, 20);
-            this.textBoxTimer.TabIndex = 11;
-            this.textBoxTimer.Text = "10";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1312,7 +1315,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.8";
+            this.Text = "BmecFlow v1.9";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
