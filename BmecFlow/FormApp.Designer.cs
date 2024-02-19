@@ -668,7 +668,8 @@
             "UCT,FODTEST,L2VISION,L2AR,DepthCal,DepthVal,CFC",
             "UCT,FODTEST,L2VISION,L2AR,LCDCAL,DepthCal,DepthVal,TELECAL,TELEVAL,TOF,CFC",
             "UCT,FODTEST,L2VISION,L2AR,LCDCAL,DepthCal,DepthVal,TELECAL,TELEVAL,TOF,UWBRadTst," +
-                "CFC"});
+                "CFC",
+            "UCT,FODTEST,L2VISION,L2AR,DepthVal,CFC"});
             this.comboBoxRouteBE.Location = new System.Drawing.Point(16, 216);
             this.comboBoxRouteBE.Name = "comboBoxRouteBE";
             this.comboBoxRouteBE.Size = new System.Drawing.Size(459, 23);
