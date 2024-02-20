@@ -124,7 +124,7 @@
             this.cQAOBSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAILDETAILSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bFlowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bmecFlowDataSet1 = new BmecFlow.BmecFlowDataSet1();
+            this.bmecFlowDataSet = new BmecFlow.BmecFlowDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBkp = new System.Windows.Forms.Button();
             this.textBoxTrackID = new System.Windows.Forms.TextBox();
@@ -141,7 +141,7 @@
             this.buttonPASSLEAK = new System.Windows.Forms.Button();
             this.labelLEAK = new System.Windows.Forms.Label();
             this.textBoxLEAKTrackid = new System.Windows.Forms.TextBox();
-            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSet1TableAdapters.BFlowTableAdapter();
+            this.bFlowTableAdapter = new BmecFlow.BmecFlowDataSetTableAdapters.BFlowTableAdapter();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -153,7 +153,7 @@
             this.groupBoxSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).BeginInit();
             this.tabControlApp.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBoxLEAK.SuspendLayout();
@@ -1116,12 +1116,12 @@
             // bFlowBindingSource
             // 
             this.bFlowBindingSource.DataMember = "BFlow";
-            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet1;
+            this.bFlowBindingSource.DataSource = this.bmecFlowDataSet;
             // 
             // bmecFlowDataSet1
             // 
-            this.bmecFlowDataSet1.DataSetName = "BmecFlowDataSet1";
-            this.bmecFlowDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bmecFlowDataSet.DataSetName = "BmecFlowDataSet";
+            this.bmecFlowDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -1336,7 +1336,7 @@
             this.groupBoxSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bFlowBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet)).EndInit();
             this.tabControlApp.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
@@ -1424,9 +1424,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label labelLeakProduct;
         private System.Windows.Forms.Button buttonOpenLeak;
-        private BmecFlowDataSet1 bmecFlowDataSet1;
+        private BmecFlowDataSet bmecFlowDataSet;
         private System.Windows.Forms.BindingSource bFlowBindingSource;
-        private BmecFlowDataSet1TableAdapters.BFlowTableAdapter bFlowTableAdapter;
+        private BmecFlowDataSetTableAdapters.BFlowTableAdapter bFlowTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trackidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iFLASHDataGridViewTextBoxColumn;

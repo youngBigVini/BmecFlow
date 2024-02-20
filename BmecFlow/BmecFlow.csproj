@@ -53,11 +53,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BmecFlowDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BmecFlowDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BmecFlowDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FormApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +66,7 @@
     <Compile Include="stationTypescs.cs" />
     <EmbeddedResource Include="FormApp.resx">
       <DependentUpon>FormApp.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,17 +87,6 @@
     </None>
     <None Include="BmecFlowDataSet.xss">
       <DependentUpon>BmecFlowDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BmecFlowDataSet1.xsc">
-      <DependentUpon>BmecFlowDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BmecFlowDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BmecFlowDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BmecFlowDataSet1.xss">
-      <DependentUpon>BmecFlowDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
