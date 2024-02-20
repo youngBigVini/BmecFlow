@@ -37,7 +37,7 @@ namespace BmecFlow
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex);
+                MessageBox.Show("InsertToMdb() method Error: " + ex.Message);
             }
 
         }
@@ -95,7 +95,7 @@ namespace BmecFlow
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex);
+                MessageBox.Show("InsertObstoDb() method Error:" + ex.Message);
                 result = false;
             }
             return result;
@@ -130,7 +130,7 @@ namespace BmecFlow
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex);
+                MessageBox.Show("InsertFailDetailsToDb() method Error:" + ex.Message);
                 result = false;
             }
             return result;

@@ -118,7 +118,7 @@ namespace BmecFlow
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Query Error!! :" + ex);
+                    MessageBox.Show("Query Error!! :" + ex.Message);
                 }
             }
         }
@@ -143,7 +143,7 @@ namespace BmecFlow
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao verificar a ROTA!!! reason: " + ex);
+                MessageBox.Show("Erro ao verificar a ROTA!!! reason: " + ex.Message);
             }
             return routeVerify;
 
@@ -165,7 +165,7 @@ namespace BmecFlow
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex);
+                MessageBox.Show("Não foi possivel criar um backup do DataBase! : " + ex.Message);
             }
         }
         private void datagridViewUpdateData()
