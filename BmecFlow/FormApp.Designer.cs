@@ -100,8 +100,6 @@
             this.lEAK101DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lEAK102DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lEAK103DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tELECALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tELEVALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xCVRLTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pREXCVRLTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -850,7 +848,12 @@
             "UCT",
             "BE",
             "CQA",
-            "PRODUTO"});
+            "PRODUTO",
+            "TELECAL",
+            "TELEVAL",
+            "UWBRadTst",
+            "TOF",
+            "LCDCAL"});
             this.comboBoxStationType.Location = new System.Drawing.Point(6, 85);
             this.comboBoxStationType.Name = "comboBoxStationType";
             this.comboBoxStationType.Size = new System.Drawing.Size(155, 21);
@@ -891,8 +894,6 @@
             this.lEAK101DataGridViewTextBoxColumn,
             this.lEAK102DataGridViewTextBoxColumn,
             this.lEAK103DataGridViewTextBoxColumn,
-            this.tELECALDataGridViewTextBoxColumn,
-            this.tELEVALDataGridViewTextBoxColumn,
             this.xCVRLTDataGridViewTextBoxColumn,
             this.pREXCVRLTDataGridViewTextBoxColumn,
             this.uCTDataGridViewTextBoxColumn,
@@ -974,18 +975,6 @@
             this.lEAK103DataGridViewTextBoxColumn.DataPropertyName = "LEAK103";
             this.lEAK103DataGridViewTextBoxColumn.HeaderText = "LEAK103";
             this.lEAK103DataGridViewTextBoxColumn.Name = "lEAK103DataGridViewTextBoxColumn";
-            // 
-            // tELECALDataGridViewTextBoxColumn
-            // 
-            this.tELECALDataGridViewTextBoxColumn.DataPropertyName = "TELECAL";
-            this.tELECALDataGridViewTextBoxColumn.HeaderText = "TELECAL";
-            this.tELECALDataGridViewTextBoxColumn.Name = "tELECALDataGridViewTextBoxColumn";
-            // 
-            // tELEVALDataGridViewTextBoxColumn
-            // 
-            this.tELEVALDataGridViewTextBoxColumn.DataPropertyName = "TELEVAL";
-            this.tELEVALDataGridViewTextBoxColumn.HeaderText = "TELEVAL";
-            this.tELEVALDataGridViewTextBoxColumn.Name = "tELEVALDataGridViewTextBoxColumn";
             // 
             // xCVRLTDataGridViewTextBoxColumn
             // 
@@ -1118,7 +1107,7 @@
             this.bFlowBindingSource.DataMember = "BFlow";
             this.bFlowBindingSource.DataSource = this.bmecFlowDataSet;
             // 
-            // bmecFlowDataSet1
+            // bmecFlowDataSet
             // 
             this.bmecFlowDataSet.DataSetName = "BmecFlowDataSet";
             this.bmecFlowDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
@@ -1316,7 +1305,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v1.9";
+            this.Text = "BmecFlow v2.0";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
