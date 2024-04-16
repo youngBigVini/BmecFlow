@@ -297,6 +297,10 @@ namespace BmecFlow {
             
             private global::System.Data.DataColumn columnLEAK103;
             
+            private global::System.Data.DataColumn columnTELECAL;
+            
+            private global::System.Data.DataColumn columnTELEVAL;
+            
             private global::System.Data.DataColumn columnXCVR_LT;
             
             private global::System.Data.DataColumn columnPRE_XCVR_LT;
@@ -322,6 +326,8 @@ namespace BmecFlow {
             private global::System.Data.DataColumn columnCamera_SOIS;
             
             private global::System.Data.DataColumn columnACT;
+            
+            private global::System.Data.DataColumn columnUWBRadTst;
             
             private global::System.Data.DataColumn columnTOF;
             
@@ -446,6 +452,22 @@ namespace BmecFlow {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TELECALColumn {
+                get {
+                    return this.columnTELECAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TELEVALColumn {
+                get {
+                    return this.columnTELEVAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public global::System.Data.DataColumn XCVR_LTColumn {
                 get {
                     return this.columnXCVR_LT;
@@ -545,6 +567,14 @@ namespace BmecFlow {
             public global::System.Data.DataColumn ACTColumn {
                 get {
                     return this.columnACT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn UWBRadTstColumn {
+                get {
+                    return this.columnUWBRadTst;
                 }
             }
             
@@ -658,6 +688,8 @@ namespace BmecFlow {
                         string LEAK101, 
                         string LEAK102, 
                         string LEAK103, 
+                        string TELECAL, 
+                        string TELEVAL, 
                         string XCVR_LT, 
                         string PRE_XCVR_LT, 
                         string UCT, 
@@ -671,6 +703,7 @@ namespace BmecFlow {
                         string DepthVal, 
                         string Camera_SOIS, 
                         string ACT, 
+                        string UWBRadTst, 
                         string TOF, 
                         string CFC, 
                         string CQA, 
@@ -690,6 +723,8 @@ namespace BmecFlow {
                         LEAK101,
                         LEAK102,
                         LEAK103,
+                        TELECAL,
+                        TELEVAL,
                         XCVR_LT,
                         PRE_XCVR_LT,
                         UCT,
@@ -703,6 +738,7 @@ namespace BmecFlow {
                         DepthVal,
                         Camera_SOIS,
                         ACT,
+                        UWBRadTst,
                         TOF,
                         CFC,
                         CQA,
@@ -749,6 +785,8 @@ namespace BmecFlow {
                 this.columnLEAK101 = base.Columns["LEAK101"];
                 this.columnLEAK102 = base.Columns["LEAK102"];
                 this.columnLEAK103 = base.Columns["LEAK103"];
+                this.columnTELECAL = base.Columns["TELECAL"];
+                this.columnTELEVAL = base.Columns["TELEVAL"];
                 this.columnXCVR_LT = base.Columns["XCVR_LT"];
                 this.columnPRE_XCVR_LT = base.Columns["PRE_XCVR_LT"];
                 this.columnUCT = base.Columns["UCT"];
@@ -762,6 +800,7 @@ namespace BmecFlow {
                 this.columnDepthVal = base.Columns["DepthVal"];
                 this.columnCamera_SOIS = base.Columns["Camera_SOIS"];
                 this.columnACT = base.Columns["ACT"];
+                this.columnUWBRadTst = base.Columns["UWBRadTst"];
                 this.columnTOF = base.Columns["TOF"];
                 this.columnCFC = base.Columns["CFC"];
                 this.columnCQA = base.Columns["CQA"];
@@ -793,6 +832,10 @@ namespace BmecFlow {
                 base.Columns.Add(this.columnLEAK102);
                 this.columnLEAK103 = new global::System.Data.DataColumn("LEAK103", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLEAK103);
+                this.columnTELECAL = new global::System.Data.DataColumn("TELECAL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTELECAL);
+                this.columnTELEVAL = new global::System.Data.DataColumn("TELEVAL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTELEVAL);
                 this.columnXCVR_LT = new global::System.Data.DataColumn("XCVR_LT", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnXCVR_LT);
                 this.columnPRE_XCVR_LT = new global::System.Data.DataColumn("PRE_XCVR_LT", typeof(string), null, global::System.Data.MappingType.Element);
@@ -819,6 +862,8 @@ namespace BmecFlow {
                 base.Columns.Add(this.columnCamera_SOIS);
                 this.columnACT = new global::System.Data.DataColumn("ACT", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnACT);
+                this.columnUWBRadTst = new global::System.Data.DataColumn("UWBRadTst", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUWBRadTst);
                 this.columnTOF = new global::System.Data.DataColumn("TOF", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTOF);
                 this.columnCFC = new global::System.Data.DataColumn("CFC", typeof(string), null, global::System.Data.MappingType.Element);
@@ -850,6 +895,8 @@ namespace BmecFlow {
                 this.columnLEAK101.MaxLength = 255;
                 this.columnLEAK102.MaxLength = 255;
                 this.columnLEAK103.MaxLength = 255;
+                this.columnTELECAL.MaxLength = 255;
+                this.columnTELEVAL.MaxLength = 255;
                 this.columnXCVR_LT.MaxLength = 255;
                 this.columnPRE_XCVR_LT.MaxLength = 255;
                 this.columnUCT.MaxLength = 255;
@@ -863,6 +910,7 @@ namespace BmecFlow {
                 this.columnDepthVal.MaxLength = 255;
                 this.columnCamera_SOIS.MaxLength = 255;
                 this.columnACT.MaxLength = 255;
+                this.columnUWBRadTst.MaxLength = 255;
                 this.columnTOF.MaxLength = 255;
                 this.columnCFC.MaxLength = 255;
                 this.columnCQA.MaxLength = 255;
@@ -1152,6 +1200,38 @@ namespace BmecFlow {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TELECAL {
+                get {
+                    try {
+                        return ((string)(this[this.tableBFlow.TELECALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TELECAL\' in table \'BFlow\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBFlow.TELECALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TELEVAL {
+                get {
+                    try {
+                        return ((string)(this[this.tableBFlow.TELEVALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TELEVAL\' in table \'BFlow\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBFlow.TELEVALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string XCVR_LT {
                 get {
                     try {
@@ -1355,6 +1435,22 @@ namespace BmecFlow {
                 }
                 set {
                     this[this.tableBFlow.ACTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string UWBRadTst {
+                get {
+                    try {
+                        return ((string)(this[this.tableBFlow.UWBRadTstColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UWBRadTst\' in table \'BFlow\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBFlow.UWBRadTstColumn] = value;
                 }
             }
             
@@ -1584,6 +1680,30 @@ namespace BmecFlow {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTELECALNull() {
+                return this.IsNull(this.tableBFlow.TELECALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTELECALNull() {
+                this[this.tableBFlow.TELECALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTELEVALNull() {
+                return this.IsNull(this.tableBFlow.TELEVALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTELEVALNull() {
+                this[this.tableBFlow.TELEVALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsXCVR_LTNull() {
                 return this.IsNull(this.tableBFlow.XCVR_LTColumn);
             }
@@ -1736,6 +1856,18 @@ namespace BmecFlow {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetACTNull() {
                 this[this.tableBFlow.ACTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsUWBRadTstNull() {
+                return this.IsNull(this.tableBFlow.UWBRadTstColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetUWBRadTstNull() {
+                this[this.tableBFlow.UWBRadTstColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2003,6 +2135,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("LEAK101", "LEAK101");
             tableMapping.ColumnMappings.Add("LEAK102", "LEAK102");
             tableMapping.ColumnMappings.Add("LEAK103", "LEAK103");
+            tableMapping.ColumnMappings.Add("TELECAL", "TELECAL");
+            tableMapping.ColumnMappings.Add("TELEVAL", "TELEVAL");
             tableMapping.ColumnMappings.Add("XCVR_LT", "XCVR_LT");
             tableMapping.ColumnMappings.Add("PRE_XCVR_LT", "PRE_XCVR_LT");
             tableMapping.ColumnMappings.Add("UCT", "UCT");
@@ -2016,6 +2150,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("DepthVal", "DepthVal");
             tableMapping.ColumnMappings.Add("Camera_SOIS", "Camera_SOIS");
             tableMapping.ColumnMappings.Add("ACT", "ACT");
+            tableMapping.ColumnMappings.Add("UWBRadTst", "UWBRadTst");
             tableMapping.ColumnMappings.Add("TOF", "TOF");
             tableMapping.ColumnMappings.Add("CFC", "CFC");
             tableMapping.ColumnMappings.Add("CQA", "CQA");
@@ -2027,7 +2162,27 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `BFlow` WHERE ((`ID` = ?) AND ((? = 1 AND `Trackid` IS NULL) OR (`Trackid` = ?)) AND ((? = 1 AND `IFLASH` IS NULL) OR (`IFLASH` = ?)) AND ((? = 1 AND `BrdTest` IS NULL) OR (`BrdTest` = ?)) AND ((? = 1 AND `T5GFR1BdTst` IS NULL) OR (`T5GFR1BdTst` = ?)) AND ((? = 1 AND `PRINTLABEL` IS NULL) OR (`PRINTLABEL` = ?)) AND ((? = 1 AND `LEAK101` IS NULL) OR (`LEAK101` = ?)) AND ((? = 1 AND `LEAK102` IS NULL) OR (`LEAK102` = ?)) AND ((? = 1 AND `LEAK103` IS NULL) OR (`LEAK103` = ?)) AND ((? = 1 AND `XCVR_LT` IS NULL) OR (`XCVR_LT` = ?)) AND ((? = 1 AND `PRE_XCVR_LT` IS NULL) OR (`PRE_XCVR_LT` = ?)) AND ((? = 1 AND `UCT` IS NULL) OR (`UCT` = ?)) AND ((? = 1 AND `FODTEST` IS NULL) OR (`FODTEST` = ?)) AND ((? = 1 AND `L2VISION` IS NULL) OR (`L2VISION` = ?)) AND ((? = 1 AND `RadioSlim` IS NULL) OR (`RadioSlim` = ?)) AND ((? = 1 AND `LCDCAL` IS NULL) OR (`LCDCAL` = ?)) AND ((? = 1 AND `L2AR` IS NULL) OR (`L2AR` = ?)) AND ((? = 1 AND `SQT` IS NULL) OR (`SQT` = ?)) AND ((? = 1 AND `DepthCal` IS NULL) OR (`DepthCal` = ?)) AND ((? = 1 AND `DepthVal` IS NULL) OR (`DepthVal` = ?)) AND ((? = 1 AND `Camera_SOIS` IS NULL) OR (`Camera_SOIS` = ?)) AND ((? = 1 AND `ACT` IS NULL) OR (`ACT` = ?)) AND ((? = 1 AND `TOF` IS NULL) OR (`TOF` = ?)) AND ((? = 1 AND `CFC` IS NULL) OR (`CFC` = ?)) AND ((? = 1 AND `CQA` IS NULL) OR (`CQA` = ?)) AND ((? = 1 AND `CQA2` IS NULL) OR (`CQA2` = ?)) AND ((? = 1 AND `RUNNIN` IS NULL) OR (`RUNNIN` = ?)) AND ((? = 1 AND `BE` IS NULL) OR (`BE` = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `BFlow` WHERE ((`ID` = ?) AND ((? = 1 AND `Trackid` IS NULL) OR (`Tra" +
+                "ckid` = ?)) AND ((? = 1 AND `IFLASH` IS NULL) OR (`IFLASH` = ?)) AND ((? = 1 AND" +
+                " `BrdTest` IS NULL) OR (`BrdTest` = ?)) AND ((? = 1 AND `T5GFR1BdTst` IS NULL) O" +
+                "R (`T5GFR1BdTst` = ?)) AND ((? = 1 AND `PRINTLABEL` IS NULL) OR (`PRINTLABEL` = " +
+                "?)) AND ((? = 1 AND `LEAK101` IS NULL) OR (`LEAK101` = ?)) AND ((? = 1 AND `LEAK" +
+                "102` IS NULL) OR (`LEAK102` = ?)) AND ((? = 1 AND `LEAK103` IS NULL) OR (`LEAK10" +
+                "3` = ?)) AND ((? = 1 AND `TELECAL` IS NULL) OR (`TELECAL` = ?)) AND ((? = 1 AND " +
+                "`TELEVAL` IS NULL) OR (`TELEVAL` = ?)) AND ((? = 1 AND `XCVR_LT` IS NULL) OR (`X" +
+                "CVR_LT` = ?)) AND ((? = 1 AND `PRE_XCVR_LT` IS NULL) OR (`PRE_XCVR_LT` = ?)) AND" +
+                " ((? = 1 AND `UCT` IS NULL) OR (`UCT` = ?)) AND ((? = 1 AND `FODTEST` IS NULL) O" +
+                "R (`FODTEST` = ?)) AND ((? = 1 AND `L2VISION` IS NULL) OR (`L2VISION` = ?)) AND " +
+                "((? = 1 AND `RadioSlim` IS NULL) OR (`RadioSlim` = ?)) AND ((? = 1 AND `LCDCAL` " +
+                "IS NULL) OR (`LCDCAL` = ?)) AND ((? = 1 AND `L2AR` IS NULL) OR (`L2AR` = ?)) AND" +
+                " ((? = 1 AND `SQT` IS NULL) OR (`SQT` = ?)) AND ((? = 1 AND `DepthCal` IS NULL) " +
+                "OR (`DepthCal` = ?)) AND ((? = 1 AND `DepthVal` IS NULL) OR (`DepthVal` = ?)) AN" +
+                "D ((? = 1 AND `Camera_SOIS` IS NULL) OR (`Camera_SOIS` = ?)) AND ((? = 1 AND `AC" +
+                "T` IS NULL) OR (`ACT` = ?)) AND ((? = 1 AND `UWBRadTst` IS NULL) OR (`UWBRadTst`" +
+                " = ?)) AND ((? = 1 AND `TOF` IS NULL) OR (`TOF` = ?)) AND ((? = 1 AND `CFC` IS N" +
+                "ULL) OR (`CFC` = ?)) AND ((? = 1 AND `CQA` IS NULL) OR (`CQA` = ?)) AND ((? = 1 " +
+                "AND `CQA2` IS NULL) OR (`CQA2` = ?)) AND ((? = 1 AND `RUNNIN` IS NULL) OR (`RUNN" +
+                "IN` = ?)) AND ((? = 1 AND `BE` IS NULL) OR (`BE` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Trackid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Trackid", global::System.Data.DataRowVersion.Original, true, null));
@@ -2046,6 +2201,10 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LEAK102", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK102", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LEAK103", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LEAK103", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TELECAL", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TELECAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TELEVAL", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TELEVAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_XCVR_LT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PRE_XCVR_LT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PRE_XCVR_LT", global::System.Data.DataRowVersion.Original, true, null));
@@ -2072,6 +2231,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Camera_SOIS", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Camera_SOIS", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ACT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ACT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_UWBRadTst", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_UWBRadTst", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TOF", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TOF", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_CFC", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CFC", global::System.Data.DataRowVersion.Original, true, null));
@@ -2086,7 +2247,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_BE", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BE", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `BFlow` (`Trackid`, `IFLASH`, `BrdTest`, `T5GFR1BdTst`, `PRINTLABEL`, `LEAK101`, `LEAK102`, `LEAK103`, `XCVR_LT`, `PRE_XCVR_LT`, `UCT`, `FODTEST`, `L2VISION`, `RadioSlim`, `LCDCAL`, `L2AR`, `SQT`, `DepthCal`, `DepthVal`, `Camera_SOIS`, `ACT`, `TOF`, `CFC`, `CQA`, `CQA2`, `RUNNIN`, `BE`, `CQAOBS`, `FAILDETAILS`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `BFlow` (`Trackid`, `IFLASH`, `BrdTest`, `T5GFR1BdTst`, `PRINTLABEL`, `LEAK101`, `LEAK102`, `LEAK103`, `TELECAL`, `TELEVAL`, `XCVR_LT`, `PRE_XCVR_LT`, `UCT`, `FODTEST`, `L2VISION`, `RadioSlim`, `LCDCAL`, `L2AR`, `SQT`, `DepthCal`, `DepthVal`, `Camera_SOIS`, `ACT`, `UWBRadTst`, `TOF`, `CFC`, `CQA`, `CQA2`, `RUNNIN`, `BE`, `CQAOBS`, `FAILDETAILS`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Trackid", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Trackid", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IFLASH", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IFLASH", global::System.Data.DataRowVersion.Current, false, null));
@@ -2096,6 +2257,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK101", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK101", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK102", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK102", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK103", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TELECAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TELEVAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PRE_XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PRE_XCVR_LT", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("UCT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UCT", global::System.Data.DataRowVersion.Current, false, null));
@@ -2109,6 +2272,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DepthVal", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DepthVal", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Camera_SOIS", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Camera_SOIS", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ACT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("UWBRadTst", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TOF", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CFC", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CFC", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CQA", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CQA", global::System.Data.DataRowVersion.Current, false, null));
@@ -2120,29 +2284,32 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE `BFlow` SET `Trackid` = ?, `IFLASH` = ?, `BrdTest` = ?, `T5GFR1BdTst` = ?," +
-                " `PRINTLABEL` = ?, `LEAK101` = ?, `LEAK102` = ?, `LEAK103` = ?, `XCVR_LT` = ?, `" +
-                "PRE_XCVR_LT` = ?, `UCT` = ?, `FODTEST` = ?, `L2VISION` = ?, `RadioSlim` = ?, `LC" +
-                "DCAL` = ?, `L2AR` = ?, `SQT` = ?, `DepthCal` = ?, `DepthVal` = ?, `Camera_SOIS` " +
-                "= ?, `ACT` = ?, `TOF` = ?, `CFC` = ?, `CQA` = ?, `CQA2` = ?, `RUNNIN` = ?, `BE` " +
-                "= ?, `CQAOBS` = ?, `FAILDETAILS` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Trackid`" +
-                " IS NULL) OR (`Trackid` = ?)) AND ((? = 1 AND `IFLASH` IS NULL) OR (`IFLASH` = ?" +
-                ")) AND ((? = 1 AND `BrdTest` IS NULL) OR (`BrdTest` = ?)) AND ((? = 1 AND `T5GFR" +
-                "1BdTst` IS NULL) OR (`T5GFR1BdTst` = ?)) AND ((? = 1 AND `PRINTLABEL` IS NULL) O" +
-                "R (`PRINTLABEL` = ?)) AND ((? = 1 AND `LEAK101` IS NULL) OR (`LEAK101` = ?)) AND" +
-                " ((? = 1 AND `LEAK102` IS NULL) OR (`LEAK102` = ?)) AND ((? = 1 AND `LEAK103` IS" +
-                " NULL) OR (`LEAK103` = ?)) AND ((? = 1 AND `XCVR_LT` IS NULL) OR (`XCVR_LT` = ?)" +
-                ") AND ((? = 1 AND `PRE_XCVR_LT` IS NULL) OR (`PRE_XCVR_LT` = ?)) AND ((? = 1 AND" +
-                " `UCT` IS NULL) OR (`UCT` = ?)) AND ((? = 1 AND `FODTEST` IS NULL) OR (`FODTEST`" +
-                " = ?)) AND ((? = 1 AND `L2VISION` IS NULL) OR (`L2VISION` = ?)) AND ((? = 1 AND " +
-                "`RadioSlim` IS NULL) OR (`RadioSlim` = ?)) AND ((? = 1 AND `LCDCAL` IS NULL) OR " +
-                "(`LCDCAL` = ?)) AND ((? = 1 AND `L2AR` IS NULL) OR (`L2AR` = ?)) AND ((? = 1 AND" +
-                " `SQT` IS NULL) OR (`SQT` = ?)) AND ((? = 1 AND `DepthCal` IS NULL) OR (`DepthCa" +
-                "l` = ?)) AND ((? = 1 AND `DepthVal` IS NULL) OR (`DepthVal` = ?)) AND ((? = 1 AN" +
-                "D `Camera_SOIS` IS NULL) OR (`Camera_SOIS` = ?)) AND ((? = 1 AND `ACT` IS NULL) " +
-                "OR (`ACT` = ?)) AND ((? = 1 AND `TOF` IS NULL) OR (`TOF` = ?)) AND ((? = 1 AND `" +
-                "CFC` IS NULL) OR (`CFC` = ?)) AND ((? = 1 AND `CQA` IS NULL) OR (`CQA` = ?)) AND" +
-                " ((? = 1 AND `CQA2` IS NULL) OR (`CQA2` = ?)) AND ((? = 1 AND `RUNNIN` IS NULL) " +
-                "OR (`RUNNIN` = ?)) AND ((? = 1 AND `BE` IS NULL) OR (`BE` = ?)))";
+                " `PRINTLABEL` = ?, `LEAK101` = ?, `LEAK102` = ?, `LEAK103` = ?, `TELECAL` = ?, `" +
+                "TELEVAL` = ?, `XCVR_LT` = ?, `PRE_XCVR_LT` = ?, `UCT` = ?, `FODTEST` = ?, `L2VIS" +
+                "ION` = ?, `RadioSlim` = ?, `LCDCAL` = ?, `L2AR` = ?, `SQT` = ?, `DepthCal` = ?, " +
+                "`DepthVal` = ?, `Camera_SOIS` = ?, `ACT` = ?, `UWBRadTst` = ?, `TOF` = ?, `CFC` " +
+                "= ?, `CQA` = ?, `CQA2` = ?, `RUNNIN` = ?, `BE` = ?, `CQAOBS` = ?, `FAILDETAILS` " +
+                "= ? WHERE ((`ID` = ?) AND ((? = 1 AND `Trackid` IS NULL) OR (`Trackid` = ?)) AND" +
+                " ((? = 1 AND `IFLASH` IS NULL) OR (`IFLASH` = ?)) AND ((? = 1 AND `BrdTest` IS N" +
+                "ULL) OR (`BrdTest` = ?)) AND ((? = 1 AND `T5GFR1BdTst` IS NULL) OR (`T5GFR1BdTst" +
+                "` = ?)) AND ((? = 1 AND `PRINTLABEL` IS NULL) OR (`PRINTLABEL` = ?)) AND ((? = 1" +
+                " AND `LEAK101` IS NULL) OR (`LEAK101` = ?)) AND ((? = 1 AND `LEAK102` IS NULL) O" +
+                "R (`LEAK102` = ?)) AND ((? = 1 AND `LEAK103` IS NULL) OR (`LEAK103` = ?)) AND ((" +
+                "? = 1 AND `TELECAL` IS NULL) OR (`TELECAL` = ?)) AND ((? = 1 AND `TELEVAL` IS NU" +
+                "LL) OR (`TELEVAL` = ?)) AND ((? = 1 AND `XCVR_LT` IS NULL) OR (`XCVR_LT` = ?)) A" +
+                "ND ((? = 1 AND `PRE_XCVR_LT` IS NULL) OR (`PRE_XCVR_LT` = ?)) AND ((? = 1 AND `U" +
+                "CT` IS NULL) OR (`UCT` = ?)) AND ((? = 1 AND `FODTEST` IS NULL) OR (`FODTEST` = " +
+                "?)) AND ((? = 1 AND `L2VISION` IS NULL) OR (`L2VISION` = ?)) AND ((? = 1 AND `Ra" +
+                "dioSlim` IS NULL) OR (`RadioSlim` = ?)) AND ((? = 1 AND `LCDCAL` IS NULL) OR (`L" +
+                "CDCAL` = ?)) AND ((? = 1 AND `L2AR` IS NULL) OR (`L2AR` = ?)) AND ((? = 1 AND `S" +
+                "QT` IS NULL) OR (`SQT` = ?)) AND ((? = 1 AND `DepthCal` IS NULL) OR (`DepthCal` " +
+                "= ?)) AND ((? = 1 AND `DepthVal` IS NULL) OR (`DepthVal` = ?)) AND ((? = 1 AND `" +
+                "Camera_SOIS` IS NULL) OR (`Camera_SOIS` = ?)) AND ((? = 1 AND `ACT` IS NULL) OR " +
+                "(`ACT` = ?)) AND ((? = 1 AND `UWBRadTst` IS NULL) OR (`UWBRadTst` = ?)) AND ((? " +
+                "= 1 AND `TOF` IS NULL) OR (`TOF` = ?)) AND ((? = 1 AND `CFC` IS NULL) OR (`CFC` " +
+                "= ?)) AND ((? = 1 AND `CQA` IS NULL) OR (`CQA` = ?)) AND ((? = 1 AND `CQA2` IS N" +
+                "ULL) OR (`CQA2` = ?)) AND ((? = 1 AND `RUNNIN` IS NULL) OR (`RUNNIN` = ?)) AND (" +
+                "(? = 1 AND `BE` IS NULL) OR (`BE` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Trackid", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Trackid", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IFLASH", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IFLASH", global::System.Data.DataRowVersion.Current, false, null));
@@ -2152,6 +2319,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK101", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK101", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK102", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK102", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LEAK103", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TELECAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TELEVAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PRE_XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PRE_XCVR_LT", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("UCT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UCT", global::System.Data.DataRowVersion.Current, false, null));
@@ -2165,6 +2334,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DepthVal", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DepthVal", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Camera_SOIS", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Camera_SOIS", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ACT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("UWBRadTst", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TOF", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CFC", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CFC", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CQA", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CQA", global::System.Data.DataRowVersion.Current, false, null));
@@ -2190,6 +2360,10 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LEAK102", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK102", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LEAK103", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LEAK103", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LEAK103", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TELECAL", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TELECAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELECAL", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TELEVAL", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TELEVAL", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TELEVAL", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_XCVR_LT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_XCVR_LT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "XCVR_LT", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PRE_XCVR_LT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PRE_XCVR_LT", global::System.Data.DataRowVersion.Original, true, null));
@@ -2216,6 +2390,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Camera_SOIS", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Camera_SOIS", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ACT", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ACT", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ACT", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_UWBRadTst", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_UWBRadTst", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UWBRadTst", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TOF", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TOF", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TOF", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_CFC", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CFC", global::System.Data.DataRowVersion.Original, true, null));
@@ -2243,7 +2419,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT ID, Trackid, IFLASH, BrdTest, T5GFR1BdTst, PRINTLABEL, LEAK101, LEAK102, LEAK103, XCVR_LT, PRE_XCVR_LT, UCT, FODTEST, L2VISION, RadioSlim, LCDCAL, L2AR, SQT, DepthCal, DepthVal, Camera_SOIS, ACT, TOF, CFC, CQA, CQA2, RUNNIN, BE, CQAOBS, FAILDETAILS FROM BFlow";
+            this._commandCollection[0].CommandText = @"SELECT ID, Trackid, IFLASH, BrdTest, T5GFR1BdTst, PRINTLABEL, LEAK101, LEAK102, LEAK103, TELECAL, TELEVAL, XCVR_LT, PRE_XCVR_LT, UCT, FODTEST, L2VISION, RadioSlim, LCDCAL, L2AR, SQT, DepthCal, DepthVal, Camera_SOIS, ACT, UWBRadTst, TOF, CFC, CQA, CQA2, RUNNIN, BE, CQAOBS, FAILDETAILS FROM BFlow";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2314,6 +2490,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string Original_LEAK101, 
                     string Original_LEAK102, 
                     string Original_LEAK103, 
+                    string Original_TELECAL, 
+                    string Original_TELEVAL, 
                     string Original_XCVR_LT, 
                     string Original_PRE_XCVR_LT, 
                     string Original_UCT, 
@@ -2327,6 +2505,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string Original_DepthVal, 
                     string Original_Camera_SOIS, 
                     string Original_ACT, 
+                    string Original_UWBRadTst, 
                     string Original_TOF, 
                     string Original_CFC, 
                     string Original_CQA, 
@@ -2398,157 +2577,181 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_LEAK103));
             }
-            if ((Original_XCVR_LT == null)) {
+            if ((Original_TELECAL == null)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_XCVR_LT));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_TELECAL));
             }
-            if ((Original_PRE_XCVR_LT == null)) {
+            if ((Original_TELEVAL == null)) {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_PRE_XCVR_LT));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_TELEVAL));
             }
-            if ((Original_UCT == null)) {
+            if ((Original_XCVR_LT == null)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_UCT));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_XCVR_LT));
             }
-            if ((Original_FODTEST == null)) {
+            if ((Original_PRE_XCVR_LT == null)) {
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_FODTEST));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_PRE_XCVR_LT));
             }
-            if ((Original_L2VISION == null)) {
+            if ((Original_UCT == null)) {
                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_L2VISION));
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_UCT));
             }
-            if ((Original_RadioSlim == null)) {
+            if ((Original_FODTEST == null)) {
                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_RadioSlim));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_FODTEST));
             }
-            if ((Original_LCDCAL == null)) {
+            if ((Original_L2VISION == null)) {
                 this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_LCDCAL));
+                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_L2VISION));
             }
-            if ((Original_L2AR == null)) {
+            if ((Original_RadioSlim == null)) {
                 this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[32].Value = ((string)(Original_L2AR));
+                this.Adapter.DeleteCommand.Parameters[32].Value = ((string)(Original_RadioSlim));
             }
-            if ((Original_SQT == null)) {
+            if ((Original_LCDCAL == null)) {
                 this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[34].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original_SQT));
+                this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original_LCDCAL));
             }
-            if ((Original_DepthCal == null)) {
+            if ((Original_L2AR == null)) {
                 this.Adapter.DeleteCommand.Parameters[35].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[36].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[35].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[36].Value = ((string)(Original_DepthCal));
+                this.Adapter.DeleteCommand.Parameters[36].Value = ((string)(Original_L2AR));
             }
-            if ((Original_DepthVal == null)) {
+            if ((Original_SQT == null)) {
                 this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[38].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[38].Value = ((string)(Original_DepthVal));
+                this.Adapter.DeleteCommand.Parameters[38].Value = ((string)(Original_SQT));
             }
-            if ((Original_Camera_SOIS == null)) {
+            if ((Original_DepthCal == null)) {
                 this.Adapter.DeleteCommand.Parameters[39].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[40].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[39].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[40].Value = ((string)(Original_Camera_SOIS));
+                this.Adapter.DeleteCommand.Parameters[40].Value = ((string)(Original_DepthCal));
             }
-            if ((Original_ACT == null)) {
+            if ((Original_DepthVal == null)) {
                 this.Adapter.DeleteCommand.Parameters[41].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[42].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[41].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[42].Value = ((string)(Original_ACT));
+                this.Adapter.DeleteCommand.Parameters[42].Value = ((string)(Original_DepthVal));
             }
-            if ((Original_TOF == null)) {
+            if ((Original_Camera_SOIS == null)) {
                 this.Adapter.DeleteCommand.Parameters[43].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[44].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[43].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[44].Value = ((string)(Original_TOF));
+                this.Adapter.DeleteCommand.Parameters[44].Value = ((string)(Original_Camera_SOIS));
             }
-            if ((Original_CFC == null)) {
+            if ((Original_ACT == null)) {
                 this.Adapter.DeleteCommand.Parameters[45].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[46].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[45].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[46].Value = ((string)(Original_CFC));
+                this.Adapter.DeleteCommand.Parameters[46].Value = ((string)(Original_ACT));
             }
-            if ((Original_CQA == null)) {
+            if ((Original_UWBRadTst == null)) {
                 this.Adapter.DeleteCommand.Parameters[47].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[48].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[47].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[48].Value = ((string)(Original_CQA));
+                this.Adapter.DeleteCommand.Parameters[48].Value = ((string)(Original_UWBRadTst));
             }
-            if ((Original_CQA2 == null)) {
+            if ((Original_TOF == null)) {
                 this.Adapter.DeleteCommand.Parameters[49].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[50].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[49].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[50].Value = ((string)(Original_CQA2));
+                this.Adapter.DeleteCommand.Parameters[50].Value = ((string)(Original_TOF));
             }
-            if ((Original_RUNNIN == null)) {
+            if ((Original_CFC == null)) {
                 this.Adapter.DeleteCommand.Parameters[51].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[52].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[51].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[52].Value = ((string)(Original_RUNNIN));
+                this.Adapter.DeleteCommand.Parameters[52].Value = ((string)(Original_CFC));
             }
-            if ((Original_BE == null)) {
+            if ((Original_CQA == null)) {
                 this.Adapter.DeleteCommand.Parameters[53].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[54].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[53].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[54].Value = ((string)(Original_BE));
+                this.Adapter.DeleteCommand.Parameters[54].Value = ((string)(Original_CQA));
+            }
+            if ((Original_CQA2 == null)) {
+                this.Adapter.DeleteCommand.Parameters[55].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[56].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[55].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[56].Value = ((string)(Original_CQA2));
+            }
+            if ((Original_RUNNIN == null)) {
+                this.Adapter.DeleteCommand.Parameters[57].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[58].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[57].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[58].Value = ((string)(Original_RUNNIN));
+            }
+            if ((Original_BE == null)) {
+                this.Adapter.DeleteCommand.Parameters[59].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[60].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[59].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[60].Value = ((string)(Original_BE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2579,6 +2782,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string LEAK101, 
                     string LEAK102, 
                     string LEAK103, 
+                    string TELECAL, 
+                    string TELEVAL, 
                     string XCVR_LT, 
                     string PRE_XCVR_LT, 
                     string UCT, 
@@ -2592,6 +2797,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string DepthVal, 
                     string Camera_SOIS, 
                     string ACT, 
+                    string UWBRadTst, 
                     string TOF, 
                     string CFC, 
                     string CQA, 
@@ -2648,131 +2854,149 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = ((string)(LEAK103));
             }
-            if ((XCVR_LT == null)) {
+            if ((TELECAL == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(XCVR_LT));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(TELECAL));
             }
-            if ((PRE_XCVR_LT == null)) {
+            if ((TELEVAL == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(PRE_XCVR_LT));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(TELEVAL));
             }
-            if ((UCT == null)) {
+            if ((XCVR_LT == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(UCT));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(XCVR_LT));
             }
-            if ((FODTEST == null)) {
+            if ((PRE_XCVR_LT == null)) {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(FODTEST));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(PRE_XCVR_LT));
             }
-            if ((L2VISION == null)) {
+            if ((UCT == null)) {
                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(L2VISION));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(UCT));
             }
-            if ((RadioSlim == null)) {
+            if ((FODTEST == null)) {
                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(RadioSlim));
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(FODTEST));
             }
-            if ((LCDCAL == null)) {
+            if ((L2VISION == null)) {
                 this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(LCDCAL));
+                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(L2VISION));
             }
-            if ((L2AR == null)) {
+            if ((RadioSlim == null)) {
                 this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(L2AR));
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(RadioSlim));
             }
-            if ((SQT == null)) {
+            if ((LCDCAL == null)) {
                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(SQT));
+                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(LCDCAL));
             }
-            if ((DepthCal == null)) {
+            if ((L2AR == null)) {
                 this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[17].Value = ((string)(DepthCal));
+                this.Adapter.InsertCommand.Parameters[17].Value = ((string)(L2AR));
             }
-            if ((DepthVal == null)) {
+            if ((SQT == null)) {
                 this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(DepthVal));
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(SQT));
             }
-            if ((Camera_SOIS == null)) {
+            if ((DepthCal == null)) {
                 this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(Camera_SOIS));
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(DepthCal));
             }
-            if ((ACT == null)) {
+            if ((DepthVal == null)) {
                 this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ACT));
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(DepthVal));
             }
-            if ((TOF == null)) {
+            if ((Camera_SOIS == null)) {
                 this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(TOF));
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(Camera_SOIS));
             }
-            if ((CFC == null)) {
+            if ((ACT == null)) {
                 this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(CFC));
+                this.Adapter.InsertCommand.Parameters[22].Value = ((string)(ACT));
             }
-            if ((CQA == null)) {
+            if ((UWBRadTst == null)) {
                 this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(CQA));
+                this.Adapter.InsertCommand.Parameters[23].Value = ((string)(UWBRadTst));
             }
-            if ((CQA2 == null)) {
+            if ((TOF == null)) {
                 this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(CQA2));
+                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(TOF));
             }
-            if ((RUNNIN == null)) {
+            if ((CFC == null)) {
                 this.Adapter.InsertCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(RUNNIN));
+                this.Adapter.InsertCommand.Parameters[25].Value = ((string)(CFC));
             }
-            if ((BE == null)) {
+            if ((CQA == null)) {
                 this.Adapter.InsertCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(BE));
+                this.Adapter.InsertCommand.Parameters[26].Value = ((string)(CQA));
             }
-            if ((CQAOBS == null)) {
+            if ((CQA2 == null)) {
                 this.Adapter.InsertCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(CQAOBS));
+                this.Adapter.InsertCommand.Parameters[27].Value = ((string)(CQA2));
             }
-            if ((FAILDETAILS == null)) {
+            if ((RUNNIN == null)) {
                 this.Adapter.InsertCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(FAILDETAILS));
+                this.Adapter.InsertCommand.Parameters[28].Value = ((string)(RUNNIN));
+            }
+            if ((BE == null)) {
+                this.Adapter.InsertCommand.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[29].Value = ((string)(BE));
+            }
+            if ((CQAOBS == null)) {
+                this.Adapter.InsertCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[30].Value = ((string)(CQAOBS));
+            }
+            if ((FAILDETAILS == null)) {
+                this.Adapter.InsertCommand.Parameters[31].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[31].Value = ((string)(FAILDETAILS));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2803,6 +3027,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string LEAK101, 
                     string LEAK102, 
                     string LEAK103, 
+                    string TELECAL, 
+                    string TELEVAL, 
                     string XCVR_LT, 
                     string PRE_XCVR_LT, 
                     string UCT, 
@@ -2816,6 +3042,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string DepthVal, 
                     string Camera_SOIS, 
                     string ACT, 
+                    string UWBRadTst, 
                     string TOF, 
                     string CFC, 
                     string CQA, 
@@ -2833,6 +3060,8 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string Original_LEAK101, 
                     string Original_LEAK102, 
                     string Original_LEAK103, 
+                    string Original_TELECAL, 
+                    string Original_TELEVAL, 
                     string Original_XCVR_LT, 
                     string Original_PRE_XCVR_LT, 
                     string Original_UCT, 
@@ -2846,6 +3075,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
                     string Original_DepthVal, 
                     string Original_Camera_SOIS, 
                     string Original_ACT, 
+                    string Original_UWBRadTst, 
                     string Original_TOF, 
                     string Original_CFC, 
                     string Original_CQA, 
@@ -2900,348 +3130,390 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(LEAK103));
             }
-            if ((XCVR_LT == null)) {
+            if ((TELECAL == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(XCVR_LT));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(TELECAL));
             }
-            if ((PRE_XCVR_LT == null)) {
+            if ((TELEVAL == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(PRE_XCVR_LT));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(TELEVAL));
             }
-            if ((UCT == null)) {
+            if ((XCVR_LT == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(UCT));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(XCVR_LT));
             }
-            if ((FODTEST == null)) {
+            if ((PRE_XCVR_LT == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(FODTEST));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(PRE_XCVR_LT));
             }
-            if ((L2VISION == null)) {
+            if ((UCT == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(L2VISION));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(UCT));
             }
-            if ((RadioSlim == null)) {
+            if ((FODTEST == null)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(RadioSlim));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(FODTEST));
             }
-            if ((LCDCAL == null)) {
+            if ((L2VISION == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(LCDCAL));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(L2VISION));
             }
-            if ((L2AR == null)) {
+            if ((RadioSlim == null)) {
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(L2AR));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(RadioSlim));
             }
-            if ((SQT == null)) {
+            if ((LCDCAL == null)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(SQT));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(LCDCAL));
             }
-            if ((DepthCal == null)) {
+            if ((L2AR == null)) {
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(DepthCal));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(L2AR));
             }
-            if ((DepthVal == null)) {
+            if ((SQT == null)) {
                 this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(DepthVal));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(SQT));
             }
-            if ((Camera_SOIS == null)) {
+            if ((DepthCal == null)) {
                 this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Camera_SOIS));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(DepthCal));
             }
-            if ((ACT == null)) {
+            if ((DepthVal == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(ACT));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(DepthVal));
             }
-            if ((TOF == null)) {
+            if ((Camera_SOIS == null)) {
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(TOF));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Camera_SOIS));
             }
-            if ((CFC == null)) {
+            if ((ACT == null)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(CFC));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(ACT));
             }
-            if ((CQA == null)) {
+            if ((UWBRadTst == null)) {
                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(CQA));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(UWBRadTst));
             }
-            if ((CQA2 == null)) {
+            if ((TOF == null)) {
                 this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(CQA2));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(TOF));
             }
-            if ((RUNNIN == null)) {
+            if ((CFC == null)) {
                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(RUNNIN));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(CFC));
             }
-            if ((BE == null)) {
+            if ((CQA == null)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(BE));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(CQA));
             }
-            if ((CQAOBS == null)) {
+            if ((CQA2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(CQAOBS));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(CQA2));
             }
-            if ((FAILDETAILS == null)) {
+            if ((RUNNIN == null)) {
                 this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(FAILDETAILS));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(RUNNIN));
             }
-            this.Adapter.UpdateCommand.Parameters[29].Value = ((int)(Original_ID));
-            if ((Original_Trackid == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
+            if ((BE == null)) {
+                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(BE));
+            }
+            if ((CQAOBS == null)) {
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(CQAOBS));
+            }
+            if ((FAILDETAILS == null)) {
                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_Trackid));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(FAILDETAILS));
+            }
+            this.Adapter.UpdateCommand.Parameters[32].Value = ((int)(Original_ID));
+            if ((Original_Trackid == null)) {
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_Trackid));
             }
             if ((Original_IFLASH == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_IFLASH));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_IFLASH));
             }
             if ((Original_BrdTest == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_BrdTest));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_BrdTest));
             }
             if ((Original_T5GFR1BdTst == null)) {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[40].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_T5GFR1BdTst));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_T5GFR1BdTst));
             }
             if ((Original_PRINTLABEL == null)) {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[42].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_PRINTLABEL));
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((string)(Original_PRINTLABEL));
             }
             if ((Original_LEAK101 == null)) {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[41].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[44].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((string)(Original_LEAK101));
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[44].Value = ((string)(Original_LEAK101));
             }
             if ((Original_LEAK102 == null)) {
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[46].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(Original_LEAK102));
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[46].Value = ((string)(Original_LEAK102));
             }
             if ((Original_LEAK103 == null)) {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[48].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_LEAK103));
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((string)(Original_LEAK103));
+            }
+            if ((Original_TELECAL == null)) {
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[50].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((string)(Original_TELECAL));
+            }
+            if ((Original_TELEVAL == null)) {
+                this.Adapter.UpdateCommand.Parameters[51].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[52].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[51].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[52].Value = ((string)(Original_TELEVAL));
             }
             if ((Original_XCVR_LT == null)) {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[53].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[54].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original_XCVR_LT));
+                this.Adapter.UpdateCommand.Parameters[53].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[54].Value = ((string)(Original_XCVR_LT));
             }
             if ((Original_PRE_XCVR_LT == null)) {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[55].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[56].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_PRE_XCVR_LT));
+                this.Adapter.UpdateCommand.Parameters[55].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[56].Value = ((string)(Original_PRE_XCVR_LT));
             }
             if ((Original_UCT == null)) {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[57].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[58].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original_UCT));
+                this.Adapter.UpdateCommand.Parameters[57].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[58].Value = ((string)(Original_UCT));
             }
             if ((Original_FODTEST == null)) {
-                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[53].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[59].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[60].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[53].Value = ((string)(Original_FODTEST));
+                this.Adapter.UpdateCommand.Parameters[59].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[60].Value = ((string)(Original_FODTEST));
             }
             if ((Original_L2VISION == null)) {
-                this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[55].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[61].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[62].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[55].Value = ((string)(Original_L2VISION));
+                this.Adapter.UpdateCommand.Parameters[61].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[62].Value = ((string)(Original_L2VISION));
             }
             if ((Original_RadioSlim == null)) {
-                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[57].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[63].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[64].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[57].Value = ((string)(Original_RadioSlim));
+                this.Adapter.UpdateCommand.Parameters[63].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[64].Value = ((string)(Original_RadioSlim));
             }
             if ((Original_LCDCAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[58].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[59].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[65].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[66].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[58].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[59].Value = ((string)(Original_LCDCAL));
+                this.Adapter.UpdateCommand.Parameters[65].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[66].Value = ((string)(Original_LCDCAL));
             }
             if ((Original_L2AR == null)) {
-                this.Adapter.UpdateCommand.Parameters[60].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[61].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[67].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[68].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[60].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[61].Value = ((string)(Original_L2AR));
+                this.Adapter.UpdateCommand.Parameters[67].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[68].Value = ((string)(Original_L2AR));
             }
             if ((Original_SQT == null)) {
-                this.Adapter.UpdateCommand.Parameters[62].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[63].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[69].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[70].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[62].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[63].Value = ((string)(Original_SQT));
+                this.Adapter.UpdateCommand.Parameters[69].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[70].Value = ((string)(Original_SQT));
             }
             if ((Original_DepthCal == null)) {
-                this.Adapter.UpdateCommand.Parameters[64].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[65].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[71].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[72].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[64].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[65].Value = ((string)(Original_DepthCal));
+                this.Adapter.UpdateCommand.Parameters[71].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[72].Value = ((string)(Original_DepthCal));
             }
             if ((Original_DepthVal == null)) {
-                this.Adapter.UpdateCommand.Parameters[66].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[67].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[73].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[74].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[66].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[67].Value = ((string)(Original_DepthVal));
+                this.Adapter.UpdateCommand.Parameters[73].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[74].Value = ((string)(Original_DepthVal));
             }
             if ((Original_Camera_SOIS == null)) {
-                this.Adapter.UpdateCommand.Parameters[68].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[69].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[75].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[76].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[68].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[69].Value = ((string)(Original_Camera_SOIS));
+                this.Adapter.UpdateCommand.Parameters[75].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[76].Value = ((string)(Original_Camera_SOIS));
             }
             if ((Original_ACT == null)) {
-                this.Adapter.UpdateCommand.Parameters[70].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[71].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[77].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[78].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[70].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[71].Value = ((string)(Original_ACT));
+                this.Adapter.UpdateCommand.Parameters[77].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[78].Value = ((string)(Original_ACT));
+            }
+            if ((Original_UWBRadTst == null)) {
+                this.Adapter.UpdateCommand.Parameters[79].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[80].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[79].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[80].Value = ((string)(Original_UWBRadTst));
             }
             if ((Original_TOF == null)) {
-                this.Adapter.UpdateCommand.Parameters[72].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[73].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[81].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[82].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[72].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[73].Value = ((string)(Original_TOF));
+                this.Adapter.UpdateCommand.Parameters[81].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[82].Value = ((string)(Original_TOF));
             }
             if ((Original_CFC == null)) {
-                this.Adapter.UpdateCommand.Parameters[74].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[75].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[83].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[84].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[74].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[75].Value = ((string)(Original_CFC));
+                this.Adapter.UpdateCommand.Parameters[83].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[84].Value = ((string)(Original_CFC));
             }
             if ((Original_CQA == null)) {
-                this.Adapter.UpdateCommand.Parameters[76].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[77].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[85].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[86].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[76].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[77].Value = ((string)(Original_CQA));
+                this.Adapter.UpdateCommand.Parameters[85].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[86].Value = ((string)(Original_CQA));
             }
             if ((Original_CQA2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[78].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[79].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[87].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[88].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[78].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[79].Value = ((string)(Original_CQA2));
+                this.Adapter.UpdateCommand.Parameters[87].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[88].Value = ((string)(Original_CQA2));
             }
             if ((Original_RUNNIN == null)) {
-                this.Adapter.UpdateCommand.Parameters[80].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[81].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[89].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[90].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[80].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[81].Value = ((string)(Original_RUNNIN));
+                this.Adapter.UpdateCommand.Parameters[89].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[90].Value = ((string)(Original_RUNNIN));
             }
             if ((Original_BE == null)) {
-                this.Adapter.UpdateCommand.Parameters[82].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[83].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[91].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[92].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[82].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[83].Value = ((string)(Original_BE));
+                this.Adapter.UpdateCommand.Parameters[91].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[92].Value = ((string)(Original_BE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
