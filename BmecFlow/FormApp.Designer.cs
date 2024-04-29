@@ -1329,7 +1329,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BmecFlow v2.1";
+            this.Text = "BmecFlow v2.2";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();

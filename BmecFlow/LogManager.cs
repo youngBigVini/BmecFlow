@@ -56,7 +56,7 @@ namespace BmecFlow
                                 if (line.Contains("5GFR1BdTst"))
                                     line = line.Replace("5GFR1BdTst", "T5GFR1BdTst");
 
-                                if (line.Contains("TH4") && !line.Contains("LEAK") && !line.Contains("L2VISIONCAL") && !line.Contains("L2ARNORM") && !line.Contains("L2ARGEN") && !line.Contains("RadioTst_VisCal") && !line.Contains("RGB_TEST"))
+                                if (line.Contains("TH4") && !line.Contains("LEAK") && !line.Contains("L2VISIONCAL") && !line.Contains("L2ARNORM") && !line.Contains("L2ARGEN") && !line.Contains("RadioTst_VisCal") && !line.Contains("RGB_TEST") && !line.Contains("RadioTst_V"))
                                     getPatternAndWriteToDB(line);
                             }
                         }
