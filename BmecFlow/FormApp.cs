@@ -57,7 +57,10 @@ namespace BmecFlow
             {
                 buttonRun.Text = "Running!";
                 if (comboBoxStationType.Text == "IFLASH")
+                {
                     startTimer();
+                    textBoxTrackID.Enabled = false;
+                }
                 else
                 {
                     buttonRun.BackColor = Color.Green;
