@@ -9,7 +9,7 @@ namespace BmecFlow
 {
     class SQLManager
     {
-        string dbConnection = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = X:\DC\BmecFlow\db\BmecFlow.mdb";
+        string dbConnection = Properties.Settings.Default.BmecFlowConnectionString;
         public void InsertToMdb(string trackID, string stationType, string result)
         {
             bool status = false;

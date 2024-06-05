@@ -26,32 +26,10 @@ namespace BmecFlow.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"C:\\DEVELOPMENT PROJECTS\\BMECFLOW\\Bm" +
-            "ecFlow\\db\\BmecFlow.mdb\"")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:\\DC\\BmecFlow\\db\\BmecFlow.mdb")]
         public string BmecFlowConnectionString {
             get {
                 return ((string)(this["BmecFlowConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"C:\\DEVELOPMENT PROJECTS\\BmecFlow\\db" +
-            "\\BmecFlow.mdb\"")]
-        public string BmecFlowConnectionString1 {
-            get {
-                return ((string)(this["BmecFlowConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:\\DC\\BmecFlow\\db\\BmecFlow.mdb")]
-        public string BmecFlowConnectionString2 {
-            get {
-                return ((string)(this["BmecFlowConnectionString2"]));
             }
         }
     }

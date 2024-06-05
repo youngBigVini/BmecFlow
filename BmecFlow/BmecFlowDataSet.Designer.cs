@@ -2410,7 +2410,7 @@ namespace BmecFlow.BmecFlowDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::BmecFlow.Properties.Settings.Default.BmecFlowConnectionString2;
+            this._connection.ConnectionString = global::BmecFlow.Properties.Settings.Default.BmecFlowConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
