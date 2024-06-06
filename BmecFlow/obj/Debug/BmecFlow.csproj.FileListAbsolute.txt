@@ -26,3 +26,4 @@ C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateReso
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.CoreCompileInputs.cache
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
+C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojAssemblyReference.cache

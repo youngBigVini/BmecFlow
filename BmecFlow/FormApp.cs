@@ -184,19 +184,14 @@ namespace BmecFlow
                 try
                 {
                     File.WriteAllText(dbDir + textBoxProductName.Text + cfgPattern, textBoxProductName.Text + "\n" + comboBoxRouteME.Text + "," + comboBoxRouteBE.Text);
+                    MessageBox.Show("Rota criada com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
                 catch
                 {
                     MessageBox.Show("Erro ao criar a ROTA do produto!!!", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                finally
-                {
-                    MessageBox.Show("Rota criada com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
-
-                }
             }
         }
-
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
             datagridViewUpdateData();
