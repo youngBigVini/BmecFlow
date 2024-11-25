@@ -41,7 +41,7 @@ namespace BmecFlow
             }
 
         }
-        private bool DoesTrackIDExist(string trackID)
+        public bool DoesTrackIDExist(string trackID)
         {
             bool result = false;
             DataTable dtTemp = new DataTable();
@@ -186,7 +186,7 @@ namespace BmecFlow
 
                             foreach (DataRow row in tbl.Rows)
                             {
-                                using (StreamWriter writer = new StreamWriter(new FileStream(@"C:\temp\BmecFlow"+ dt.ToString("yyyyMMdd") + ".csv", FileMode.Create, FileAccess.Write)))
+                                using (StreamWriter writer = new StreamWriter(new FileStream(@"C:\temp\BmecFlow" + dt.ToString("yyyyMMdd") + ".csv", FileMode.Create, FileAccess.Write)))
                                 {
                                     writer.WriteLine("ID,Trackid,IFLASH,BrdTest,T5GFR1BdTst,PRINTLABEL,LEAK101,LEAK102,LEAK103,TELECAL,TELEVAL,XCVR_LT,PRE_XCVR_LT,UCT,FODTEST,L2VISION,RadioSlim,LCDCAL,L2AR,SQT,DepthCal,DepthVal,Camera_SOIS,ACT,UWBRadTst,TOF,CFC,CQA,CQA2,RUNNIN,BE,CQAOBS,FAILDETAILS");
                                     resultLine = string.Join(Environment.NewLine, tbl.Rows.OfType<DataRow>().Select(x => string.Join(" , ", x.ItemArray)));
@@ -204,5 +204,7 @@ namespace BmecFlow
                 return false;
             }
         }
+        
     }
 }
+    

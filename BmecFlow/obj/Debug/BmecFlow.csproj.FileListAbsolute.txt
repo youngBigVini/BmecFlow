@@ -27,3 +27,12 @@ C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.CoreCompileI
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
 C:\DEVELOPMENT PROJECTS\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojAssemblyReference.cache
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe.config
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojResolveAssemblyReference.cache
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache

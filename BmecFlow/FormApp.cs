@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace BmecFlow
 {
@@ -14,9 +15,9 @@ namespace BmecFlow
         string leak = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
         string strFieldCheck = "Preencha corretamente todos os campos para serem inseridos!!!";
-        public static string trackingDir = @"X:\DC\BmecFlow\tracking";
-        public static string LeakResultDir = @"X:\DC\BmecFlow\LeakResults";
-        string dbDir = @"X:\DC\BmecFlow\db\";
+        public static string trackingDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\tracking\";
+        public static string LeakResultDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\LeakResults\";
+        string dbDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\db\";
         string cfgPattern = ".cfg";
         public FormMain()
         {
@@ -245,7 +246,7 @@ namespace BmecFlow
                 cleanPInfos();
             }
         }
-   
+
         private void buttonPASS_Click(object sender, EventArgs e)
         {
             if (textBoxOBSTrackId.TextLength != 10)
@@ -313,7 +314,7 @@ namespace BmecFlow
         {
             openFolder(trackingDir);
         }
-     
+
         public void getRestrictionUnits()
         {
             textBoxRestrictionUnits.Text = "-> Unidades com restrições:" + Environment.NewLine + "->PRODUTO \\ TRACKID" + Environment.NewLine;
@@ -352,9 +353,9 @@ namespace BmecFlow
             status = sQLManager.ImportDelimitedFile(dbDir + "BmecFlow.mdb");
 
             if (status)
-                MessageBox.Show(@"Dados exportados com sucesso para folder C:\temp!!!","SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show(@"Dados exportados com sucesso para folder C:\temp!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
             else
-                MessageBox.Show("Erro ao exportar os dados!!!","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Erro ao exportar os dados!!!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void buttonPASSLEAK_Click(object sender, EventArgs e)
@@ -370,7 +371,7 @@ namespace BmecFlow
                 leak = comboBoxLEAK.Text;
                 sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "P");
 
-                logManager.writeResult(comboBoxLeakProduct.Text,textBoxLEAKTrackid.Text,leak,"PASS",textBoxLeakResult.Text);
+                logManager.writeResult(comboBoxLeakProduct.Text, textBoxLEAKTrackid.Text, leak, "PASS", textBoxLeakResult.Text);
 
                 MessageBox.Show("LEAK result PASS adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 textBoxLEAKTrackid.Text = "";
@@ -390,7 +391,7 @@ namespace BmecFlow
                 leak = comboBoxLEAK.Text;
                 sQLManager.InsertToMdb(textBoxLEAKTrackid.Text, leak, "F");
 
-                logManager.writeResult(comboBoxLeakProduct.Text,textBoxLEAKTrackid.Text, leak, "FAIL", textBoxLeakResult.Text);
+                logManager.writeResult(comboBoxLeakProduct.Text, textBoxLEAKTrackid.Text, leak, "FAIL", textBoxLeakResult.Text);
 
                 MessageBox.Show("LEAK result FAIL adicionado com sucesso!!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 textBoxLEAKTrackid.Text = "";
@@ -408,5 +409,59 @@ namespace BmecFlow
             if (comboBoxStationType.Text == "IFLASH")
                 textBoxTimer.Enabled = true;
         }
+   
+        public string[] route()
+        {
+            string selectedProduct = comboBoxProductName.GetItemText(comboBoxProductName.SelectedItem);
+            string[] splitFile = File.ReadAllLines(dbDir + selectedProduct + cfgPattern);
+            string productName = splitFile[0];
+            string routeFlow = splitFile[1];
+            string[] flowStations = routeFlow.Split(',');
+            return flowStations;
+        }
+        
+        List<string> missingStations = new List<string>();
+        public void buttonRunCheckRoute_Click(object sender, EventArgs e)
+        {
+            if (comboBoxProductName.Text == "")
+                MessageBox.Show("Digite o nome do Produto!!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            else if (comboBoxStationType.Text == string.Empty)
+                MessageBox.Show("Selecione o tipo da estação!!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            else
+            {
+                missingStations.Clear();
+                string TrackId = textBoxTrackIdRouteCheck.Text;
+
+                foreach (string station in route())
+                {
+                    string Station = station;
+                    if ((station == "5GFR1BdTst"))
+                        Station = "T5GFR1BdTst";
+
+                    if (sQLManager.CheckRouteStatus(TrackId, Station) == false)
+                        missingStations.Add(Station);
+                    
+
+                }
+                string msgMissingStations = string.Join(Environment.NewLine, missingStations);
+
+                if (missingStations.Count >= 0)
+                    MessageBox.Show(msgMissingStations,"Missing Stations", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                else
+                {
+                    MessageBox.Show("Route Completed!","No Missing Stations", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+
+
+        }
+
+       
     }
 }
+
+
