@@ -36,3 +36,5 @@ C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojRe
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\dbTraceability.mdf
+C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\dbTraceability_log.ldf

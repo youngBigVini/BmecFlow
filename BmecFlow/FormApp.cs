@@ -3,6 +3,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace BmecFlow
 {
@@ -10,7 +12,9 @@ namespace BmecFlow
     {
         private System.Threading.Timer timer;
         LogManager logManager = new LogManager();
-        SQLManager sQLManager = new SQLManager();
+        SQLManager sQLManager = new SQLManager();       
+        TraceablilitySQLManager traceablilitySQLManager = new TraceablilitySQLManager();
+        
         string cqa = string.Empty;
         string leak = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
@@ -26,6 +30,8 @@ namespace BmecFlow
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dbTraceabilityDataSet.TableTraceability' table. You can move, or remove it, as needed.
+            this.tableTraceabilityTableAdapter.Fill(this.dbTraceabilityDataSet.TableTraceability);
             // TODO: This line of code loads data into the 'bmecFlowDataSet1.BFlow' table. You can move, or remove it, as needed.
             this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
 
@@ -458,10 +464,179 @@ namespace BmecFlow
 
 
 
+        }                
+
+        private void comboBoxTraceability_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
-       
-    }
+        private void buttonOkTraceability_Click(object sender, EventArgs e)
+        {
+            string trackId = textBoxtrackIdTraceability.Text;
+            string selectedItem = comboBoxTraceability.SelectedItem.ToString();
+            string partNumber = textBoxPartnumberTraceability.Text;
+            if (selectedItem != null && trackId  != null)
+            {
+                
+                if (traceablilitySQLManager.TrackIdExist(trackId))
+                {
+                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                }
+
+                else
+                {
+                    traceablilitySQLManager.insertTrackId(trackId);
+                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                }
+
+                updateDataGridTraceability();
+
+            }
+
+        }
+
+        private void updateDataGridTraceability()
+        {
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TRACEABILITY\db\dbTraceability.mdf;Integrated Security=True;Connect Timeout=30";
+
+            string query = "SELECT * FROM TableTraceability";
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connectionString);
+            DataTable dataTable = new DataTable();
+            dataAdapter.Fill(dataTable);
+            tableTraceabilityDataGridView.DataSource = null;
+            tableTraceabilityDataGridView.DataSource = dataTable;
+
+
+        }
+
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxtrackIdTraceability_TextChanged(object sender, EventArgs e)
+        {
+             
+            
+
+
+
+        }
+
+        private void tableTraceabilityDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void textBoxPartnumberTraceability_TextChanged(object sender,  EventArgs e)
+        {
+            
+                
+            
+        }
+        private void textBoxtrackIdTraceability_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {       
+                
+                textBoxPartnumberTraceability.Select();
+                textBoxPartnumberTraceability.Clear();
+            }
+        }
+        private void textBoxPartnumberTraceability_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBoxtrackIdTraceability.Select();
+                updateDbTtraceabilite();
+                textBoxtrackIdTraceability.Clear();
+            }
+        }
+
+        private void updateDbTtraceabilite()
+        {
+            string trackId = textBoxtrackIdTraceability.Text;
+            string selectedItem = comboBoxTraceability.SelectedItem.ToString();
+            string partNumber = textBoxPartnumberTraceability.Text;
+            if (selectedItem != null && trackId != null)
+            {
+
+                if (traceablilitySQLManager.TrackIdExist(trackId))
+                {
+                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                }
+
+                else
+                {
+                    traceablilitySQLManager.insertTrackId(trackId);
+                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                }
+
+                updateDataGridTraceability();
+
+            }
+        }
+
+        private void buttonExport_Click(object sender, EventArgs e)
+        {
+            ExportDataTableToCSV();
+            MessageBox.Show(@"Os dados exportados podem ser encontrados em C:\TRACEABILITY\Export Files\Traceability_BFlow.csv.", "Traceability", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        static void ExportDataTableToCSV()
+        {
+            string csvFilePath = @"C:\TRACEABILITY\Export Files\Traceability_BFlow.csv";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TRACEABILITY\db\dbTraceability.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "SELECT * FROM TableTraceability";
+                        
+            DataTable dataTable = new DataTable();
+
+            // Conectar ao banco de dados e preencher o DataTable
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                connection.Open();
+                adapter.Fill(dataTable);
+            }
+            // Conectar ao banco de dados e preencher o DataTable
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                connection.Open();
+                adapter.Fill(dataTable);
+            }
+            using (StreamWriter writer = new StreamWriter(csvFilePath))
+            {
+                // Escrever cabeçalhos
+                for (int i = 0; i < dataTable.Columns.Count; i++)
+                {
+                    writer.Write(dataTable.Columns[i]);
+                    if (i < dataTable.Columns.Count - 1)
+                    {
+                        writer.Write(",");
+                    }
+                }
+                writer.WriteLine();
+
+                // Escrever linhas de dados
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    for (int i = 0; i < dataTable.Columns.Count; i++)
+                    {
+                        writer.Write(row[i].ToString());
+                        if (i < dataTable.Columns.Count - 1)
+                        {
+                            writer.Write(",");
+                        }
+                    }
+                    writer.WriteLine();
+                }
+            }
+        }
+        }
 }
 
 
