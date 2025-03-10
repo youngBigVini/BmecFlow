@@ -38,3 +38,75 @@ C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properti
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\dbTraceability.mdf
 C:\Users\jagvluiz\Documents\GitHub\BmecFlow\BmecFlow\bin\Debug\dbTraceability_log.ldf
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\dbTraceability.mdf
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\dbTraceability_log.ldf
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe.config
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojResolveAssemblyReference.cache
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\EntityFramework.dll
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.dll
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\EntityFramework.xml
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jagvluiz\Desktop\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.xml
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe.config
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\dbTraceability.mdf
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\dbTraceability_log.ldf
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\EntityFramework.dll
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.dll
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\EntityFramework.xml
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.xml
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojResolveAssemblyReference.cache
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
+C:\Users\jagvluiz\Desktop\bkp\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe.config
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojResolveAssemblyReference.cache
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\EntityFramework.dll
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.dll
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\EntityFramework.xml
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jagvluiz\Desktop\bkp\24_02_2025\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.xml
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe.config
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\BmecFlow.pdb
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\EntityFramework.dll
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.dll
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\EntityFramework.xml
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\bin\Debug\System.Data.SQLite.xml
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csprojResolveAssemblyReference.cache
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.FormMain.resources
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.Properties.Resources.resources
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.csproj.GenerateResource.Cache
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.exe
+C:\Users\jagvluiz\Desktop\BmecFlow v3.0\BmecFlow\BmecFlow\obj\Debug\BmecFlow.pdb

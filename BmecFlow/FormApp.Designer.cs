@@ -147,24 +147,43 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxTrackIdRouteCheck = new System.Windows.Forms.TextBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBoxTraceability = new System.Windows.Forms.ComboBox();
-            this.tableTraceabilityDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableTraceabilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbTraceabilityDataSet = new BmecFlow.dbTraceabilityDataSet();
             this.buttonExport = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxPartnumberTraceability = new System.Windows.Forms.TextBox();
@@ -175,8 +194,6 @@
             this.bmecFlowDataSet1 = new BmecFlow.BmecFlowDataSet();
             this.tableAdapterManager1 = new BmecFlow.BmecFlowDataSetTableAdapters.TableAdapterManager();
             this.bFlowTableAdapter1 = new BmecFlow.BmecFlowDataSetTableAdapters.BFlowTableAdapter();
-            this.tableTraceabilityTableAdapter = new BmecFlow.dbTraceabilityDataSetTableAdapters.TableTraceabilityTableAdapter();
-            this.tableAdapterManager = new BmecFlow.dbTraceabilityDataSetTableAdapters.TableAdapterManager();
             this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -194,9 +211,6 @@
             this.groupBoxLEAK.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableTraceabilityDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableTraceabilityBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbTraceabilityDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1403,9 +1417,43 @@
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.textBox22);
+            this.tabPage9.Controls.Add(this.textBox21);
+            this.tabPage9.Controls.Add(this.textBox20);
+            this.tabPage9.Controls.Add(this.textBox19);
+            this.tabPage9.Controls.Add(this.textBox18);
+            this.tabPage9.Controls.Add(this.textBox17);
+            this.tabPage9.Controls.Add(this.textBox16);
+            this.tabPage9.Controls.Add(this.textBox15);
+            this.tabPage9.Controls.Add(this.textBox14);
+            this.tabPage9.Controls.Add(this.textBox13);
+            this.tabPage9.Controls.Add(this.label25);
+            this.tabPage9.Controls.Add(this.textBox12);
+            this.tabPage9.Controls.Add(this.label24);
+            this.tabPage9.Controls.Add(this.label23);
+            this.tabPage9.Controls.Add(this.textBox11);
+            this.tabPage9.Controls.Add(this.label22);
+            this.tabPage9.Controls.Add(this.textBox10);
+            this.tabPage9.Controls.Add(this.label21);
+            this.tabPage9.Controls.Add(this.textBox9);
+            this.tabPage9.Controls.Add(this.label20);
+            this.tabPage9.Controls.Add(this.textBox8);
+            this.tabPage9.Controls.Add(this.label19);
+            this.tabPage9.Controls.Add(this.textBox7);
+            this.tabPage9.Controls.Add(this.label18);
+            this.tabPage9.Controls.Add(this.textBox6);
+            this.tabPage9.Controls.Add(this.label17);
+            this.tabPage9.Controls.Add(this.textBox5);
+            this.tabPage9.Controls.Add(this.label16);
+            this.tabPage9.Controls.Add(this.textBox4);
+            this.tabPage9.Controls.Add(this.label15);
+            this.tabPage9.Controls.Add(this.textBox3);
+            this.tabPage9.Controls.Add(this.label14);
+            this.tabPage9.Controls.Add(this.textBox2);
+            this.tabPage9.Controls.Add(this.label12);
+            this.tabPage9.Controls.Add(this.textBox1);
             this.tabPage9.Controls.Add(this.label13);
             this.tabPage9.Controls.Add(this.comboBoxTraceability);
-            this.tabPage9.Controls.Add(this.tableTraceabilityDataGridView);
             this.tabPage9.Controls.Add(this.buttonExport);
             this.tabPage9.Controls.Add(this.label11);
             this.tabPage9.Controls.Add(this.textBoxPartnumberTraceability);
@@ -1419,6 +1467,299 @@
             this.tabPage9.TabIndex = 9;
             this.tabPage9.Text = "TRACEABILITY";
             this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(555, 557);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
+            this.textBox22.Size = new System.Drawing.Size(100, 20);
+            this.textBox22.TabIndex = 63;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(555, 531);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
+            this.textBox21.Size = new System.Drawing.Size(100, 20);
+            this.textBox21.TabIndex = 62;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(555, 505);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(100, 20);
+            this.textBox20.TabIndex = 61;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(555, 479);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(100, 20);
+            this.textBox19.TabIndex = 60;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(555, 453);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(100, 20);
+            this.textBox18.TabIndex = 59;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(555, 427);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(100, 20);
+            this.textBox17.TabIndex = 58;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(555, 401);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.TabIndex = 57;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(555, 375);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.TabIndex = 56;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(555, 349);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.TabIndex = 55;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(555, 323);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.TabIndex = 54;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(570, 268);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(69, 13);
+            this.label25.TabIndex = 53;
+            this.label25.Text = "DATE CODE";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(555, 294);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.TabIndex = 52;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(275, 268);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(108, 13);
+            this.label24.TabIndex = 51;
+            this.label24.Text = "8S CODE SCANNED";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(62, 557);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 13);
+            this.label23.TabIndex = 50;
+            this.label23.Text = "Finger Print";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(125, 554);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(408, 20);
+            this.textBox11.TabIndex = 49;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(72, 531);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(47, 13);
+            this.label22.TabIndex = 48;
+            this.label22.Text = "Speaker";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(125, 528);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(408, 20);
+            this.textBox10.TabIndex = 47;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(69, 505);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(50, 13);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Receiver";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(125, 502);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(408, 20);
+            this.textBox9.TabIndex = 45;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(7, 479);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(115, 13);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "Camera Traseira 50MP";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(125, 476);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(408, 20);
+            this.textBox8.TabIndex = 43;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(44, 453);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 13);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "Camera Frontal";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(125, 450);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(408, 20);
+            this.textBox7.TabIndex = 41;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(90, 427);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(27, 13);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "FPC";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(125, 424);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(408, 20);
+            this.textBox6.TabIndex = 39;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(88, 401);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(29, 13);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "Inlay";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(125, 398);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(408, 20);
+            this.textBox5.TabIndex = 37;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(56, 375);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 13);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Top Bracket";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(125, 372);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(408, 20);
+            this.textBox4.TabIndex = 35;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(74, 349);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(43, 13);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Vibrator";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(125, 346);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(408, 20);
+            this.textBox3.TabIndex = 33;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(79, 323);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 13);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Battery";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(125, 320);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(408, 20);
+            this.textBox2.TabIndex = 31;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(64, 297);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "L5/Display";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 294);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(408, 20);
+            this.textBox1.TabIndex = 29;
             // 
             // label13
             // 
@@ -1442,7 +1783,7 @@
             "Inlay",
             "FPC",
             "Camera Frontal",
-            "Camera Traseira 50M",
+            "Camera Traseira 50MP",
             "Receiver",
             "Speaker",
             "Finger Print"});
@@ -1452,124 +1793,10 @@
             this.comboBoxTraceability.TabIndex = 2;
             this.comboBoxTraceability.SelectedIndexChanged += new System.EventHandler(this.comboBoxTraceability_SelectedIndexChanged);
             // 
-            // tableTraceabilityDataGridView
-            // 
-            this.tableTraceabilityDataGridView.AutoGenerateColumns = false;
-            this.tableTraceabilityDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableTraceabilityDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
-            this.tableTraceabilityDataGridView.DataSource = this.tableTraceabilityBindingSource;
-            this.tableTraceabilityDataGridView.Location = new System.Drawing.Point(0, 198);
-            this.tableTraceabilityDataGridView.Name = "tableTraceabilityDataGridView";
-            this.tableTraceabilityDataGridView.Size = new System.Drawing.Size(1052, 383);
-            this.tableTraceabilityDataGridView.TabIndex = 28;
-            this.tableTraceabilityDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableTraceabilityDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "TrackId";
-            this.dataGridViewTextBoxColumn4.HeaderText = "TrackId";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "L5/Display";
-            this.dataGridViewTextBoxColumn5.HeaderText = "L5/Display";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Battery";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Battery";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Vibrator";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Vibrator";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Top Bracket";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Top Bracket";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Inlay";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Inlay";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "FPC";
-            this.dataGridViewTextBoxColumn10.HeaderText = "FPC";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Camera Frontal";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Camera Frontal";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Camera Traseira 50M";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Camera Traseira 50M";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Receiver";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Receiver";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Speaker";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Speaker";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Finger Print";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Finger Print";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // tableTraceabilityBindingSource
-            // 
-            this.tableTraceabilityBindingSource.DataMember = "TableTraceability";
-            this.tableTraceabilityBindingSource.DataSource = this.dbTraceabilityDataSet;
-            // 
-            // dbTraceabilityDataSet
-            // 
-            this.dbTraceabilityDataSet.DataSetName = "dbTraceabilityDataSet";
-            this.dbTraceabilityDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // buttonExport
             // 
             this.buttonExport.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.buttonExport.Location = new System.Drawing.Point(941, 136);
+            this.buttonExport.Location = new System.Drawing.Point(839, 31);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(90, 32);
             this.buttonExport.TabIndex = 28;
@@ -1581,27 +1808,27 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(466, 95);
+            this.label11.Location = new System.Drawing.Point(483, 95);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 18);
+            this.label11.Size = new System.Drawing.Size(74, 18);
             this.label11.TabIndex = 27;
-            this.label11.Text = "PART NUMBER";
+            this.label11.Text = "8S CODE";
             // 
             // textBoxPartnumberTraceability
             // 
             this.textBoxPartnumberTraceability.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPartnumberTraceability.Location = new System.Drawing.Point(425, 116);
-            this.textBoxPartnumberTraceability.MaxLength = 10;
+            this.textBoxPartnumberTraceability.Location = new System.Drawing.Point(6, 116);
+            this.textBoxPartnumberTraceability.MaxLength = 55;
             this.textBoxPartnumberTraceability.Multiline = true;
             this.textBoxPartnumberTraceability.Name = "textBoxPartnumberTraceability";
-            this.textBoxPartnumberTraceability.Size = new System.Drawing.Size(190, 41);
+            this.textBoxPartnumberTraceability.Size = new System.Drawing.Size(1043, 41);
             this.textBoxPartnumberTraceability.TabIndex = 25;
             this.textBoxPartnumberTraceability.TextChanged += new System.EventHandler(this.textBoxPartnumberTraceability_TextChanged);
             this.textBoxPartnumberTraceability.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPartnumberTraceability_KeyDown);
             // 
             // buttonOkTraceability
             // 
-            this.buttonOkTraceability.Location = new System.Drawing.Point(633, 83);
+            this.buttonOkTraceability.Location = new System.Drawing.Point(486, 163);
             this.buttonOkTraceability.Name = "buttonOkTraceability";
             this.buttonOkTraceability.Size = new System.Drawing.Size(75, 30);
             this.buttonOkTraceability.TabIndex = 24;
@@ -1626,7 +1853,7 @@
             this.textBoxtrackIdTraceability.MaxLength = 10;
             this.textBoxtrackIdTraceability.Multiline = true;
             this.textBoxtrackIdTraceability.Name = "textBoxtrackIdTraceability";
-            this.textBoxtrackIdTraceability.Size = new System.Drawing.Size(190, 41);
+            this.textBoxtrackIdTraceability.Size = new System.Drawing.Size(189, 41);
             this.textBoxtrackIdTraceability.TabIndex = 23;
             this.textBoxtrackIdTraceability.TextChanged += new System.EventHandler(this.textBoxtrackIdTraceability_TextChanged);
             this.textBoxtrackIdTraceability.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxtrackIdTraceability_KeyDown);
@@ -1649,16 +1876,6 @@
             // bFlowTableAdapter1
             // 
             this.bFlowTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tableTraceabilityTableAdapter
-            // 
-            this.tableTraceabilityTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TableTraceabilityTableAdapter = this.tableTraceabilityTableAdapter;
-            this.tableAdapterManager.UpdateOrder = BmecFlow.dbTraceabilityDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // FormMain
             // 
@@ -1699,9 +1916,6 @@
             this.tabPage8.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableTraceabilityDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableTraceabilityBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbTraceabilityDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmecFlowDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1832,33 +2046,51 @@
         private BmecFlowDataSet bmecFlowDataSet1;
         private BmecFlowDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private BmecFlowDataSetTableAdapters.BFlowTableAdapter bFlowTableAdapter1;
+        
         private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBoxTraceability;
+        private System.Windows.Forms.Button buttonExport;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBoxPartnumberTraceability;
         private System.Windows.Forms.Button buttonOkTraceability;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxtrackIdTraceability;
-        private System.Windows.Forms.Button buttonExport;
-        private dbTraceabilityDataSet dbTraceabilityDataSet;
-        private System.Windows.Forms.BindingSource tableTraceabilityBindingSource;
-        private dbTraceabilityDataSetTableAdapters.TableTraceabilityTableAdapter tableTraceabilityTableAdapter;
-        private dbTraceabilityDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView tableTraceabilityDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBoxTraceability;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }
 

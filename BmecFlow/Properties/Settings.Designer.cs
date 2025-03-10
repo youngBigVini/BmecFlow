@@ -26,19 +26,16 @@ namespace BmecFlow.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\jagvluiz\\Documents\\GitHub\\B" +
-            "mecFlow\\db\\BmecFlow.mdb")]
+        //[global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\jagvluiz\\Desktop\\BmecFlow v3.0\\" +
+           // "BmecFlow\\db\\BmecFlow.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=X:\\DC\\B" +
+           "mecFlow\\db\\BmecFlow.mdb")]
         public string BmecFlowConnectionString {
             get {
                 return ((string)(this["BmecFlowConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbTraceabilit" +
-            "y.mdf;Integrated Security=True;Connect Timeout=30")]
+      
         public string dbTraceabilityConnectionString {
             get {
                 return ((string)(this["dbTraceabilityConnectionString"]));

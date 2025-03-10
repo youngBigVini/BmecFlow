@@ -3,9 +3,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-
+using System.Text;
 namespace BmecFlow
 {
     public partial class FormMain : Form
@@ -13,28 +12,41 @@ namespace BmecFlow
         private System.Threading.Timer timer;
         LogManager logManager = new LogManager();
         SQLManager sQLManager = new SQLManager();       
-        TraceablilitySQLManager traceablilitySQLManager = new TraceablilitySQLManager();
+        
         
         string cqa = string.Empty;
         string leak = string.Empty;
         string invalidTrackIdMsg = "trackId inválido!!!";
         string strFieldCheck = "Preencha corretamente todos os campos para serem inseridos!!!";
-        public static string trackingDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\tracking\";
-        public static string LeakResultDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\LeakResults\";
-        string dbDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\db\";
+        //public static string trackingDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\tracking\";
+        //public static string LeakResultDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\LeakResults\";
+        //string dbDir = @"C:\Users\jagvluiz\Documents\GitHub\BmecFlow\db\";
+        public static string trackingDir = @"X:\DC\BmecFlow\tracking\";
+        public static string LeakResultDir = @"X:\DC\BmecFlow\LeakResults\";
+        string dbDir = @"X:\DC\BmecFlow\db\";  
         string cfgPattern = ".cfg";
+        
+        public static string TtrackId = null;
+        public static string Tl5_display = null;
+        public static string TBattery = null;
+        public static string TVibrator = null;
+        public static string TTopBracket = null;
+        public static string TInlay = null;
+        public static string TFPC = null;
+        public static string TCamerafrontal = null;
+        public static string TCameraTraseira = null;
+        public static string TReceiver = null;
+        public static string TSpeaker = null;
+        public static string TFingerPrint = null;
         public FormMain()
         {
             InitializeComponent();
             readRouteFilesAndFillComboBox();
         }
         private void FormMain_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dbTraceabilityDataSet.TableTraceability' table. You can move, or remove it, as needed.
-            this.tableTraceabilityTableAdapter.Fill(this.dbTraceabilityDataSet.TableTraceability);
+        {            
             // TODO: This line of code loads data into the 'bmecFlowDataSet1.BFlow' table. You can move, or remove it, as needed.
-            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);
-
+            this.bFlowTableAdapter.Fill(this.bmecFlowDataSet.BFlow);         
         }
         public void readRouteFilesAndFillComboBox()
         {
@@ -460,6 +472,7 @@ namespace BmecFlow
                 {
                     MessageBox.Show("Route Completed!","No Missing Stations", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                textBoxTrackIdRouteCheck.Clear();
             }
 
 
@@ -468,61 +481,175 @@ namespace BmecFlow
 
         private void comboBoxTraceability_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            textBoxPartnumberTraceability.Select();
         }
 
         private void buttonOkTraceability_Click(object sender, EventArgs e)
         {
             string trackId = textBoxtrackIdTraceability.Text;
-            string selectedItem = comboBoxTraceability.SelectedItem.ToString();
-            string partNumber = textBoxPartnumberTraceability.Text;
-            if (selectedItem != null && trackId  != null)
+            string selectedItem;
+            string partNumber = textBoxPartnumberTraceability.Text.Replace("\n", "").Replace("\r", "");
+                        
+            if (comboBoxTraceability.SelectedItem != null && trackId  != null && partNumber != null && partNumber != "" )
             {
+                selectedItem = comboBoxTraceability.SelectedItem.ToString();
+
                 
-                if (traceablilitySQLManager.TrackIdExist(trackId))
+                
+                if (selectedItem=="L5/Display")
                 {
-                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                    Tl5_display = partNumber;
+                    textBox1.Text = Tl5_display;
+                    textBox12.Text = dateCode(Tl5_display);
                 }
-
-                else
+                if (selectedItem == "Battery")
                 {
-                    traceablilitySQLManager.insertTrackId(trackId);
-                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                    TBattery = partNumber;
+                    textBox2.Text = TBattery;
+                    textBox13.Text = dateCode(TBattery);
                 }
+                if (selectedItem == "Vibrator")
+                {
+                    TVibrator = partNumber;
+                    textBox3.Text = TVibrator;
+                    textBox14.Text = dateCode(TVibrator);
 
-                updateDataGridTraceability();
-
+                }
+                if (selectedItem == "Top Bracket")
+                {
+                    TTopBracket = partNumber;
+                    textBox4.Text = TTopBracket;
+                    textBox15.Text = dateCode(TTopBracket);
+                }
+                if (selectedItem == "Inlay")
+                {
+                    TInlay = partNumber;
+                    textBox5.Text = TInlay;
+                    textBox16.Text = dateCode(TInlay);
+                }
+                if (selectedItem == "FPC")
+                {
+                    TFPC = partNumber;
+                    textBox6.Text = TFPC;
+                    textBox17.Text = dateCode(TFPC);
+                }
+                if (selectedItem == "Camera Frontal")
+                {
+                    TCamerafrontal = partNumber;
+                    textBox7.Text = TCamerafrontal;
+                    textBox18.Text = dateCode(TCamerafrontal);
+                }
+                if (selectedItem == "Camera Traseira 50MP")
+                {
+                    TCameraTraseira = partNumber;
+                    textBox8.Text = TCameraTraseira;
+                    textBox19.Text = dateCode(TCameraTraseira);
+                }
+                if (selectedItem == "Receiver")
+                {
+                    TReceiver = partNumber;
+                    textBox9.Text = TReceiver;
+                    textBox20.Text = dateCode(TReceiver);
+                }
+                if (selectedItem == "Speaker")
+                {
+                    TSpeaker = partNumber;
+                    textBox10.Text = TSpeaker;
+                    textBox21.Text = dateCode(TSpeaker);
+                }
+                if (selectedItem == "Finger Print")
+                {
+                    TFingerPrint = partNumber;
+                    textBox11.Text = TFingerPrint;
+                    textBox22.Text = dateCode(TFingerPrint);
+                }
+                
+                textBoxPartnumberTraceability.Clear();
+                
             }
+            TtrackId = trackId.Replace("\n", "").Replace("\r", "");
+
+              
+            if (Tl5_display != null && TBattery != null && TVibrator != null && TTopBracket != null && TInlay != null && TFPC != null && TCamerafrontal != null &&
+                    TCameraTraseira != null && TReceiver != null && TSpeaker != null && TFingerPrint != null && TtrackId != null && TtrackId != "")
+            {
+                try
+                {
+                    TraceabilityCsv();
+                    string csvFilePath = @"C:\TRACEABILITY\Export Files\Traceability_BFlow.csv";
+                    using (StreamWriter writer = new StreamWriter(csvFilePath, true))  
+                    {
+
+
+                        string linha = $"{TtrackId.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{Tl5_display.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TBattery.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TVibrator.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TTopBracket.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TInlay.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TFPC.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TCamerafrontal.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TCameraTraseira.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TReceiver.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TSpeaker.Replace("\n", "").Replace("\r", "").Replace(",", ";")}," +
+                           $"{TFingerPrint.Replace("\n", "").Replace("\r", "").Replace(",", ";")}";
+
+                        writer.WriteLine(linha);
+
+                        Tl5_display = null;
+                        TBattery = null;
+                        TVibrator = null;
+                        TTopBracket = null;
+                        TInlay = null;
+                        TFPC = null;
+                        TCamerafrontal = null;
+                        TCameraTraseira = null;
+                        TReceiver = null;
+                        TSpeaker = null;
+                        TFingerPrint = null;
+                        TtrackId = null;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocorreu um erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                textBoxtrackIdTraceability.Clear();
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                textBox7.Clear();
+                textBox8.Clear();
+                textBox9.Clear();
+                textBox10.Clear();
+                textBox11.Clear();
+                textBox12.Clear();
+                textBox13.Clear();
+                textBox14.Clear();
+                textBox15.Clear();
+                textBox16.Clear();
+                textBox17.Clear();
+                textBox18.Clear();
+                textBox19.Clear();
+                textBox20.Clear();
+                textBox21.Clear();
+                textBox22.Clear();
+            }
+            comboBoxTraceability.Select();
 
         }
-
-        private void updateDataGridTraceability()
-        {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TRACEABILITY\db\dbTraceability.mdf;Integrated Security=True;Connect Timeout=30";
-
-            string query = "SELECT * FROM TableTraceability";
-
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connectionString);
-            DataTable dataTable = new DataTable();
-            dataAdapter.Fill(dataTable);
-            tableTraceabilityDataGridView.DataSource = null;
-            tableTraceabilityDataGridView.DataSource = dataTable;
-
-
-        }
-
-
+  
         private void label13_Click(object sender, EventArgs e)
         {
 
         }
 
         private void textBoxtrackIdTraceability_TextChanged(object sender, EventArgs e)
-        {
-             
-            
-
-
+        {                         
 
         }
 
@@ -540,103 +667,75 @@ namespace BmecFlow
         private void textBoxtrackIdTraceability_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {       
-                
+            {
+                buttonOkTraceability_Click(sender, e);
                 textBoxPartnumberTraceability.Select();
-                textBoxPartnumberTraceability.Clear();
+
             }
         }
         private void textBoxPartnumberTraceability_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                textBoxtrackIdTraceability.Select();
-                updateDbTtraceabilite();
-                textBoxtrackIdTraceability.Clear();
-            }
-        }
-
-        private void updateDbTtraceabilite()
-        {
-            string trackId = textBoxtrackIdTraceability.Text;
-            string selectedItem = comboBoxTraceability.SelectedItem.ToString();
-            string partNumber = textBoxPartnumberTraceability.Text;
-            if (selectedItem != null && trackId != null)
-            {
-
-                if (traceablilitySQLManager.TrackIdExist(trackId))
+                buttonOkTraceability_Click(sender, e);
+                
+                if (Tl5_display != null && TBattery != null && TVibrator != null && TTopBracket != null && TInlay != null && TFPC != null && TCamerafrontal != null &&
+                    TCameraTraseira != null && TReceiver != null && TSpeaker != null && TFingerPrint != null)
                 {
-                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                    textBoxtrackIdTraceability.Select();
                 }
-
                 else
                 {
-                    traceablilitySQLManager.insertTrackId(trackId);
-                    traceablilitySQLManager.insertItemTraceability(selectedItem, trackId, partNumber);
+                    comboBoxTraceability.Select();
                 }
-
-                updateDataGridTraceability();
 
             }
         }
+
+        
 
         private void buttonExport_Click(object sender, EventArgs e)
-        {
-            ExportDataTableToCSV();
+        {            
             MessageBox.Show(@"Os dados exportados podem ser encontrados em C:\TRACEABILITY\Export Files\Traceability_BFlow.csv.", "Traceability", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        static void ExportDataTableToCSV()
+        }   
+          
+        private string dateCode(string code8s)
         {
-            string csvFilePath = @"C:\TRACEABILITY\Export Files\Traceability_BFlow.csv";
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TRACEABILITY\db\dbTraceability.mdf;Integrated Security=True;Connect Timeout=30";
-            string query = "SELECT * FROM TableTraceability";
-                        
-            DataTable dataTable = new DataTable();
+            
+            int positionFromEnd = 22;
+            int startPosition = code8s.Length - positionFromEnd - 4;
+            if (code8s != "" && code8s != null && code8s.Length >= 52)
+            {
+                code8s = code8s.Substring(startPosition, 4);
+                return code8s;
+            }
+            else
+            {
+                return "";
+            }
+            
 
-            // Conectar ao banco de dados e preencher o DataTable
-            using (SqlConnection connection = new SqlConnection(connectionString))
+        }   
+        private void TraceabilityCsv()
+        {
+           string csvFilePath = @"C:\TRACEABILITY\Export Files\Traceability_BFlow.csv";
+            if (!Directory.Exists(csvFilePath))
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                connection.Open();
-                adapter.Fill(dataTable);
+                Directory.CreateDirectory(@"C:\TRACEABILITY\Export Files\");
             }
-            // Conectar ao banco de dados e preencher o DataTable
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            if (!File.Exists(csvFilePath))
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                connection.Open();
-                adapter.Fill(dataTable);
-            }
-            using (StreamWriter writer = new StreamWriter(csvFilePath))
-            {
-                // Escrever cabeçalhos
-                for (int i = 0; i < dataTable.Columns.Count; i++)
+                // Criar o arquivo CSV e adicionar um cabeçalho
+                using (StreamWriter writer = new StreamWriter(csvFilePath))
                 {
-                    writer.Write(dataTable.Columns[i]);
-                    if (i < dataTable.Columns.Count - 1)
-                    {
-                        writer.Write(",");
-                    }
+                    
+                    writer.WriteLine("TrackId,L5/Display,Battery,Vibrator,Top Bracket,Inlay,FPC,Camera frontal,Camera Traseira 50MP,Receiver,Speaker,Finger Print");
                 }
-                writer.WriteLine();
 
-                // Escrever linhas de dados
-                foreach (DataRow row in dataTable.Rows)
-                {
-                    for (int i = 0; i < dataTable.Columns.Count; i++)
-                    {
-                        writer.Write(row[i].ToString());
-                        if (i < dataTable.Columns.Count - 1)
-                        {
-                            writer.Write(",");
-                        }
-                    }
-                    writer.WriteLine();
-                }
             }
+
         }
-        }
+    }
 }
 
 
